@@ -2,6 +2,7 @@
  font-family: CoasterBlack;
  src: url("../CoasterBlack.eot") /* EOT file for IE */
 }
+
 @font-face {
  font-family: CoasterBlack;
  src: url("../CoasterBlack.ttf") /* TTF file for CSS3 browsers */
