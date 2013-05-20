@@ -43,17 +43,38 @@
 			<div id="content">
 				<h1> Line Up </h1>
 				
-				<div class="artist-container">
-				<a href="./artist.php"><img class="jrf-artist-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/santigold.png"></a>
-				<img class="jrf-artist-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/common.png">
-				<img class="jrf-artist-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/grouch.png">
-				<img class="jrf-artist-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/jhene.png">
-				<img class="jrf-artist-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/ryan.png">
-				<img class="jrf-artist-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/ziggy.png">
-				<img class="jrf-artist-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/barrington.png">
-				<img class="jrf-artist-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/mr.png">
-				<img class="jrf-artist-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/marcia.png">
+				
+				<div class="grid-img">
+					<a href="./artist.php">
+						<img src="http://www.paradigmagency.com/Asset/s/a/santigold-main--photo-credit-sean-thomas-extralarge_1327359655725-medium.jpg">
+						<div class="grid-img-overlay">
+							<div class="overlay-text">Santigold</div>
+						</div>
+					</a>
 				</div>
+				
+				
+				</br>
+				</br>
+				</br>
+				
+				
+				
+				<div class="artist-container">
+				<a href="./artist.php"><img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/santigold.png"></a>
+				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/common.png">
+				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/grouch.png">
+				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/jhene.png">
+				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/ryan.png">
+				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/ziggy.png">
+				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/barrington.png">
+				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/mr.png">
+				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/marcia.png">
+				</div>
+				
+				
+				
+				
 				
 			</div> <!-- end #content -->
 			
@@ -77,6 +98,20 @@
     	
 	});	
 	jPM.on();
+</script>
+<script type="text/javascript">
+$(window).resize(function(){
+
+    $('.overlay-text').css({
+        position:'absolute',
+        right: 0,
+        top: ($(".grid-img-overlay").height() - $('.overlay-text').outerHeight())/2
+    });
+
+});
+
+// To initially run the function:
+$(window).resize();
 </script>
 <script type="text/javascript">
 function triggerMenu()
