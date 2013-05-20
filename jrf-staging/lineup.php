@@ -42,9 +42,8 @@
 			<!-- Variable Content Goes Here -->
 			<div id="content">
 				<h1> Line Up </h1>
-				
-				
-				<div class="grid-img">
+				<div class="artist-container">
+				<div class="grid-img" style="display:none;">
 					<a href="./artist.php">
 						<img src="http://www.paradigmagency.com/Asset/s/a/santigold-main--photo-credit-sean-thomas-extralarge_1327359655725-medium.jpg">
 						<div class="grid-img-overlay">
@@ -52,25 +51,54 @@
 						</div>
 					</a>
 				</div>
-				
-				
-				</br>
-				</br>
-				</br>
-				
-				
-				
-				<div class="artist-container">
-				<a href="./artist.php"><img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/santigold.png"></a>
-				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/common.png">
-				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/grouch.png">
-				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/jhene.png">
-				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/ryan.png">
-				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/ziggy.png">
-				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/barrington.png">
-				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/mr.png">
-				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/marcia.png">
+				<div class="grid-img">
+					<a href="./artist.php">
+						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/common.png">
+					</a>
 				</div>
+				<div class="grid-img">
+					<a href="./artist.php">
+						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/common.png">
+					</a>
+				</div>
+				<div class="grid-img">
+					<a href="./artist.php">
+						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/grouch.png">
+					</a>
+				</div>
+				<div class="grid-img">
+					<a href="./artist.php">
+						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/jhene.png">
+					</a>
+				</div>
+				<div class="grid-img">
+					<a href="./artist.php">
+						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/ryan.png">
+					</a>
+				</div>
+				<div class="grid-img">
+					<a href="./artist.php">
+						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/ryan.png">
+					</a>
+				</div>
+				<div class="grid-img">
+					<a href="./artist.php">
+						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/barrington.png">
+					</a>
+				</div>
+				<div class="grid-img">
+					<a href="./artist.php">
+						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/mr.png">
+					</a>
+				</div>
+				<div class="grid-img">
+					<a href="./artist.php">
+						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/marcia.png">
+					</a>
+				</div>
+				<div class="spacer" style="clear: both;"></div>
+				</div>
+				
 				
 				
 				

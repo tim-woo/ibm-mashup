@@ -1,11 +1,11 @@
 @font-face {
  font-family: CoasterBlack;
- src: url("../CoasterBlack.eot") /* EOT file for IE */
+ src: url("../fonts/CoasterBlack.eot") /* EOT file for IE */
 }
 
 @font-face {
  font-family: CoasterBlack;
- src: url("../CoasterBlack.ttf") /* TTF file for CSS3 browsers */
+ src: url("../fonts/CoasterBlack.ttf") /* TTF file for CSS3 browsers */
 }
 
 body {
@@ -76,13 +76,14 @@ body {
 }
 
 .grid-img {
-    width: 29%;
     height: auto;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 30px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
     box-shadow: 0 0 10px #555;
     position:relative;
+    float: left;
+
 }
 
 .grid-img-overlay {
@@ -98,8 +99,9 @@ body {
 	font-family: CoasterBlack, Verdana, Arial, sans-serif;
 	color: rgb(30, 153, 25);
 	margin-right: 10px;
-	font-size: 32px;
+	font-size: 26px;
 }
+
 
 img {
 width:100%;
@@ -116,13 +118,13 @@ ul {
 	list-style-type:none; 
 	margin: 0px;
 	padding: 10px;
-	font-size: 24px;
 }
 
 li {
 display: block;
 list-style-type: none;
-padding-right: 20px;
+padding-right: 10px;
+padding-left: 10px;
 }
 
 .video-container {
@@ -147,12 +149,18 @@ padding-right: 20px;
 
 /* Flipper did go here once */
 
-@media screen and (min-width: 620px)
+@media screen and (min-width: 540px)
 {
 
 	#nav {
 	display:block;
 	background-color: #33cccc;
+	}
+	
+	.grid-img {
+	width: 40%;
+    margin-left: 6.666%;
+    margin-top: 6.666%;
 	}
 	
 	li {
@@ -168,14 +176,19 @@ padding-right: 20px;
 	}
 }
 
-@media screen and (min-width: 775px)
+@media screen and (min-width: 620px)
 {
 	#full-view {
 	padding:10px;
 	}
+}
+
+@media screen and (min-width: 775px)
+{
+	
 	
 	#wrapper {
-	max-width:950px;
+	max-width:1020px;
 	width: 80%;
 	}
 
@@ -183,6 +196,13 @@ padding-right: 20px;
 	#nav-side, #jPanelMenu-menu {
 	display:none;
 	}
+}
 
-
+@media screen and (min-width: 980px)
+{
+	.grid-img {
+		width: 28%;
+    	margin-left: 4%;
+    	margin-top: 4%;
+    }
 }
