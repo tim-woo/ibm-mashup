@@ -8,6 +8,11 @@
  src: url("../fonts/CoasterBlack.ttf") /* TTF file for CSS3 browsers */
 }
 
+@font-face {
+ font-family: BirthOfAHero;
+ src: url("../fonts/BIRTH_OF_A_HERO.ttf") /* TTF file for CSS3 browsers */
+}
+
 body {
 	margin:0px;
 	background-color:#000000;
@@ -96,7 +101,7 @@ body {
 }
 
 .overlay-text {
-	font-family: CoasterBlack, Verdana, Arial, sans-serif;
+	font-family: BirthOfAHero, Verdana, Arial, sans-serif;
 	color: rgb(30, 153, 25);
 	margin-right: 10px;
 	font-size: 26px;
