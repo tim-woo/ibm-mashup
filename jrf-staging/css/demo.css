@@ -1,0 +1,153 @@
+body {
+	margin:0px;
+	background-color:#000000;
+}
+
+.menu-trigger {
+	background-color:#33cccc;
+	width:45px;
+	height: 40;
+	position:fixed;
+	top:15px;
+	z-index:101;
+	text-align: center;
+}
+
+.side-strip {
+	background-color:#33cccc;
+	width:2px;
+	height:100%;
+	position:fixed;
+	z-index:100;
+}
+
+#full-view {
+	background-color:#000000;
+}
+
+#wrapper {
+	max-width:620px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#page {
+	background-color:#99cc99;
+	padding:10px;
+	text-align:center;
+}
+
+#header {
+}
+
+#nav {
+	display:none;
+}
+
+#nav-side, #jPanelMenu-menu {
+	background-color:#33cccc;
+	display:none;
+}
+
+#content {
+}
+
+#footer {
+}
+
+#map {
+	width:100%;
+	height:100%;
+}
+
+.rslides {
+	margin: 0 auto 0;
+}
+
+.jrf-artist-img {
+    width: 266px;
+    height: auto;
+    margin-left: 30px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px #555;
+}
+
+img {
+width:100%;
+height:auto;
+}
+
+ul { 
+	list-style-type:none; 
+	margin: 0px;
+	padding: 10px;
+}
+
+li {
+display: block;
+list-style-type: none;
+padding-right: 20px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.audio-container {
+	margin:10px;
+}
+
+/* Flipper did go here once */
+
+@media screen and (min-width: 620px)
+{
+
+	#nav {
+	display:block;
+	background-color: #33cccc;
+	}
+	
+	li {
+	display: inline;
+	}
+	
+	.menu-trigger {
+	display:none;
+	}
+
+	.side-strip {
+	display:none;
+	}
+}
+
+@media screen and (min-width: 775px)
+{
+	#full-view {
+	padding:10px;
+	}
+	
+	#wrapper {
+	max-width:950px;
+	width: 80%;
+	}
+
+	
+	#nav-side, #jPanelMenu-menu {
+	display:none;
+	}
+
+
+}
