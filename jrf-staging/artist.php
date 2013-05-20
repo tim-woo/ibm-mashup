@@ -51,12 +51,12 @@
 After four years of hide and seek in which blogs blew up at the sudden release of any track with her name attached to it, Santigold returns in a moment of global aggression and vulnerability. Honing in on the hyper-media cult of personality, in her unmistakable voice she asks the listener: Into what fantasy do you hurl yourself as you gaze into the glow of your machine? The answer to this question is central to what drives "Master of My Make-Believe," her latest work.
 				</div>
 				
-				<h1> YOUTUBE </h1>
+				<h1 class="mashup-type"> YOUTUBE </h1>
 				<div class="video-container">
 					<iframe src="http://www.youtube.com/embed/mIMMZQJ1H6E" frameborder="0" allowfullscreen></iframe>
 				</div>
 				
-				<h1> SOUNDCLOUD </h1>
+				<h1 class="mashup-type"> SOUNDCLOUD </h1>
 				<div class="audio-container">
 				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F47836153"></iframe>
 				</div>
@@ -64,7 +64,7 @@ After four years of hide and seek in which blogs blew up at the sudden release o
 				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F43420259"></iframe>
 				</div>
 				
-				<h1> RELATED ARTISTS </h1>			
+				<h1 class="mashup-type"> RELATED ARTISTS </h1>			
 				
 				
 								
