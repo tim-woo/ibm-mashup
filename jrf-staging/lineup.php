@@ -114,9 +114,6 @@
 	</div> <!-- end #wrapper -->
 	</div> <!-- end #full-view -->
 	
-	
-    
-</body>
 
 <!-- Sliding menu javascript -->
 <script type="text/javascript">
@@ -146,6 +143,10 @@ function triggerMenu()
 {
 	jPM.trigger(true);
 }
-</script>	
+</script>
+	
+    
+</body>
+	
 </html>
 

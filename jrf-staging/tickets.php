@@ -102,10 +102,6 @@
 	</div> <!-- end #wrapper -->
 	</div> <!-- end #full-view -->
 	
-	
-    
-</body>
-
 <!-- Sliding menu javascript -->
 <script type="text/javascript">
 	//var jPM = $.jPanelMenu();
@@ -121,5 +117,9 @@ function triggerMenu()
 	jPM.trigger(true);
 }
 </script>
+    
+</body>
+
+
 </html>
 
