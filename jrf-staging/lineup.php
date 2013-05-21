@@ -41,7 +41,7 @@
 			
 			<!-- Variable Content Goes Here -->
 			<div id="content">
-				<h1> Line Up </h1>
+				<!-- <h1> Line Up </h1> -->
 				<div class="artist-container">
 				<div class="grid-img" style="display:none;">
 					<a href="./artist.php">
