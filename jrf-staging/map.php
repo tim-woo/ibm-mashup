@@ -104,7 +104,7 @@
 
 		L.imageOverlay(imageUrl, imageBounds).addTo(map);
 
-		var drakeIcon = L.icon({
+		/*var drakeIcon = L.icon({
     		iconUrl: './images/map/drake-icon.png',
 
     		iconSize:     [74, 98], // size of the icon
@@ -113,7 +113,7 @@
 		});
 
 		var marker = L.marker([34.072433, -118.448592], {icon: drakeIcon}).addTo(map);
-		marker.bindPopup("<b>Hello world!</b><br>This is Drake Stadium.");
+		marker.bindPopup("<b>Hello world!</b><br>This is Drake Stadium.");*/
 		
 		function onLocationFound(e) {
     		var radius = e.accuracy / 2;
@@ -132,10 +132,10 @@
 
 		map.on('locationerror', onLocationError);
 		
-		if( isMobile.iOS() )
+		/*if( isMobile.iOS() )
 		{
 			map.locate({setView: true, maxZoom: 16});
-		}
+		}*/
 		
 
 	</script>

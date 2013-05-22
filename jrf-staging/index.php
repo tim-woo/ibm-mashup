@@ -55,7 +55,7 @@
 				<div class="home-content" style="padding-top:10px;padding-bottom:20px;">
 					<div class="left-column">
 						<h1>Event Flyer</h1>
-						<img src="./images/flyer.jpg">
+						<img src="./images/home/flyer.jpg">
 						
 					</div> <!-- end left column -->
 					
