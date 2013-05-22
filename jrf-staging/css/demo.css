@@ -81,7 +81,7 @@ color:transparent;
 	background-color: rgb(0, 63, 63);
 }
 
-#wrapper {
+#wrapper, .elbow {
 	max-width:620px;
 	text-align:center;
 	margin-left:auto;
@@ -299,7 +299,7 @@ width:100%;
 {
 	
 	
-	#wrapper {
+	#wrapper, .elbow {
 	max-width:1020px;
 	width: 80%;
 	}

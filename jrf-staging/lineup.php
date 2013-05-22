@@ -78,11 +78,6 @@
 				</div>
 				<div class="grid-img">
 					<a href="./artist.php">
-						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/ryan.png">
-					</a>
-				</div>
-				<div class="grid-img">
-					<a href="./artist.php">
 						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/barrington.png">
 					</a>
 				</div>
