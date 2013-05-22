@@ -42,6 +42,53 @@
 			<!-- Variable Content Goes Here -->
 			<div id="content">
 				<h1> Craft Vendors </h1>
+				
+    
+    				<img alt="Vendors at the 25th Annual JazzReggae Festival " src="./images/craft_primary.png" >
+    				</br>
+    				</br>
+    
+    				One of the unique focuses at the JazzReggae Festival is the importance of art within our society and culture. Quality craft vendors selling clothing, jewelry, visual art and much more are carefully chosen by the JRF staff to ensure the creative experience that the festival promotes. &nbsp;The producers of the &nbsp;JazzReggae Festival also provide attendees with an art exhibit presenting a multitude of interesting, beautiful, and unique creations. As JRF attracts a crowd that comes to enjoy the beats, rhymes, and tunes produced by talented musicians, it will also deliver an ambiance of love for people, food, and art!
+    
+    				</br>
+    				
+    				<div class="vendor-container">
+    				
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/african.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/ali.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/beLoveApparel.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/bodyButterLady.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/caribbeanIslandGiftShop.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/diama.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/fari.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/glyde.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/gotVape.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/handsForAfrica.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/hat.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/haveSomeScents.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/hennaByMayra.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/jah.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/jr.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/kahanda.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/lovepray.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/luvenlightens.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/native.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/rasta.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/rise.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/sistargirl.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/soaptopia.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/solsis.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/timeless.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/todays.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/uppitees.png">
+    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/z.png">
+    				
+    				<div class="spacer" style="clear: both;"></div>
+    				
+    				</div>
+    
+    
+				
 			</div> <!-- end #content -->
 			
 			<?php include('./includes/footer.php'); ?>
