@@ -45,9 +45,10 @@
 			<div id="content">
 				<div class="slide-show">
 					<ul class="rslides" id="slider1">
-  						<li class="rslides-element"><img src="./images/1.jpg" alt=""></li>
-  						<li class="rslides-element"><img src="./images/2.jpg" alt=""></li>
-  						<li class="rslides-element"><img src="./images/3.jpg" alt=""></li>
+  						<li class="rslides-element"><img src="./images/slide_santigold.png" alt=""></li>
+  						<li class="rslides-element"><img src="./images/slide_ziggy.png" alt=""></li>
+  						<li class="rslides-element"><img src="./images/slide_design.png" alt=""></li>
+  						<li class="rslides-element"><img src="./images/slide_stage.png" alt=""></li>
 					</ul>
 				</div>
 	
