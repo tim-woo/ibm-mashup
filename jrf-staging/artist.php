@@ -43,7 +43,31 @@
 			
 			
 			<!-- Variable Content Goes Here -->
-			<?php include('./includes/artist_functions.php'); ?>
+			<?php 
+				$artistID = $_GET['id'];
+				include('./includes/artist_functions.php'); 
+			?>
+			
+			<div id="content">
+				
+					<h1> <?php artistName($artistID); ?> </h1> <!-- Just a test, remove eventually -->
+			
+						<img src="<?php artistPrimaryImgURL($artistID); ?>">
+						<div class="bio-container"><?php artistBio($artistID); ?></div>
+				
+					<h1 class="mashup-type"> YOUTUBE </h1>
+						<div class="video-container">
+							<iframe src="<?php artistVideo($artistID); ?>" frameborder="0" allowfullscreen></iframe>
+						</div>
+					
+					<h1 class="mashup-type"> SOUNDCLOUD </h1>
+						<?php soundcloudAudio($artistID); ?>
+						
+
+					<h1 class="mashup-type"> SOCIAL MEDIA </h1>	
+						
+			</div> <!-- end #content -->
+
 
 
 			
