@@ -47,7 +47,7 @@
 				<div class="artist-container">
 				
 				<div class="grid-img">
-					<a href="./artist.php?id=Santigold">
+					<a href="./artist.php?id=santigold">
 						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/santigold.png">
 					</a>
 				</div>
@@ -82,7 +82,7 @@
 					</a>
 				</div>
 				<div class="grid-img">
-					<a href="./artist.php?id=mr">
+					<a href="./artist.php?id=vegas">
 						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/mr.png">
 					</a>
 				</div>

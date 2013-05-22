@@ -39,7 +39,8 @@
 			
 			<?php include('./includes/nav.php'); ?>
 			<?php include('./includes/nav-side.php'); ?>
-			
+
+			<?php include('./includes/artist_functions.php'); ?>
 			
 			<!-- Variable Content Goes Here -->
 			<div id="content">
