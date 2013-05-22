@@ -47,47 +47,47 @@
 				<div class="artist-container">
 				
 				<div class="grid-img">
-					<a href="./artist.php">
+					<a href="./artist.php?id=santigold">
 						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/santigold.png">
 					</a>
 				</div>
 				<div class="grid-img">
-					<a href="./artist.php">
+					<a href="./artist.php?id=common">
 						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/common.png">
 					</a>
 				</div>
 				<div class="grid-img">
-					<a href="./artist.php">
+					<a href="./artist.php?id=grouch">
 						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/grouch.png">
 					</a>
 				</div>
 				<div class="grid-img">
-					<a href="./artist.php">
+					<a href="./artist.php?id=jhene">
 						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/jhene.png">
 					</a>
 				</div>
 				<div class="grid-img">
-					<a href="./artist.php">
+					<a href="./artist.php?id=ryan">
 						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/ryan.png">
 					</a>
 				</div>
 				<div class="grid-img">
-					<a href="./artist.php">
+					<a href="./artist.php?id=ziggy">
 						<img src="./images/ziggy.png">
 					</a>
 				</div>
 				<div class="grid-img">
-					<a href="./artist.php">
+					<a href="./artist.php?id=barrington">
 						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/barrington.png">
 					</a>
 				</div>
 				<div class="grid-img">
-					<a href="./artist.php">
+					<a href="./artist.php?id=mr">
 						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/mr.png">
 					</a>
 				</div>
 				<div class="grid-img">
-					<a href="./artist.php">
+					<a href="./artist.php?id=marcia">
 						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/marcia.png">
 					</a>
 				</div>

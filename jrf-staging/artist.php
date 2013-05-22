@@ -44,6 +44,9 @@
 			
 			<!-- Variable Content Goes Here -->
 			<div id="content">
+			
+			<h1> <?php echo $_GET['id']; ?> </h1> <!-- Just a test, remove eventually -->
+			
 				<img src="http://www.paradigmagency.com/Asset/s/a/santigold-main--photo-credit-sean-thomas-extralarge_1327359655725-medium.jpg">
 				<div class="bio-container">
 					Santigold is Santi White: an artist whose perseverance relies on invention, a champion who survives off her own skill and faith. She is a major muse watched by the inspired world, an in categorical performer who collapses time and genre with one hand guided by tradition, while the other hand carves out a shining future. Santigold is neither calm nor mayhem, but from her lungs burst every color in between. 
