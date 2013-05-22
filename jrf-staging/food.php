@@ -84,7 +84,7 @@
 							SWAG
 						</div>
 						<div class="back">
-							SWERVE
+							SWERVY
 						</div>
 					</div>
 				</div>
