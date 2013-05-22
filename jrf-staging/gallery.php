@@ -42,6 +42,11 @@
 			<!-- Variable Content Goes Here -->
 			<div id="content">
 				<h1> Gallery </h1>
+				
+				<center><div id="cincopa_widget_6d2a99be-5dff-492f-8bd8-f379bfdee197"><img src="//www.cincopa.com/media-platform/runtime/loading.gif" style="border:0;" width="700" /><a href="//www.cincopa.com/media-platform/wordpress-plugin.aspx"><img alt="WordPress plugin" border="0" src="http://www.cincopa.com/media-platform/runtime/cincopaicons.gif" style="border:0;" /></a></div><script src='//www.cincopa.com/media-platform/runtime/libasync.js' type='text/javascript'></script><script type='text/javascript'>cp_load_widget('AECACFbmx99n', 'cincopa_widget_6d2a99be-5dff-492f-8bd8-f379bfdee197');</script><noscript>Click <a href='http://www.cincopa.com/media-platform/view.aspx?fid=AECACFbmx99n'>here</a> to open the gallery.<br>
+Powered by Cincopa <a href='http://www.cincopa.com/media-platform'>Media Platform</a> for your website and Cincopa MediaSend for <a href='http://www.cincopa.com/mediasend/start.aspx'>file transfer</a>.
+</noscript></center>
+				
 			</div> <!-- end #content -->
 			
 			<?php include('./includes/footer.php'); ?>
