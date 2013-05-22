@@ -197,6 +197,10 @@ width:100%;
     float: left;
 }
 
+.grid-flip-container {
+	margin-bottom: 20px;
+}
+
 .overlay-text {
 	font-family: CoasterBlack, Verdana, Arial, sans-serif;
 	color: rgb(30, 153, 25);
