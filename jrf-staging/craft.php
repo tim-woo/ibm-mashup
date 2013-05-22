@@ -41,7 +41,7 @@
 			
 			<!-- Variable Content Goes Here -->
 			<div id="content">
-				<h1> Craft </h1>
+				<h1> Craft Vendors </h1>
 			</div> <!-- end #content -->
 			
 			<?php include('./includes/footer.php'); ?>

@@ -44,7 +44,7 @@
 			
 			<!-- Variable Content Goes Here -->
 			<div id="content">
-				<h1> Food </h1>
+				<h1> Food Vendors</h1>
 				
 				<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 					<div class="flipper">
