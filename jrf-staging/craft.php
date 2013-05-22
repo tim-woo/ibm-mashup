@@ -47,7 +47,7 @@
 				<h1> Craft Vendors </h1>
 				
     
-    				<img alt="Vendors at the 25th Annual JazzReggae Festival " src="./images/craft_primary.png" >
+    				<img alt="Vendors at the 25th Annual JazzReggae Festival " src="./images/craft/craft_primary.png" >
     				</br>
     				</br>
     

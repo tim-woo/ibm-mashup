@@ -46,7 +46,7 @@
 			<div id="content">
 				<h1> Food Vendors</h1>
 				
-				<img alt="Vendors at the 25th Annual JazzReggae Festival " src="./images/food_primary.png" >
+				<img alt="Vendors at the 25th Annual JazzReggae Festival " src="./images/food/food_primary.png" >
     				</br>
     				</br>
     

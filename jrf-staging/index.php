@@ -45,10 +45,10 @@
 			<div id="content">
 				<div class="slide-show">
 					<ul class="rslides" id="slider1">
-  						<li class="rslides-element"><img src="./images/slide_santigold.png" alt=""></li>
-  						<li class="rslides-element"><img src="./images/slide_ziggy.png" alt=""></li>
-  						<li class="rslides-element"><img src="./images/slide_design.png" alt=""></li>
-  						<li class="rslides-element"><img src="./images/slide_stage.png" alt=""></li>
+  						<li class="rslides-element"><img src="./images/slides/slide_santigold.png" alt=""></li>
+  						<li class="rslides-element"><img src="./images/slides/slide_ziggy.png" alt=""></li>
+  						<li class="rslides-element"><img src="./images/slides/slide_design.png" alt=""></li>
+  						<li class="rslides-element"><img src="./images/slides/slide_stage.png" alt=""></li>
 					</ul>
 				</div>
 	
@@ -60,21 +60,21 @@
 					</div> <!-- end left column -->
 					
 					<div class="right-column">
-						<img src="./images/infographic.png">
+						<img src="./images/home/infographic.png">
 						
 						</br>
 						</br>
-						<img src="./images/divider.png">
+						<img src="./images/home/divider.png">
 						</br>
 						</br>
 						</br>
 						
-						<img src="./images/email.png">
+						<img src="./images/home/email.png">
 						
 						</br>
 						</br>
 						</br>
-						<img src="./images/divider.png">
+						<img src="./images/home/divider.png">
 						</br>
 						</br>
 						</br>

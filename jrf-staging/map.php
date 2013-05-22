@@ -99,13 +99,13 @@
 		}).addTo(map);
 
 
-		var imageUrl = './images/map-transparent.png',
+		var imageUrl = './images/map/map-transparent.png',
     	imageBounds = [[34.071120, -118.447616], [34.073196, -118.446103]];
 
 		L.imageOverlay(imageUrl, imageBounds).addTo(map);
 
 		var drakeIcon = L.icon({
-    		iconUrl: './images/drake-icon.png',
+    		iconUrl: './images/map/drake-icon.png',
 
     		iconSize:     [74, 98], // size of the icon
     		iconAnchor:   [37, 0], // point of the icon which will correspond to marker's location

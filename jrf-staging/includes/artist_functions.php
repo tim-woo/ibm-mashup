@@ -91,31 +91,31 @@ function artistPrimaryImgURL($artistID)
 	switch ($artistID)
 	{
 	case "santigold":
- 	 	echo './images/santigold_large.png';
+ 	 	echo './images/artists/large/santigold_large.png';
  	 	break;
 	case "common":
- 	 	echo './images/common_large.jpeg';
+ 	 	echo './images/artists/large/common_large.jpeg';
   		break;
 	case "grouch":
-  		echo './images/grouch_large.png';
+  		echo './images/artists/large/grouch_large.png';
   		break;
   	case "jhene":
-  		echo './images/jhene_large.jpg';
+  		echo './images/artists/large/jhene_large.jpg';
   		break;
   	case "ryan":
-  		echo './images/ryan_large.jpg';
+  		echo './images/artists/large/ryan_large.jpg';
   		break;
   	case "ziggy":
-  		echo './images/ziggy_large.jpg';
+  		echo './images/artists/large/ziggy_large.jpg';
   		break;
   	case "barrington":
-  		echo './images/barrington_large.jpg';
+  		echo './images/artists/large/barrington_large.jpg';
   		break;
   	case "mr":
-  		echo './images/mr_large.jpg';
+  		echo './images/artists/large/mr_large.jpg';
   		break;
   	case "marcia":
-  		echo './images/marcia_large.jpeg';
+  		echo './images/artists/large/marcia_large.jpeg';
   		break;
 	default:
   		echo '';

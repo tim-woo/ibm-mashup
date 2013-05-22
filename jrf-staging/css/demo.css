@@ -53,7 +53,7 @@ h1 {
 }
 
 .menu-trigger {
-	background-image:url('../images/nav_tab_black.png');
+	background-image:url('../images/site/nav_tab_black.png');
 	background-repeat:none;
 	background-size:100% 100%;
 	/*background-color:#33cccc;*/
@@ -179,11 +179,13 @@ width:100%;
 
 .grid-img-overlay {
 	width: 100%;
-	height: 30%;
-	top: 70%;
+	height: 25%;
+	top: 75%;
 	position:absolute;
 	background-color: rgb(3, 37, 76);
 	background-color: rgba(3, 37, 76, 0.8);
+	/*background-color: rgb(0, 63, 63);
+	background-color: rgba(0, 63, 63, 0.8);*/
 }
 
 .grid-img-flip {
