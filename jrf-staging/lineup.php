@@ -43,7 +43,7 @@
 			<div id="content">
 				<!-- <h1> Line Up </h1> -->
 				<div class="artist-container">
-				<div class="grid-img" style="display:none;">
+				<div class="grid-img">
 					<a href="./artist.php">
 						<img src="http://www.paradigmagency.com/Asset/s/a/santigold-main--photo-credit-sean-thomas-extralarge_1327359655725-medium.jpg">
 						<div class="grid-img-overlay">
@@ -134,7 +134,6 @@ $(window).resize(function(){
     });
 
 });
-
 // To initially run the function:
 $(window).resize();
 </script>
