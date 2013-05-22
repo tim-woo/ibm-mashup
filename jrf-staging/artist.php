@@ -68,8 +68,6 @@ After four years of hide and seek in which blogs blew up at the sudden release o
 				
 				<h1 class="mashup-type"> RELATED ARTISTS </h1>
 
-<div class="fb-like-box" data-href="http://www.facebook.com/Santigold" data-width="400" data-show-faces="false" data-stream="true" data-show-border="false" data-header="false"></div>
-
 
 
 				<h1 class="mashup-type"> SOCIAL MEDIA </h1>	
