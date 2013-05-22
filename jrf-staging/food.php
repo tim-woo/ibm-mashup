@@ -393,17 +393,6 @@
 				
 				</div>
 				
-				<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-					<div class="flipper">
-						<div class="front">
-							SWAG
-						</div>
-						<div class="back">
-							SWERVY
-						</div>
-					</div>
-				</div>
-				
 			</div> <!-- end #content -->
 			
 			<?php include('./includes/footer.php'); ?>

@@ -47,7 +47,9 @@ li {
 h1 {
 	font-family: BirthOfAHero, Verdana, Arial, sans-serif;
 	font-size: 3em;
-	padding: 0px
+	padding: 0px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 .menu-trigger {

@@ -7,6 +7,9 @@
 	<!-- Include the slide show CSS -->
 	<link rel="stylesheet" href="./libraries/responsiveslides/responsiveslides.css"/>
 	
+	<!-- Including flipper CSS -->
+	<link rel="stylesheet" href="./css/card-flipper.css"/>
+	
 	<!-- Including our CSS file -->
 	<link rel="stylesheet" href="./css/demo.css"/>
 
@@ -52,40 +55,396 @@
     
     				</br>
     				
-    				<div class="vendor-container">
+    				<div class="grid-flip-container">
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/african.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Unique, one of a kind African inspired jewelry and accessories.</div>
+								<div class="vendor-link" style="text-align: center"><a target="_blank" href="http://www.africancharm.com/">Website</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/ali.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Rasta inspired clothing.</div>
+								<div class="vendor-link" style="text-align: center"><a target="_blank" href="http://www.alidesigner.com/">Website</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/beLoveApparel.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Peace inspiring clothing.</div>
+								<div class="vendor-link" style="text-align: center"><a target="_blank" href="http://www.beloveapparel.com/">Website</a></div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/bodyButterLady.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Shea Butter lotion to keep your skin smooth as butter.</div>
+								<div class="vendor-link" style="text-align: center"><a target="_blank" href="http://www.bodybutterlady.com/">Website</a></div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/caribbeanIslandGiftShop.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Caribbean souvenirs without leaving California. </div>
+								<div class="vendor-link" style="text-align: center"><a target="_blank" href="http://caribbeanislandsgiftshop.net/home.php">Website</a></div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/diama.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Jewelry, hats, flags and bags, everything for everyone.</div>	
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/fari.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Reggae influenced clothing that represents unity and togetherness.</div>
+								<div class="vendor-link" style="text-align: center"><a target="_blank" href="http://www.fariapparel.com/">Website</a></div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/glyde.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">The world's only ethical and vegan condom brand! </div>
+								<div class="vendor-link" style="text-align: center"><a target="_blank" href="http://www.glydeamerica.com/">Website</a></div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/gotVape.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Premium vaporizers for a more clean, smoke free lifestyle.</div>
+								<div class="vendor-link" style="text-align: center"><a target="_blank" href="http://www.gotvape.com/">Website</a></div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/handsForAfrica.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">African accessories whose profits go to support the hundreds of thousands who have been maimed by machetes or explosive devices in the Blood Diamond industry in Sierra Leone.</div>
+								<div class="vendor-link" style="text-align: center"><a target="_blank" href="http://www.handsforafrica.org/">Website</a></div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/hat.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Large selection of snap back hats.</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/haveSomeScents.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">High quality scents with everything from colognes, perfumes, body oils, and home fragrances!</div>
+								<div class="vendor-link" style="text-align: center"><a target="_blank" href="http://havesomescents.com/">Website</a></div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/hennaByMayra.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Traditional and custom henna designs</div>
+								<div class="vendor-link" style="text-align: center"><a target="_blank" href="http://www.hennabymayra.com/">Website</a></div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/jah.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Bob Marley license tees.</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/jr.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Innovative clothing.</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/kahanda.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Bringing arts and crafts from Africa to JazzReggae</div>	
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/lovepray.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Handmade, unique and one-of-a-kind jewelry pieces for people of all ages.</div>
+								<div class="vendor-link" style="text-align: center"><a target="_blank" href="http://www.loveprayjewelry.com/">Website</a></div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/luvenlightens.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Clothing and hats with a positive message.</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/native.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Help your eco footprint with Native Sol's earth friendly clothing!</div>
+								<div class="vendor-link" style="text-align: center"><a target="_blank" href="http://www.nativesol.org/">Website</a></div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/rasta.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">One stop shop for reggae and Rasta themed clothing and accessories.</div>	
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/rise.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">A variety of Rasta items from clothes and jewelry to incense and oils.</div>	
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/sistargirl.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Handmade jewelry and accessories.</div>
+								<div class="vendor-link" style="text-align: center"><a target="_blank" href="http://www.etsy.com/shop/SISTARGIRL ">Website</a></div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/soaptopia.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Eco friendly, all natural soaps and bath products to nourish your skin.</div>
+								<div class="vendor-link" style="text-align: center"><a target="_blank" href="http://www.soaptopia.com/">Website</a></div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/solsis.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Colorful and eye catching clothing.</div>
+								<div class="vendor-link" style="text-align: center"><a target="_blank" href="http://solsisclothing.com/02en/">Website</a></div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/timeless.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">vSymbolic and timeless jewelry that won't go out of style!</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/todays.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Trendy and fashionable clothing and accessories for women</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/uppitees.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Fashions for men, women, pets, and the home.</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="grid-img-flip">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/z.png">
+							</div>
+							<div class="back">
+								<div class="vendor-info">Z Glove arm and leg compression sleeves increase performance and add protection with a cutting edge style for athletes everywhere</div>
+								<div class="vendor-link" style="text-align: center"><a target="_blank" href="http://www.thezglove.com/">Website</a></div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				
+				
+				
+				<div class="spacer" style="clear: both;"></div>
+				
+				</div>
     				
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/african.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/ali.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/beLoveApparel.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/bodyButterLady.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/caribbeanIslandGiftShop.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/diama.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/fari.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/glyde.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/gotVape.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/handsForAfrica.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/hat.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/haveSomeScents.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/hennaByMayra.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/jah.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/jr.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/kahanda.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/lovepray.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/luvenlightens.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/native.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/rasta.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/rise.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/sistargirl.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/soaptopia.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/solsis.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/timeless.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/todays.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/uppitees.png">
-    				<img class="grid-img" src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/craft/z.png">
-    				
-    				<div class="spacer" style="clear: both;"></div>
-    				
-    				</div>
     
     
 				
