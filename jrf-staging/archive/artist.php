@@ -22,6 +22,16 @@
 	<!-- Include the slide show library -->
 	<script type="text/javascript" src="./libraries/responsiveslides/responsiveslides.min.js"></script>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=150769608397642";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
 </head>
 
 <body>
@@ -74,7 +84,12 @@ After four years of hide and seek in which blogs blew up at the sudden release o
 
 				<h1 class="mashup-type"> SOCIAL MEDIA </h1>	
 
+				<a class="twitter-timeline" href="https://twitter.com/Santigold" data-widget-id="337172010155249664">Tweets by @Santigold</a>
 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+				
 				
 								
 			</div> <!-- end #content -->
