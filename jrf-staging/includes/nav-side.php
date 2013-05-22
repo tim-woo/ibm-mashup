@@ -6,7 +6,7 @@
 		<li><a href="./map.php">Map</a></li>
 		<li><a href="./food.php">Food</a></li>
 		<li><a href="./craft.php">Craft</a></li>
-		<li><a href="./artexhibit.php">Art Exhibit</a></li>
+		<li><a href="./artexhibit.php">Art</a></li>
 		<li><a href="./gallery.php">Gallery</a></li>
 		<li><a href="./info.php">Info</a></li>
 	</ul>
