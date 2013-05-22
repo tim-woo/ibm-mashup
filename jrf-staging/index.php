@@ -52,28 +52,35 @@
 					</ul>
 				</div>
 	
-				<div class="dummy-content">
-					<div style="width:60%;float:left;">
+				<div class="home-content" style="padding-top:10px;padding-bottom:20px;">
+					<div class="left-column">
 						<h1>Event Flyer</h1>
 						<img src="./images/flyer.jpg">
 						
 					</div> <!-- end left column -->
 					
-					<div style="width:40%; float:right;">
-						<h3>Paragraph Element</h3>
-						<p>
-						Quisque pellentesque sodales aliquam. Morbi mollis neque eget arcu egestas non ultrices neque volutpat. Nam at nunc lectus, id vulputate purus. In et turpis ac mauris viverra iaculis. Cras sed elit a purus ultrices iaculis eget sit amet dolor. Praesent ac libero dolor, id viverra libero. Mauris aliquam nibh vitae eros sodales fermentum. Fusce cursus est varius ante vehicula eget ultrices felis eleifend. Nunc pharetra rutrum nibh et lobortis. Morbi vitae venenatis velit.
-						</p>
-						<p>
-						Quisque pellentesque sodales aliquam. Morbi mollis neque eget arcu egestas non ultrices neque volutpat. Nam at nunc lectus, id vulputate purus. In et turpis ac mauris viverra iaculis. Cras sed elit a purus ultrices iaculis eget sit amet dolor. Praesent ac libero dolor, id viverra libero. Mauris aliquam nibh vitae eros sodales fermentum. Fusce cursus est varius ante vehicula eget ultrices felis eleifend. Nunc pharetra rutrum nibh et lobortis. Morbi vitae venenatis velit.
-						</p>
-						<h3>Another Heading Starting Point</h3>
-						<p>
-						Quisque pellentesque sodales aliquam. Morbi mollis neque eget arcu egestas non ultrices neque volutpat. Nam at nunc lectus, id vulputate purus. In et turpis ac mauris viverra iaculis. Cras sed elit a purus ultrices iaculis eget sit amet dolor. Praesent ac libero dolor, id viverra libero. Mauris aliquam nibh vitae eros sodales fermentum. Fusce cursus est varius ante vehicula eget ultrices felis eleifend. Nunc pharetra rutrum nibh et lobortis. Morbi vitae venenatis velit.
-						</p>
-						<p>
-						Quisque pellentesque sodales aliquam. Morbi mollis neque eget arcu egestas non ultrices neque volutpat. Nam at nunc lectus, id vulputate purus. In et turpis ac mauris viverra iaculis. Cras sed elit a purus ultrices iaculis eget sit amet dolor. Praesent ac libero dolor, id viverra libero. Mauris aliquam nibh vitae eros sodales fermentum. Fusce cursus est varius ante vehicula eget ultrices felis eleifend. Nunc pharetra rutrum nibh et lobortis. Morbi vitae venenatis velit.
-						</p>
+					<div class="right-column">
+						<img src="./images/infographic.png">
+						
+						</br>
+						</br>
+						<img src="./images/divider.png">
+						</br>
+						</br>
+						</br>
+						
+						<img src="./images/email.png">
+						
+						</br>
+						</br>
+						</br>
+						<img src="./images/divider.png">
+						</br>
+						</br>
+						</br>
+						
+						<iframe height="225" width="100%" src="http://8tracks.com/mixes/1474514/player_v3_universal" style="border: 0px none;" ></iframe>
+						
 					</div> <!-- end right column -->
 					<div class="spacer" style="clear: both;"></div>
 					
