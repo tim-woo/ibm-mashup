@@ -1,8 +1,11 @@
 <!-- artist_functions.php -->
+<html>
 
+<?php
 switch ($id)
 {
 	case "santigold":
+	
 
 	case "common":
 
@@ -22,3 +25,7 @@ switch ($id)
 
 	
 }
+
+?>
+
+</html>
