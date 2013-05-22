@@ -39,21 +39,16 @@
 			<?php include('./includes/nav-side.php'); ?>
 			
 			
+			
 			<!-- Variable Content Goes Here -->
 			<div id="content">
-				<!-- <h1> Line Up </h1> -->
+			
+				<h1> Line Up </h1> 
 				<div class="artist-container">
+				
 				<div class="grid-img">
 					<a href="./artist.php">
-						<img src="http://www.paradigmagency.com/Asset/s/a/santigold-main--photo-credit-sean-thomas-extralarge_1327359655725-medium.jpg">
-						<div class="grid-img-overlay">
-							<div class="overlay-text">Santigold</div>
-						</div>
-					</a>
-				</div>
-				<div class="grid-img">
-					<a href="./artist.php">
-						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/common.png">
+						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/santigold.png">
 					</a>
 				</div>
 				<div class="grid-img">
@@ -78,6 +73,11 @@
 				</div>
 				<div class="grid-img">
 					<a href="./artist.php">
+						<img src="./images/ziggy.png">
+					</a>
+				</div>
+				<div class="grid-img">
+					<a href="./artist.php">
 						<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/barrington.png">
 					</a>
 				</div>
@@ -92,12 +92,19 @@
 					</a>
 				</div>
 				<div class="spacer" style="clear: both;"></div>
+				
 				</div>
 				
 				
-				
-				
-				
+				<!--
+				<div class="grid-img">
+					<a href="./artist.php">
+						<img src="http://www.paradigmagency.com/Asset/s/a/santigold-main--photo-credit-sean-thomas-extralarge_1327359655725-medium.jpg"
+						<div class="grid-img-overlay"
+							<div class="overlay-text"Santigold</div
+						</div
+					</a
+				</div -->
 				
 			</div> <!-- end #content -->
 			
