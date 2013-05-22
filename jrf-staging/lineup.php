@@ -127,10 +127,16 @@
 <script type="text/javascript">
 $(window).resize(function(){
 
+	var height = ($(".grid-img-overlay").height() - $('.overlay-text').outerHeight())/2;
+	
+	// If height is incorrectly negative (unknown bug), manually set 8, a safe number
+	if (height < 0)
+		height = 8;
+
     $('.overlay-text').css({
         position:'absolute',
         right: 0,
-        top: ($(".grid-img-overlay").height() - $('.overlay-text').outerHeight())/2
+        top: height
     });
 
 });
