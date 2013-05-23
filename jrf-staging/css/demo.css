@@ -261,6 +261,10 @@ width:100%;
     padding-top: 20px;
 }
 
+.hide-on-mobile {
+	display:none;
+}
+
 /* Flipper did go here once */
 
 @media screen and (min-width: 540px)
@@ -418,6 +422,10 @@ width:100%;
 	.side-strip {
 	display:none;
 	}
+	
+	.hide-on-mobile {
+	display:block;
+}
 }
 
 @media screen and (min-width: 620px)

@@ -111,6 +111,12 @@
 	});	
 	jPM.on();
 </script>
+
+<script>
+    $('a:contains(Tickets)').css("background","#00cde0");
+    $('li:contains(Tickets)').css("background","#00cde0");
+</script>
+
 <script type="text/javascript">
 function triggerMenu()
 {

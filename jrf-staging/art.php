@@ -67,6 +67,13 @@ The art exhibit will continue the thread of sustainability that is largely appar
 	});	
 	jPM.on();
 </script>
+
+<script>
+    $('a:contains(Art)').css("background","#00cde0");
+    $('li:contains(Art)').css("background","#00cde0");
+</script>
+
+
 <script type="text/javascript">
 function triggerMenu()
 {

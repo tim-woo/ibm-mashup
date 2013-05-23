@@ -98,6 +98,13 @@
 	});	
 	jPM.on();
 </script>
+
+<script>
+    $('a:contains(Info)').css("background","#00cde0");
+    $('li:contains(Info)').css("background","#00cde0");
+</script>
+
+
 <script type="text/javascript">
 function triggerMenu()
 {

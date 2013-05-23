@@ -66,6 +66,13 @@ Powered by Cincopa <a href='http://www.cincopa.com/media-platform'>Media Platfor
 	});	
 	jPM.on();
 </script>
+
+<script>
+    $('a:contains(Gallery)').css("background","#00cde0");
+    $('li:contains(Gallery)').css("background","#00cde0");
+</script>
+
+
 <script type="text/javascript">
 function triggerMenu()
 {

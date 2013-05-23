@@ -139,6 +139,12 @@
 		
 
 	</script>
+	
+	<script>
+    $('a:contains(Map)').css("background","#00cde0");
+    $('li:contains(Map)').css("background","#00cde0");
+</script>
+	
 	<script type="text/javascript">
 function triggerMenu()
 {

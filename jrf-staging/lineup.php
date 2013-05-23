@@ -175,6 +175,12 @@ $(window).resize(function(){
 // To initially run the function:
 $(window).resize();
 </script>
+
+<script>
+    $('a:contains(Line)').css("background","#00cde0");
+    $('li:contains(Line)').css("background","#00cde0");
+</script>
+
 <script type="text/javascript">
 function triggerMenu()
 {
