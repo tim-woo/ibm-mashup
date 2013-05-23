@@ -43,7 +43,7 @@
 			<!-- Variable Content Goes Here -->
 			<div id="content">
 			
-				<h1> Line Up </h1> 
+				<h1> Jam Day </h1> 
 				<div class="artist-container">
 				
 				<div class="grid-img">
@@ -90,7 +90,12 @@
 						</div>
 					</a>
 				</div>
+				<div class="spacer" style="clear: both;"></div>
+				</div>
 				
+				<h1> Reggae Day </h1> 
+				
+				<div class="artist-container">
 				<div class="grid-img">
 					<a href="./artist.php?id=ziggy">
 						<img src="./images/artists/lineup/ziggy.png">

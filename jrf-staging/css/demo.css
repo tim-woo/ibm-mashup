@@ -18,6 +18,16 @@
 }
 
 @font-face {
+ font-family: Groovy;
+ src: url("../fonts/Groovy.eot") /* EOT file for IE */
+}
+
+@font-face {
+ font-family: Groovy;
+ src: url("../fonts/Groovy.ttf") /* TTF file for CSS3 browsers */
+}
+
+@font-face {
  font-family: BirthOfAHero;
  src: url("../fonts/BIRTH_OF_A_HERO.ttf") /* TTF file for CSS3 browsers */
 }
@@ -55,8 +65,8 @@ li {
 }
 
 h1 {
-	font-family: BirthOfAHero, Verdana, Arial, sans-serif;
-	font-size: 3em;
+	font-family: Groovy, Verdana, Arial, sans-serif;
+	font-size: 1.5em;
 	padding: 0px;
 	margin-top: 15px;
 	margin-bottom: 15px;
