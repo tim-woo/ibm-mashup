@@ -27,6 +27,7 @@ body {
 	margin:0px;
 	font-family: Verdana, Arial, sans-serif;
 	background-color: rgb(0, 63, 63);
+	/*background-color: black;*/
 }
 
 img {
@@ -95,6 +96,7 @@ color:transparent;
 #full-view {
 	/*background-color:white;*/
 	background-color: rgb(0, 63, 63);
+	/*background-color: black;*/
 }
 
 #wrapper {
@@ -108,7 +110,7 @@ color:transparent;
 	/*background-color:#99cc99;*/
 	/*background-color: rgba(153, 204, 153,0.48);*/
 	background-color: rgba(190, 230, 190,1);
-	padding:0px;
+	margin-bottom:20px;
 	text-align:center;
 	box-shadow: 0 0 30px #111111;
 }
@@ -210,6 +212,7 @@ width:100%;
 
 .grid-flip-container {
 	margin-bottom: 20px;
+	padding-bottom: 25px;
 }
 
 .artist-container {
@@ -425,7 +428,7 @@ width:100%;
 	
 	.hide-on-mobile {
 	display:block;
-}
+	}
 }
 
 @media screen and (min-width: 620px)

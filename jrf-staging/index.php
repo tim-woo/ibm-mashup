@@ -116,6 +116,11 @@
   });
 </script>
 
+<script>
+    $('a:contains(Home)').css("background","#00cde0");
+    $('li:contains(Home)').css("background","#00cde0");
+</script>
+
 <script type="text/javascript">
 function triggerMenu()
 {

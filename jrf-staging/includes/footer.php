@@ -1,4 +1,5 @@
-<div id="footer">
+
+<!-- <div id="footer">
 
 Sponsored In Part By:
 
@@ -17,7 +18,7 @@ Sponsored In Part By:
 
 <a href="http://americansignsinc.com/" target="_blank"><img src="http://www.jazzreggaefest.com/files/americansignslogotransparent.png" style="width: 150px;"></a>
 
-<!-- <a href="http://www.illyissimo.com/" target="_blank"><img src="http://www.jazzreggaefest.com/files/illyissimologotransparent.png" style="width: 150px;"></a>-->
+<a href="http://www.illyissimo.com/" target="_blank"><img src="http://www.jazzreggaefest.com/files/illyissimologotransparent.png" style="width: 150px;"></a>
 
 <br>
 <br>
