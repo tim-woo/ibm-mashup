@@ -116,7 +116,7 @@
 				</div>
 				
 				<div class="grid-img">
-					<a href="./artist.php?id=barringon">
+					<a href="./artist.php?id=barrington">
 						<img src="./images/artists/lineup/barrington.png">
 						<div class="grid-img-overlay">
 							<div class="overlay-text">Barrington Levy</div>
