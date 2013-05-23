@@ -67,7 +67,7 @@
 						<img src="<?php artistPrimaryImgURL($artistID); ?>">
 						<div class="bio-container"><?php artistBio($artistID); ?></div>
 				
-
+						
 						<div class="video-container">
 							<iframe src="<?php artistVideo($artistID); ?>" frameborder="0" allowfullscreen></iframe>
 						</div>

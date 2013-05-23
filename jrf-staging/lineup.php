@@ -144,7 +144,7 @@
 				
 				<div class="grid-img">
 					<a href="./artist.php?id=kes">
-						<img src="./images/artists/lineup/kes.jpg">
+						<img src="./images/artists/lineup/kes.png">
 						<div class="grid-img-overlay">
 							<div class="overlay-text">Kes the Band</div>
 						</div>
