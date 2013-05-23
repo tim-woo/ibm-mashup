@@ -26,6 +26,18 @@
 
 <body>
 
+	<!-- FACEBOOK INCLUDE -->
+<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
 	<div class="menu-trigger"><a href="javascript:triggerMenu();">Menu</a></div>
 	<div class="side-strip"></div>
 	
@@ -55,12 +67,12 @@
 						<img src="<?php artistPrimaryImgURL($artistID); ?>">
 						<div class="bio-container"><?php artistBio($artistID); ?></div>
 				
-					<h1 class="mashup-type"> YOUTUBE </h1>
+
 						<div class="video-container">
 							<iframe src="<?php artistVideo($artistID); ?>" frameborder="0" allowfullscreen></iframe>
 						</div>
 					
-					<h1 class="mashup-type"> SOUNDCLOUD </h1>
+
 						<?php soundcloudAudio($artistID); ?>
 						
 					<div class="audio-container">
@@ -73,10 +85,10 @@
 
 
 
-
-
-
-					<h1 class="mashup-type"> SOCIAL MEDIA </h1>	
+<!-- FACEBOOK -->
+<div class="audio-container">
+<div class="fb-like" data-href="https://www.facebook.com/Santigold" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div>
+</div>
 						
 			</div> <!-- end #content -->
 
