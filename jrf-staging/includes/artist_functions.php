@@ -47,6 +47,18 @@ $mrVid = 'http://www.youtube.com/embed/5je4wdMTDWw';
 $mrLnk = '<a class="artist-link" target="_blank" href="http://mrvegasmusic.com/">Website</a><a class="artist-link" target="_blank" href="https://www.facebook.com/MrVegasMusic">Facebook</a><a class="artist-link" target="_blank" href="https://twitter.com/mrvegasmusic">Twitter</a><a class="artist-link" target="_blank" href="http://www.youtube.com/user/MrVegasVEVO">Youtube</a>';
 $mrBio = 'From “Heads High” (1998) to “Bruk It Down” (2012), Mr Vegas has assembled an unshakable string of international classic reggae and dancehall releases including Billboard hits over the past three decades of his career. Always looking forward, Mr Vegas is also synonymous with the success of the new social media generation amassing copious amounts of friends and followers across Twitter and Facebook. Leading the way into 2013 with solid spins on mainstream radio throughout the US and a remix package penetrating the dance market, is no doubt that ‘Bruk It Down’ will be this Spring’s cross over dancehall anthem, while Mr Vegas’ smash single ‘Party Tun Up’ is bubbling in the dance. Mr Vegas continues to hit stages to sold out crowds worldwide, doing his part, taking the message about reggae and dancehall straight to the people worldwide, from New York to Paris, from California to St Maarten.';
 
+$kesImg = 'http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/kes.png';
+$kesVid = 'http://www.youtube.com/embed/5cGq3S0Mgmg';
+$kesLnk = '<a class="artist-link" target="_blank" href="http://www.kestheband.com/">Website</a><a class="artist-link" target="_blank" href="https://www.facebook.com/Kestheband">Facebook</a><a class="artist-link" target="_blank" href="https://twitter.com/Kestheband">Twitter</a><a class="artist-link" target="_blank" href="http://www.youtube.com/user/keslive">Youtube</a>';
+$kesBio = 'Kees Dieffenthaller began performing in the late 90′s, fronting a cover band that specialized in Billboard chart-toppers, and popular soca and reggae tracks. Due to his vocal range, stage presence, good looks, and uncanny ability to mimic popular artists, Kees quickly created a buzz and attracted a large, loyal following. On the crest of all this success and momentum, Kees exited the cover band circuit in 2005 and formed his own band, KES, with the dream to pursue great original music. Featuring his brothers Hans (drums), Jon (lead guitar), and best friend Riad Boochoon (bass), Kees was now able to work with similarly focused members on creating original music that could have international appeal.';
+
+$gluckImg = 'http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/gluck.png';
+$gluckVid = 'N/A';
+$gluckLnk = 'N/A';
+$gluckBio = 'The Gluck Jazz Ensemble very excited to join the Jazz Reggae lineup. The group is made up of some of the finest jazz musicians from UCLA\'s Herb Alpert School of Music. Mentored by the great Kenny Burrell, the group plays original music written by its members: trombonist Jonah Levine, alto saxophonist Nathan Kersey-Wilson, trumpeter Zach Ramacier, drummer Brandon Bridges, pianist Kiefer Shackelford, and bassist Owen Clapp.';
+$gluckInf = 'The Gluck Jazz Ensemble very excited to join the Jazz Reggae lineup. The group is made up of some of the finest jazz musicians from UCLA\'s Herb Alpert School of Music. Mentored by the great Kenny Burrell, the group plays original music written by its members: trombonist Jonah Levine, alto saxophonist Nathan Kersey-Wilson, trumpeter Zach Ramacier, drummer Brandon Bridges, pianist Kiefer Shackelford, and bassist Owen Clapp.';
+
+
 
 
 function artistName($artistID)
@@ -68,6 +80,9 @@ function artistName($artistID)
   	case "ryan":
   		echo 'Ryan McDermott';
   		break;
+  	case "gluck":
+  		echo 'Gluck Jazz Ensemble';
+  		break;
   	case "ziggy":
   		echo 'Ziggy Marley';
   		break;
@@ -79,6 +94,9 @@ function artistName($artistID)
   		break;
   	case "marcia":
   		echo 'Marcia Griffiths';
+  		break;
+  	case "kes":
+  		echo 'Kes the Band';
   		break;
 	default:
   		echo '';
@@ -105,6 +123,9 @@ function artistPrimaryImgURL($artistID)
   	case "ryan":
   		echo './images/artists/large/ryan_large.jpg';
   		break;
+  	case "gluck":
+  		echo './images/artists/large/gluck_large.png';
+  		break;
   	case "ziggy":
   		echo './images/artists/large/ziggy_large.jpg';
   		break;
@@ -116,6 +137,9 @@ function artistPrimaryImgURL($artistID)
   		break;
   	case "marcia":
   		echo './images/artists/large/marcia_large.jpeg';
+  		break;
+  	case "kes":
+  		echo './images/artists/large/kes_large.jpg';
   		break;
 	default:
   		echo '';
@@ -143,6 +167,9 @@ function artistBio($artistID)
   	case "ryan":
   		echo $GLOBALS['ryanBio'];
   		break;
+  	case "gluck":
+  		echo $GLOBALS['gluckBio'];
+  		break;
   	case "ziggy":
   		echo $GLOBALS['ziggyBio'];
   		break;
@@ -154,6 +181,9 @@ function artistBio($artistID)
   		break;
   	case "marcia":
   		echo $GLOBALS['marciaBio'];
+  		break;
+  	case "kes":
+  		echo $GLOBALS['kesBio'];
   		break;
 	default:
   		echo '';
@@ -180,6 +210,9 @@ function artistVideo($artistID)
   	case "ryan":
   		echo $GLOBALS['ryanVid'];
   		break;
+  	case "gluck":
+  		echo $GLOBALS['gluckVid'];
+  		break;
   	case "ziggy":
   		echo $GLOBALS['ziggyVid'];
   		break;
@@ -191,6 +224,9 @@ function artistVideo($artistID)
   		break;
   	case "marcia":
   		echo $GLOBALS['marciaVid'];
+  		break;
+  	case "kes":
+  		echo $GLOBALS['kesVid'];
   		break;
 	default:
   		echo '';

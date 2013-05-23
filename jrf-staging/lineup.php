@@ -68,7 +68,7 @@
 					<a href="./artist.php?id=grouch">
 						<img src="./images/artists/lineup/grouch.png">
 						<div class="grid-img-overlay">
-							<div class="overlay-text">The Grouch & Eligh</div>
+							<div class="overlay-text" style="font-size:24px;">The Grouch & Eligh</div>
 						</div>
 					</a>
 				</div>
@@ -90,6 +90,16 @@
 						</div>
 					</a>
 				</div>
+				
+				<div class="grid-img">
+					<a href="./artist.php?id=gluck">
+						<img src="./images/artists/lineup/gluck.png">
+						<div class="grid-img-overlay">
+							<div class="overlay-text" style="font-size:24px;">Gluck Jazz Ensemble</div>
+						</div>
+					</a>
+				</div>
+				
 				<div class="spacer" style="clear: both;"></div>
 				</div>
 				
@@ -132,7 +142,14 @@
 					</a>
 				</div>
 				
-				
+				<div class="grid-img">
+					<a href="./artist.php?id=kes">
+						<img src="./images/artists/lineup/kes.jpg">
+						<div class="grid-img-overlay">
+							<div class="overlay-text">Kes the Band</div>
+						</div>
+					</a>
+				</div>
 				
 				<div class="spacer" style="clear: both;"></div>
 				
