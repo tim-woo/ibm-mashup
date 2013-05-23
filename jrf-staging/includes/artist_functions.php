@@ -6,21 +6,21 @@ $ziggyImg = 'http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/image
 $ziggyVid = 'http://www.youtube.com/embed/r-eXYJnV3V4';
 $ziggyLnk = '<a class="artist-link" target="_blank" href="http://www.ziggymarley.com/site/">Website</a><a class="artist-link" target="_blank" href="https://www.facebook.com/ZiggyMarley">Facebook</a><a class="artist-link" target="_blank" href="https://twitter.com/ziggymarley">Twitter</a><a class="artist-link" target="_blank" href="http://www.youtube.com/ziggymarley">Youtube</a>';
 $ziggyBio = 'Ziggy Marley was born October 17, 1968 in Trenchtown, Jamaica. The eldest son of Bob and Rita Marley, Ziggy began his musical career playing with his father and his siblings Sharon, Cedella and Stephen on "Children Playing in the Streets" in 1979. The siblings became known as Ziggy Marley and the Melody Makers, and released their debut album, "Play the Game Right" on EMI Records in 1985. While with EMI, the Melody Makers released "Hey World" in 1986, and then "The Time Has Come: The Best of Ziggy Marley and the Melody Makers" in 1988. In 1988, the band moved to Virgin Records and recorded "Conscious Party" which won them their first Grammy. "Conscious Party" was produced by Chris Frantz and Tina Weymouth, and included the hit songs "Tomorrow People" and "Tumblin\' Down."';
-$ziggySpo = '<iframe src="https://embed.spotify.com/?uri=spotify:track:0t2QiRkpag0fAgs9zuCPlH" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>';
+$ziggySpo = '<iframe src="https://embed.spotify.com/?uri=spotify:track:1ZPsdTkzhDeHjA5c2Rnt2I" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>';
 $ziggyTwi = '<a class="twitter-timeline" href="https://twitter.com/ziggymarley" data-widget-id="337629152423337984">Tweets by @ziggymarley</a>';
 
 $barringtonImg = 'http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/barrington.png';
 $barringtonVid = 'http://www.youtube.com/embed/W9mvTNh-plY';
 $barringtonLnk = '<a class="artist-link" target="_blank" href="http://www.barringtonlevy.com/officialMusic/">Website</a><a class="artist-link" target="_blank" href="https://twitter.com/abarringtonlevy">Twitter</a><a class="artist-link" target="_blank" href="http://www.youtube.com/barringtonlevymusic">Youtube</a>';
 $barringtonBio = 'Barrington Levy (born April 30, 1964) is a reggae and dancehall artist. He was born in Clarendon, Jamaica and soon formed a band with his cousin, Everton Dacres, called the Mighty Multitude; the pair released “My Black Girl” in 1977. Levy established his solo career the next year with “A Long Time Since We Don’t Have No Love”; though the single was a failure, the fourteen year old was a popular performer at Jamaican dancehalls. (cc Last FM)';
-$barringtonSpo = '<iframe src="https://embed.spotify.com/?uri=spotify:track:0t2QiRkpag0fAgs9zuCPlH" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>';
+$barringtonSpo = '<iframe src="https://embed.spotify.com/?uri=spotify:track:2YYguBcfKlKLQoE35hl4cI" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>';
 $barringtonTwi = '<a class="twitter-timeline" href="https://twitter.com/abarringtonlevy" data-widget-id="337631369243021313">Tweets by @abarringtonlevy</a>';
 
 $marciaImg = 'http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/marcia.png';
 $marciaVid = 'http://www.youtube.com/embed/VTkpLHBMTC0';
 $marciaLnk = '<a class="artist-link" target="_blank" href="http://www.marciagriffiths.net/home.html">Website</a><a class="artist-link" target="_blank" href="https://twitter.com/RealMarciaG">Twitter</a>';
 $marciaBio = 'Yes! She is the Empress and nothing less. The Reggae Matriarch who never fails to spark. In the recording studio or live on stage, she appeals to one and all, soothes any age. For over 20 years, without fear, of being The reigning Queen on the reggae scene. The shocking, “Electric Boogie” star of the worldAn I-Three harmony with the legendary Bob Marley and the Wailers, the indelible, universal reggae music ambassadors And trail blazers. A Jamaican girl, a musical pearl.';
-$marciaSpo = '<iframe src="https://embed.spotify.com/?uri=spotify:track:0t2QiRkpag0fAgs9zuCPlH" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>';
+$marciaSpo = '<iframe src="https://embed.spotify.com/?uri=spotify:track:1jd7LBHm9SV7RyuBiWuDYB" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>';
 $marciaTwi = '<a class="twitter-timeline" href="https://twitter.com/QueenOfReggae" data-widget-id="337633530412675072">Tweets by @QueenOfReggae</a>';
 
 $santigoldImg = 'http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/santigold.png';
@@ -34,21 +34,21 @@ $grouchImg = 'http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/imag
 $grouchVid = 'http://www.youtube.com/embed/dIItEigwW8w';
 $grouchLnk = '<a class="artist-link" target="_blank" href="http://therealgrouch.com/">Website</a><a class="artist-link" target="_blank" href="https://www.facebook.com/therealgrouch">Facebook</a><a class="artist-link" target="_blank" href="https://twitter.com/therealgrouch">Twitter</a><a class="artist-link" target="_blank" href="http://www.youtube.com/user/therealtherealgrouch">Youtube</a>';
 $grouchBio = 'The Grouch and Eligh are an underground hip-hop collective consisting of Corey “The Grouch” Scoffern and Eligh Nachowitz who are both members of the internationally infamous rap crew, The Living Legends. The Grouch and Eligh have been at the forefront of the west coast\'s independent rap movement for over a decade. With their tight knit chemistry and impeccable interaction, The Grouch and Eligh are considered to be one of hip-hop’s most appreciated duos. Humbly beginning on a 4-track recorder nearly 15 years ago, The Grouch has steadily grown into one of the prominent figures within the independent hip-hop scene and is known for captivating his listeners with his down to earth and truthfully poignant raps and production. Eligh has maintained his respected status by fearlessly veering from the traditional trajectory and has instead chosen to fabricate projects that incorporate the gritty sounds of the UK dub scene, the unorthodox styling of indie rock, the lush guitars and honesty of folk music, and the complexity of jazz, all without losing the listener in a musically esoteric composition. The Grouch and Eligh have announced that they will be joining the Kickin’ Up Dust tour along with Slightly Stoopid and Atmosphere this summer.';
-$grouchSpo = '<iframe src="https://embed.spotify.com/?uri=spotify:track:0t2QiRkpag0fAgs9zuCPlH" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>';
+$grouchSpo = '<iframe src="https://embed.spotify.com/?uri=spotify:track:60QqmqdmvlQBOlAFwQKUoT" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>';
 $grouchTwi = '';
 
 $commonImg = 'http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/common.png';
 $commonVid = 'http://www.youtube.com/embed/S7B2VgRShew';
 $commonLnk = '<a class="artist-link" target="_blank" href="http://thinkcommon.com/">Website</a><a class="artist-link" target="_blank" href="https://www.facebook.com/thinkcommon">Facebook</a><a class="artist-link" target="_blank" href="https://twitter.com/common">Twitter</a><a class="artist-link" target="_blank" href="http://www.youtube.com/user/CommonVEVO">Youtube</a>';
 $commonBio = 'Since his debut in 1992 with <i>Can I Borrow a Dollar?</i>, COMMON has charted a constant course toward self-expansion and reinvention. He’s gone from a battle rhymer flipping clever punchlines to a conscious rapper exploring themes of love and light to the complex, multi-talented artist that he is today. Through it all, he’s stayed true to his family, to his friends, and to his South Side Chicago roots.';
-$commonSpo = '<iframe src="https://embed.spotify.com/?uri=spotify:track:0t2QiRkpag0fAgs9zuCPlH" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>';
+$commonSpo = '<iframe src="https://embed.spotify.com/?uri=spotify:track:3wauST900TNdlPA66c7TdI" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>';
 $commonTwi = '<a class="twitter-timeline" href="https://twitter.com/common" data-widget-id="337625085856845825">Tweets by @common</a>';
 
 $ryanImg = 'http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/ryan.png';
 $ryanVid = 'http://www.youtube.com/embed/LxtfXCTqImw';
 $ryanLnk = '<a class="artist-link" target="_blank" href="http://ryanmcdermottmusic.com">Website</a><a class="artist-link" target="_blank" href="https://www.facebook.com/ryanmcdmusic">Facebook</a><a class="artist-link" target="_blank" href="https://twitter.com/RyanMcDMusic">Twitter</a><a class="artist-link" target="_blank" href="http://www.youtube.com/user/RyanMcDermottMusic">Youtube</a>';
 $ryanBio = 'Artist, writer, producer, and newest member of the G.O.O.D. Music/Island Def Jam family, we are proud to announce Ryan McDermott. Straight out of Los Angeles, his soulful and smooth voice is sure to mesmerize.  Check out his brand new music video "Joy" featuring label made Hit-Boy. We can\'t wait to see what\'s to come next with this talented new artist!';
-$ryanSpo = '<iframe src="https://embed.spotify.com/?uri=spotify:track:0t2QiRkpag0fAgs9zuCPlH" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>';
+$ryanSpo = '<iframe src="https://embed.spotify.com/?uri=spotify:track:4W3f2PzKaugDoAFAcJn2yQ" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>';
 $ryanTwi = '<a class="twitter-timeline" href="https://twitter.com/RyanMcDMusic" data-widget-id="337630572941819906">Tweets by @RyanMcDMusic</a>';
 
 
@@ -63,14 +63,14 @@ $mrImg = 'http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/a
 $mrVid = 'http://www.youtube.com/embed/5je4wdMTDWw';
 $mrLnk = '<a class="artist-link" target="_blank" href="http://mrvegasmusic.com/">Website</a><a class="artist-link" target="_blank" href="https://www.facebook.com/MrVegasMusic">Facebook</a><a class="artist-link" target="_blank" href="https://twitter.com/mrvegasmusic">Twitter</a><a class="artist-link" target="_blank" href="http://www.youtube.com/user/MrVegasVEVO">Youtube</a>';
 $mrBio = 'From “Heads High” (1998) to “Bruk It Down” (2012), Mr Vegas has assembled an unshakable string of international classic reggae and dancehall releases including Billboard hits over the past three decades of his career. Always looking forward, Mr Vegas is also synonymous with the success of the new social media generation amassing copious amounts of friends and followers across Twitter and Facebook. Leading the way into 2013 with solid spins on mainstream radio throughout the US and a remix package penetrating the dance market, is no doubt that ‘Bruk It Down’ will be this Spring’s cross over dancehall anthem, while Mr Vegas’ smash single ‘Party Tun Up’ is bubbling in the dance. Mr Vegas continues to hit stages to sold out crowds worldwide, doing his part, taking the message about reggae and dancehall straight to the people worldwide, from New York to Paris, from California to St Maarten.';
-$mrSpo = '<iframe src="https://embed.spotify.com/?uri=spotify:track:0t2QiRkpag0fAgs9zuCPlH" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>';
+$mrSpo = '<iframe src="https://embed.spotify.com/?uri=spotify:track:6bpM5eshfckRhe1NlRWLve" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>';
 $mrTwi = '<a class="twitter-timeline" href="https://twitter.com/MrVegasMusic" data-widget-id="337632857633726464">Tweets by @MrVegasMusic</a>';
 
 $kesImg = 'http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/kes.png';
 $kesVid = 'http://www.youtube.com/embed/5cGq3S0Mgmg';
 $kesLnk = '<a class="artist-link" target="_blank" href="http://www.kestheband.com/">Website</a><a class="artist-link" target="_blank" href="https://www.facebook.com/Kestheband">Facebook</a><a class="artist-link" target="_blank" href="https://twitter.com/Kestheband">Twitter</a><a class="artist-link" target="_blank" href="http://www.youtube.com/user/keslive">Youtube</a>';
 $kesBio = 'Kees Dieffenthaller began performing in the late 90′s, fronting a cover band that specialized in Billboard chart-toppers, and popular soca and reggae tracks. Due to his vocal range, stage presence, good looks, and uncanny ability to mimic popular artists, Kees quickly created a buzz and attracted a large, loyal following. On the crest of all this success and momentum, Kees exited the cover band circuit in 2005 and formed his own band, KES, with the dream to pursue great original music. Featuring his brothers Hans (drums), Jon (lead guitar), and best friend Riad Boochoon (bass), Kees was now able to work with similarly focused members on creating original music that could have international appeal.';
-$kesSpo = '<iframe src="https://embed.spotify.com/?uri=spotify:track:0t2QiRkpag0fAgs9zuCPlH" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>';
+$kesSpo = '<iframe src="https://embed.spotify.com/?uri=spotify:track:0rNN7mmslNTxbx5Xo96fqG" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>';
 $kesTwi = '<a class="twitter-timeline" href="https://twitter.com/Kestheband" data-widget-id="337633123477106688">Tweets by @Kestheband</a>';
 
 
@@ -308,28 +308,31 @@ function spotify($artistID)
     echo $GLOBALS['santigoldSpo'];
     break;
   case "common":
-    echo '';
+    echo $GLOBALS['commonSpo'];
       break;
   case "grouch":
-      echo '';
+      echo $GLOBALS['grouchSpo'];
       break;
     case "jhene":
       echo $GLOBALS['jheneSpo'];
       break;
     case "ryan":
-      echo '';
+      echo $GLOBALS['ryanSpo'];
       break;
     case "ziggy":
-      echo '';
+      echo $GLOBALS['ziggySpo'];
       break;
     case "barrington":
-      echo '';
+      echo $GLOBALS['barringtonSpo'];
       break;
     case "mr":
-      echo '';
+      echo $GLOBALS['mrSpo'];
       break;
     case "marcia":
-      echo '';
+      echo $GLOBALS['marciaSpo'];
+      break;
+    case "kes":
+      echo $GLOBALS['kesSpo'];
       break;
   default:
       echo '';
@@ -369,6 +372,9 @@ function twitter($artistID)
       break;
     case "marcia":
       echo $GLOBALS['marciaTwi'];
+      break;
+    case "kes":
+      echo $GLOBALS['kesTwi'];
       break;
   default:
       echo '';
