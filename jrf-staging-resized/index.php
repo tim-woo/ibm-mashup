@@ -61,6 +61,7 @@
 					<div class="right-column">
 						<a href="http://www.ticketmaster.com/JazzReggae-Festival-UCLA-tickets/artist/870795"><img src="./images/home/tickets.png" width="500px"></a>
 						<br>
+						<br>
 						<a href="http://www.ticketmaster.com/JazzReggae-Festival-UCLA-tickets/artist/870795"><img src="./images/home/ticketsdeluxe.png" width="500px"></a>
 						<br>
 						<br>

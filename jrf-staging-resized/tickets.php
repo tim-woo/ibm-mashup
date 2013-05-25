@@ -43,14 +43,23 @@
 			<div id="content">
 				<h1> Tickets </h1>
 				
-				<a href="http://www.ticketmaster.com/JazzReggae-Festival-UCLA-tickets/artist/870795"><img src="http://www.jazzreggaefest.com/files/ticketspage.jpg" width="500px"></a>
+				
+				<div class="basic-padding">
+				
+				<a href="http://www.ticketmaster.com/JazzReggae-Festival-UCLA-tickets/artist/870795"><img src="./images/home/tickets.png" width="500px"></a>
 				<br>
-				<a href="http://www.ticketmaster.com/JazzReggae-Festival-UCLA-tickets/artist/870795"><img src="http://www.jazzreggaefest.com/files/ticketspagedeluxe.jpg" width="500px"></a>
+				<br>
+				<a href="http://www.ticketmaster.com/JazzReggae-Festival-UCLA-tickets/artist/870795"><img src="./images/home/ticketsdeluxe.png" width="500px"></a>
+				<br>
 				<br>
 				This Memorial Day Weekend, the JazzReggae Festival is kicking off the summer with a lineup of incredible performers.Tickets are available at <a href="http://www.ticketmaster.com/JazzReggae-Festival-UCLA-tickets/artist/870795" target="_blank">ticketmaster.com</a> at the Central Ticket Office at UCLA, and Amoeba Music.
 				<br>
 				Single day passes are available to the general public, as well as weekend packages. Be sure to get your tickets before they are all gone!
 				<br>
+				<br>
+				
+				<h1>Locations</h1>
+				
 				UCLA Central Ticket Office 
 				<br>
 				Address: 325 Westwood Plz Ste 100, Los Angeles, CA 90024
@@ -87,10 +96,14 @@
 				<a href="http://www.natraliart.com">http://www.natraliart.com</a>
 				<br>
 				<br>
+				<h1>Students</h1>
 				UCLA Students, Staff and Faculty! This year, there is a brand new limited student ticket price of $25. Tickets at this discounted student price are limited and are only available at the CTO upon presentation of a current and valid Bruin Card. The STUDENT TICKET GIVEAWAY will be on May 14th this year and a limited amount of students will recieve FREE TICKETS TO BOTH DAYS upon presentation of a current and valid Bruin Card!
 				<br>
+				<br>
+				<h1>Deluxe</h1>
 				Deluxe packages are now available on Ticketmaster for the 2013 JazzReggae Festival weekend as well! For only $65 a day, the deluxepackage includes complete access to the festival, a gift bag, two free meals, and a prime and shaded location to enjoy the music from! Check out Ticketmaster to buy your deluxe package and enjoy the sunny Memorial Day weekend in style at the 27th Anniversary of the JazzReggae Festival.
 				
+				</div>
 				
 			</div> <!-- end #content -->
 			
