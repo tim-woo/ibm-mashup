@@ -139,6 +139,7 @@ The art exhibit will continue the thread of sustainability that is largely appar
 <script type="text/javascript">
 	//var jPM = $.jPanelMenu();
 	var jPM = $.jPanelMenu({
+		animated: false,
     	menu: '#nav-side',
     	
 	});	

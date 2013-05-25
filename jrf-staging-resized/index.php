@@ -54,30 +54,17 @@
 	
 				<div class="home-content" style="padding-top:10px;padding-bottom:20px;">
 					<div class="left-column">
-						<h1>Event Flyer</h1>
-						<img src="./images/home/flyer.jpg">
+						<img src="./images/home/flyer.png">
 						
 					</div> <!-- end left column -->
 					
 					<div class="right-column">
-						<img src="./images/home/infographic.png">
+						<a href="http://www.ticketmaster.com/JazzReggae-Festival-UCLA-tickets/artist/870795"><img src="./images/home/tickets.png" width="500px"></a>
+						<br>
+						<a href="http://www.ticketmaster.com/JazzReggae-Festival-UCLA-tickets/artist/870795"><img src="./images/home/ticketsdeluxe.png" width="500px"></a>
+						<br>
+						<br>
 						
-						</br>
-						</br>
-						<img src="./images/home/divider.png">
-						</br>
-						</br>
-						</br>
-						
-						<img src="./images/home/email.png">
-						
-						</br>
-						</br>
-						</br>
-						<img src="./images/home/divider.png">
-						</br>
-						</br>
-						</br>
 						
 						<iframe height="225" width="100%" src="http://8tracks.com/mixes/1474514/player_v3_universal" style="border: 0px none;" ></iframe>
 						
@@ -101,6 +88,7 @@
 <script type="text/javascript">
 	//var jPM = $.jPanelMenu();
 	var jPM = $.jPanelMenu({
+		animated: false,
     	menu: '#nav-side',
     	
 	});	

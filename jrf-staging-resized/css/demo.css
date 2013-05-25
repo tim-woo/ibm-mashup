@@ -86,8 +86,8 @@ nav {
 	position:fixed;
 	top:15px;
 	z-index:101;
-	opacity:0.85;
-    filter:alpha(opacity=85); /* For IE8 and earlier */
+	opacity:0.65;
+    filter:alpha(opacity=65); /* For IE8 and earlier */
 }
 .menu-trigger a {
 color:transparent;
@@ -221,7 +221,6 @@ width:100%;
 }
 
 .grid-flip-container {
-	margin-bottom: 20px;
 	padding-bottom: 25px;
 }
 
