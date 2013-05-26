@@ -75,67 +75,84 @@
 			
 			<!-- Variable Content Goes Here -->
 			<div id="content">
-				<h1> Arts Exhibit </h1>
+				<h1> Art Exhibit </h1>
 				
 				<div class="basic-padding">
-				
-JazzReggae is pleased to announce the various art exhibits and craft projects featured at this year's festival! The art exhibition is expected to be better than ever this year with dynamic art pieces and installations provided by both hip companies and local artists.
-<br>
-<br>
-
 <img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/gallery/june22StudyInWatercolorVsAerosol.png">
 
 </br>
 </br>
+			
+JazzReggae is pleased to announce the various art exhibits and craft projects featured at this year's festival! The art exhibition is expected to be better than ever this year with dynamic art pieces and installations provided by both hip companies and local artists.
+<br>
+<br>
 
-The art exhibit will continue the thread of sustainability that is largely apparent throughout the entire festival with the use of eco-friendly paints and recycled canvases. With the expertise of the JRF Sustainability crew, we will also feature a colorful and vibrant installation made from recycled materials. As we believe that green living can be beautiful, there will also be an eco- friendly craft station featuring kid-focused projects and activities. Further, there will be a large- scale chalkboard on which visitors can voice their green initiative in an artistic and creative way.
+<h1>X is the Weapon</h1>
+<img src="./images/art/x.png" style="width:100%">
+<br>
+<br>
+X is the Weapon is an artist collective based in Orange County that will be featured at this year’s exhibition. Several artists will also be doing live art during both days of the festival. We hope to show process alongside final product, so you can see how these artists bring their works from start to completion.
+<br>
+<br>
+<a href="./gallery.php?id=x">Gallery</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://xistheweapon.com/">Website</a>
 <br>
 <br>
 
 
 
-				<div id="rg-gallery" class="rg-gallery">
-					<div class="rg-thumbs">
-						<!-- Elastislide Carousel Thumbnail Viewer -->
-						<div class="es-carousel-wrapper">
-							<div class="es-nav">
-								<span class="es-nav-prev">Previous</span>
-								<span class="es-nav-next">Next</span>
-							</div>
-							<div class="es-carousel">
-								<ul>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/1.jpg" data-large="./libraries/gallery/images/1.jpg" alt="image01" data-description="From off a hill whose concave womb reworded" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/2.jpg" data-large="./libraries/gallery/images/2.jpg" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/3.jpg" data-large="./libraries/gallery/images/3.jpg" alt="image03" data-description="A plaintful story from a sistering vale" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/4.jpg" data-large="./libraries/gallery/images/4.jpg" alt="image04" data-description="My spirits to attend this double voice accorded" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/5.jpg" data-large="./libraries/gallery/images/5.jpg" alt="image05" data-description="And down I laid to list the sad-tuned tale" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/6.jpg" data-large="./libraries/gallery/images/6.jpg" alt="image06" data-description="Ere long espied a fickle maid full pale" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/7.jpg" data-large="./libraries/gallery/images/7.jpg" alt="image07" data-description="Tearing of papers, breaking rings a-twain" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/8.jpg" data-large="./libraries/gallery/images/8.jpg" alt="image08" data-description="Storming her world with sorrow's wind and rain" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/9.jpg" data-large="./libraries/gallery/images/9.jpg" alt="image09" data-description="Upon her head a platted hive of straw" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/10.jpg" data-large="./libraries/gallery/images/10.jpg" alt="image10" data-description="Which fortified her visage from the sun" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/11.jpg" data-large="./libraries/gallery/images/11.jpg" alt="image11" data-description="Whereon the thought might think sometime it saw" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/12.jpg" data-large="./libraries/gallery/images/12.jpg" alt="image12" data-description="The carcass of beauty spent and done" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/13.jpg" data-large="./libraries/gallery/images/13.jpg" alt="image13" data-description="Time had not scythed all that youth begun" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/14.jpg" data-large="./libraries/gallery/images/14.jpg" alt="image14" data-description="Nor youth all quit; but, spite of heaven's fell rage" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/15.jpg" data-large="./libraries/gallery/images/15.jpg" alt="image15" data-description="Some beauty peep'd through lattice of sear'd age" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/16.jpg" data-large="./libraries/gallery/images/16.jpg" alt="image16" data-description="Oft did she heave her napkin to her eyne" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/17.jpg" data-large="./libraries/gallery/images/17.jpg" alt="image17" data-description="Which on it had conceited characters" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/18.jpg" data-large="./libraries/gallery/images/18.jpg" alt="image18" data-description="Laundering the silken figures in the brine" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/19.jpg" data-large="./libraries/gallery/images/19.jpg" alt="image19" data-description="That season'd woe had pelleted in tears" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/20.jpg" data-large="./libraries/gallery/images/20.jpg" alt="image20" data-description="And often reading what contents it bears" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/21.jpg" data-large="./libraries/gallery/images/21.jpg" alt="image21" data-description="As often shrieking undistinguish'd woe" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/22.jpg" data-large="./libraries/gallery/images/22.jpg" alt="image22" data-description="In clamours of all size, both high and low" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/23.jpg" data-large="./libraries/gallery/images/23.jpg" alt="image23" data-description="Sometimes her levell'd eyes their carriage ride" /></a></li>
-									<li><a href="#"><img src="./libraries/gallery/images/thumbs/24.jpg" data-large="./libraries/gallery/images/24.jpg" alt="image24" data-description="As they did battery to the spheres intend" /></a></li>
-								</ul>
-							</div>
-						</div>
-						<!-- End Elastislide Carousel Thumbnail Viewer -->
-					</div><!-- rg-thumbs -->
-				</div><!-- rg-gallery -->
+<h1>Sole Bicyles</h1>
+<img src="./images/art/sole.png" style="width:100%">
+<br>
+<br>
+Founded by two USC graduates and now based in Venice Beach, Sole Bicycles started with the goal of creating affordable and well-designed fixed gear bikes, but they didn’t just stop there.Sole also has a team of artists that turns selected bikes into works of art. At the festival, you will get to see these bikes alongside artists’ other works to experience the full range of art produced by theSole collective.
+<br>
+<br>
+<a href="./gallery.php?id=sole">Gallery</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.solebicycles.com/">Website</a>
+<br>
+<br>
+
+		
 				
-			</div>
+				
+<h1>CanLove: "No Can Left Behind"</h1>
+
+As part of the JazzReggae sustainable art initiative, the artists of CanLove will be at the festival to share their art and their mission. By using discarded graffiti spray cans as their primary medium, CanLove offers a creative solution to the problem of waste produced by graffiti artists. They have recycled over 10,000 cans and counting. Check out all the creative ways they manage to turn trash into art.
+<br>
+<br>
+<a href="http://canlove.org/">Website</a>
+<br>
+<br>				
+	
+
+<h1>Student Art Competition</h1>
+<img src="./images/art/student.png" style="width:100%">
+<br>
+<br>
+<a href="./gallery.php?id=student">Gallery</a>
+<br>
+<br>
+
+
+<h1>Photo Project</h1>
+<img src="./images/art/photo.png" style="width:100%">
+<br>
+<br>
+As part of our mission to make art interactive and diverse, JazzReggae launched a collaborative photo project that will be displayed as part of the exhibition this year. Contestants were given little instruction, only that their submission had to be inspired by Los Angeles, opening the project up to a range of interpretations. Winning submissions will be displayed for the first time at the festival in a collaborative collage piece.
+<br>
+<br>
+<a href="./gallery.php?id=photo">Gallery</a>
+<br>
+<br>
+
+
+<h1>Sustainable arts and crafts</h1>
+
+To make the JazzReggae art exhibition as interactive and sustainable as possible, this year we have added recycled arts and crafts to the mix. Art teacher Jennifer Morgan of Sustainable Arts L.A. will have a just for kids’ arts and crafts table. All materials will be from Trash for Teachers, a company that recycles local businesses’ discarded waste to provide sustainable supplies for artists and teachers. For those of us that don’t feel too old for a little arts and crafts, we will be constructing a sculpture entirely out of recycled water bottles that you can help paint!
+<br>
+<br>
+
+				
+			</div> <!-- end basic-padding -->
 
 			</div> <!-- end #content -->
 			

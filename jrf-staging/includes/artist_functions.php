@@ -142,7 +142,7 @@ function artistPrimaryImgURL($artistID)
  	 	echo './images/artists/large/santigold_large.png';
  	 	break;
 	case "common":
- 	 	echo './images/artists/large/common_large.jpeg';
+ 	 	echo './images/artists/large/common_large.png';
   		break;
 	case "grouch":
   		echo './images/artists/large/grouch_large.png';
@@ -160,13 +160,13 @@ function artistPrimaryImgURL($artistID)
   		echo './images/artists/large/ziggy_large.jpg';
   		break;
   	case "barrington":
-  		echo './images/artists/large/barringon_large.jpg';
+  		echo './images/artists/large/barringon_large.png';
   		break;
   	case "mr":
   		echo './images/artists/large/mr_large.jpg';
   		break;
   	case "marcia":
-  		echo './images/artists/large/marcia_large.jpeg';
+  		echo './images/artists/large/marcia_large.png';
   		break;
   	case "kes":
   		echo './images/artists/large/kes_large.jpg';

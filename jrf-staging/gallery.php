@@ -7,8 +7,6 @@
 	<!-- Include the slide show CSS -->
 	<link rel="stylesheet" href="./libraries/responsiveslides/responsiveslides.css"/>
 	
-	<!-- Including our CSS file -->
-	<link rel="stylesheet" href="./css/demo.css"/>
 
 	<!-- Including the most recent JQuery Library -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -18,6 +16,42 @@
 	
 	<!-- Include the slide show library -->
 	<script type="text/javascript" src="./libraries/responsiveslides/responsiveslides.min.js"></script>
+
+	<!-- Gallery plugin -->
+	<link rel="stylesheet" type="text/css" href="./libraries/gallery/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="./libraries/gallery/css/elastislide.css" />
+	
+	<!-- Our CSS --><!-- Including our CSS file -->
+	<link rel="stylesheet" href="./css/demo.css"/>
+	
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+		
+	<noscript>
+			<style>
+				.es-carousel ul{
+					display:block;
+				}
+			</style>
+	</noscript>
+		
+	<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+			<div class="rg-image-wrapper">
+				{{if itemsCount > 1}}
+					<div class="rg-image-nav">
+						<a href="#" class="rg-image-nav-prev">Previous Image</a>
+						<a href="#" class="rg-image-nav-next">Next Image</a>
+					</div>
+				{{/if}}
+				<div class="rg-image"></div>
+				<div class="rg-loading"></div>
+				<div class="rg-caption-wrapper">
+					<div class="rg-caption" style="display:none;">
+						<p></p>
+					</div>
+				</div>
+			</div>
+	</script>
 
 
 </head>
@@ -41,12 +75,102 @@
 			
 			<!-- Variable Content Goes Here -->
 			<div id="content">
-				<h1> Gallery </h1>
 				
-				<center><div id="cincopa_widget_6d2a99be-5dff-492f-8bd8-f379bfdee197"><img src="//www.cincopa.com/media-platform/runtime/loading.gif" style="border:0;" width="700" /><a href="//www.cincopa.com/media-platform/wordpress-plugin.aspx"><img alt="WordPress plugin" border="0" src="http://www.cincopa.com/media-platform/runtime/cincopaicons.gif" style="border:0;" /></a></div><script src='//www.cincopa.com/media-platform/runtime/libasync.js' type='text/javascript'></script><script type='text/javascript'>cp_load_widget('AECACFbmx99n', 'cincopa_widget_6d2a99be-5dff-492f-8bd8-f379bfdee197');</script><noscript>Click <a href='http://www.cincopa.com/media-platform/view.aspx?fid=AECACFbmx99n'>here</a> to open the gallery.<br>
-Powered by Cincopa <a href='http://www.cincopa.com/media-platform'>Media Platform</a> for your website and Cincopa MediaSend for <a href='http://www.cincopa.com/mediasend/start.aspx'>file transfer</a>.
-</noscript></center>
+				<div class="basic-padding">
 				
+
+<?php
+	switch($_GET['id'])
+	{
+		case "x":
+			echo '<h1> X is The Weapon </h1>
+			
+X is the Weapon is an artist collective based in Orange County that will be featured at this year’s exhibition. Several artists will also be doing live art during both days of the festival. We hope to show process alongside final product, so you can see how these artists bring their works from start to completion.
+<br>
+<br>
+<a href="http://xistheweapon.com/"> http://xistheweapon.com/ </a>
+<br>
+<br>';
+			break;
+		case "sole":
+			echo '<h1>Sole Bicyles</h1>
+
+Founded by two USC graduates and now based in Venice Beach, Sole Bicycles started with the goal of creating affordable and well-designed fixed gear bikes, but they didn’t just stop there.Sole also has a team of artists that turns selected bikes into works of art. At the festival, you will get to see these bikes alongside artists’ other works to experience the full range of art produced by theSole collective.
+<br>
+<br>
+<a href="http://www.solebicycles.com/"> http://www.solebicycles.com/ </a>
+<br>
+<br>
+';
+			break;
+		case "student":
+			echo '<h1>Student Art Competition</h1>';
+			break;
+		case "photo":
+			echo '<h1>Photo Project</h1>
+
+As part of our mission to make art interactive and diverse, JazzReggae launched a collaborative photo project that will be displayed as part of the exhibition this year. Contestants were given little instruction, only that their submission had to be inspired by Los Angeles, opening the project up to a range of interpretations. Winning submissions will be displayed for the first time at the festival in a collaborative collage piece.
+<br>
+<br>';
+			break;
+		default:
+			echo '';
+				
+	}
+?>
+
+
+
+	<div id="rg-gallery" class="rg-gallery">
+		<div class="rg-thumbs">
+			<!-- Elastislide Carousel Thumbnail Viewer -->
+			<div class="es-carousel-wrapper">
+				<div class="es-nav">
+					<span class="es-nav-prev">Previous</span>
+					<span class="es-nav-next">Next</span>
+				</div>
+				<div class="es-carousel">
+					<ul>
+					
+					
+					
+<?php
+	switch($_GET['id'])
+	{
+		case "x":
+			echo '
+			
+<li><a href="#"><img src="./libraries/gallery/images/thumbs/1.jpg" data-large="./libraries/gallery/images/1.jpg" alt="image01" data-description="From off a hill whose concave womb reworded" /></a></li>
+	
+					
+					';
+			break;
+		case "sole":
+			echo '';
+			break;
+		case "student":
+			echo '<';
+			break;
+		case "photo":
+			echo '';
+			break;
+		default:
+			echo '';
+				
+	}
+?>
+					
+					</ul>
+				</div>
+			</div>
+			<!-- End Elastislide Carousel Thumbnail Viewer -->
+		</div><!-- rg-thumbs -->
+	</div><!-- rg-gallery -->
+			
+
+				
+			</div> <!-- end basic-padding -->
+
 			</div> <!-- end #content -->
 			
 			<?php include('./includes/footer.php'); ?>
@@ -56,7 +180,7 @@ Powered by Cincopa <a href='http://www.cincopa.com/media-platform'>Media Platfor
 	
 	</div> <!-- end #wrapper -->
 	</div> <!-- end #full-view -->
-	
+
 <!-- Sliding menu javascript -->
 <script type="text/javascript">
 	//var jPM = $.jPanelMenu();
@@ -69,8 +193,8 @@ Powered by Cincopa <a href='http://www.cincopa.com/media-platform'>Media Platfor
 </script>
 
 <script>
-    $('a:contains(Gallery)').css("background","#00cde0");
-    $('li:contains(Gallery)').css("background","#00cde0");
+    $('a:contains(Art)').css("background","#00cde0");
+    $('li:contains(Art)').css("background","#00cde0");
 </script>
 
 
@@ -79,7 +203,19 @@ function triggerMenu()
 {
 	jPM.trigger(true);
 }
-</script>
+</script>	
+ 
+ 
+ 
+ 
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./libraries/gallery/js/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="./libraries/gallery/js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="./libraries/gallery/js/jquery.elastislide.js"></script>
+		<script type="text/javascript" src="./libraries/gallery/js/gallery.js"></script>
+ 
+ 
+ 
     
 </body>
 
