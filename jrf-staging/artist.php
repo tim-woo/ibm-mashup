@@ -38,6 +38,9 @@
 
 
 
+
+
+
 	<div class="menu-trigger"><a href="javascript:triggerMenu();">Menu</a></div>
 	<div class="side-strip"></div>
 	
@@ -73,23 +76,25 @@
 						</div>
 					
 
+						
 						<?php soundcloudAudio($artistID); ?>
+						
+						<!-- Spotify Done -->
 						<?php spotify($artistID); ?>
 
-						
-					<?php	if($artistID != ("jhene" || "mr")) : ?> 
-						<h2> TEST </h2>
-					<?php endif; ?>
+						<!-- FACEBOOK  TODO -->
+						<div class="audio-container">
+						<?php facebook($artistID); ?>
+						<!-- <div class="fb-like" data-href="https://www.facebook.com/Santigold" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div>
+						-->
+						</div>
 
-
+					<!-- Twitter Done -->
 					<?php twitter($artistID); ?>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 						
 
-<!-- FACEBOOK -->
-<div class="audio-container">
-<div class="fb-like" data-href="https://www.facebook.com/Santigold" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div>
-</div>
+
 						
 			</div> <!-- end #content -->
 
