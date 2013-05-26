@@ -7,8 +7,6 @@
 	<!-- Include the slide show CSS -->
 	<link rel="stylesheet" href="./libraries/responsiveslides/responsiveslides.css"/>
 	
-	<!-- Including our CSS file -->
-	<link rel="stylesheet" href="./css/demo.css"/>
 
 	<!-- Including the most recent JQuery Library -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -19,20 +17,25 @@
 	<!-- Include the slide show library -->
 	<script type="text/javascript" src="./libraries/responsiveslides/responsiveslides.min.js"></script>
 
-
-<link rel="stylesheet" type="text/css" href="./libraries/gallery/css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="./libraries/gallery/css/style.css" />
-		<link rel="stylesheet" type="text/css" href="./libraries/gallery/css/elastislide.css" />
-		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
-		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
-		<noscript>
+	<!-- Gallery plugin -->
+	<link rel="stylesheet" type="text/css" href="./libraries/gallery/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="./libraries/gallery/css/elastislide.css" />
+	
+	<!-- Our CSS --><!-- Including our CSS file -->
+	<link rel="stylesheet" href="./css/demo.css"/>
+	
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+		
+	<noscript>
 			<style>
 				.es-carousel ul{
 					display:block;
 				}
 			</style>
-		</noscript>
-		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+	</noscript>
+		
+	<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
 			<div class="rg-image-wrapper">
 				{{if itemsCount > 1}}
 					<div class="rg-image-nav">
@@ -48,7 +51,7 @@
 					</div>
 				</div>
 			</div>
-		</script>
+	</script>
 
 
 </head>
@@ -73,12 +76,23 @@
 			<!-- Variable Content Goes Here -->
 			<div id="content">
 				<h1> Arts Exhibit </h1>
-JazzReggae is pleased to announce the various art exhibits and craft projects featured at this year’s festival! The art exhibition is expected to be better than ever this year with dynamic art pieces and installations provided by both hip companies and local artists.
+				
+				<div class="basic-padding">
+				
+JazzReggae is pleased to announce the various art exhibits and craft projects featured at this year's festival! The art exhibition is expected to be better than ever this year with dynamic art pieces and installations provided by both hip companies and local artists.
 <br>
 <br>
+
+<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/gallery/june22StudyInWatercolorVsAerosol.png">
+
+</br>
+</br>
+
 The art exhibit will continue the thread of sustainability that is largely apparent throughout the entire festival with the use of eco-friendly paints and recycled canvases. With the expertise of the JRF Sustainability crew, we will also feature a colorful and vibrant installation made from recycled materials. As we believe that green living can be beautiful, there will also be an eco- friendly craft station featuring kid-focused projects and activities. Further, there will be a large- scale chalkboard on which visitors can voice their green initiative in an artistic and creative way.
 <br>
 <br>
+
+
 
 				<div id="rg-gallery" class="rg-gallery">
 					<div class="rg-thumbs">
@@ -120,10 +134,8 @@ The art exhibit will continue the thread of sustainability that is largely appar
 						<!-- End Elastislide Carousel Thumbnail Viewer -->
 					</div><!-- rg-thumbs -->
 				</div><!-- rg-gallery -->
-
-
-
-
+				
+			</div>
 
 			</div> <!-- end #content -->
 			
@@ -139,6 +151,7 @@ The art exhibit will continue the thread of sustainability that is largely appar
 <script type="text/javascript">
 	//var jPM = $.jPanelMenu();
 	var jPM = $.jPanelMenu({
+		animated: false,
     	menu: '#nav-side',
     	
 	});	

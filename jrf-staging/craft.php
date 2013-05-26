@@ -44,6 +44,11 @@
 			
 			<!-- Variable Content Goes Here -->
 			<div id="content">
+			
+			
+				<div class="hide-on-desktop">
+					<h1>Craft Vendors</h1>
+				</div>
 				
     			  <div class="hide-on-mobile">
     				<img alt="Vendors at the 25th Annual JazzReggae Festival " src="./images/craft/craft_primary.png" >
@@ -51,7 +56,8 @@
     				</br>
     
     				One of the unique focuses at the JazzReggae Festival is the importance of art within our society and culture. Quality craft vendors selling clothing, jewelry, visual art and much more are carefully chosen by the JRF staff to ensure the creative experience that the festival promotes. &nbsp;The producers of the &nbsp;JazzReggae Festival also provide attendees with an art exhibit presenting a multitude of interesting, beautiful, and unique creations. As JRF attracts a crowd that comes to enjoy the beats, rhymes, and tunes produced by talented musicians, it will also deliver an ambiance of love for people, food, and art!
-    
+    				</br>
+    				</br>
     				</br>
     			  </div>
     				
@@ -462,6 +468,7 @@
 <script type="text/javascript">
 	//var jPM = $.jPanelMenu();
 	var jPM = $.jPanelMenu({
+		animated: false,
     	menu: '#nav-side',
     	
 	});	

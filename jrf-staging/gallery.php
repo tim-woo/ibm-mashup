@@ -61,6 +61,7 @@ Powered by Cincopa <a href='http://www.cincopa.com/media-platform'>Media Platfor
 <script type="text/javascript">
 	//var jPM = $.jPanelMenu();
 	var jPM = $.jPanelMenu({
+		animated: false,
     	menu: '#nav-side',
     	
 	});	

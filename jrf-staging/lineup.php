@@ -116,7 +116,7 @@
 				</div>
 				
 				<div class="grid-img">
-					<a href="./artist.php?id=barrington">
+					<a href="./artist.php?id=barringon">
 						<img src="./images/artists/lineup/barrington.png">
 						<div class="grid-img-overlay">
 							<div class="overlay-text">Barrington Levy</div>
@@ -173,6 +173,7 @@
 <script type="text/javascript">
 	//var jPM = $.jPanelMenu();
 	var jPM = $.jPanelMenu({
+		animated: false,
     	menu: '#nav-side',
     	
 	});	

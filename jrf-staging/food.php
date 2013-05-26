@@ -44,6 +44,10 @@
 			
 			<!-- Variable Content Goes Here -->
 			<div id="content">
+			
+				<div class="hide-on-desktop">
+					<h1>Food Vendors</h1>
+				</div>
 				
 				<div class="hide-on-mobile">
 				<img alt="Vendors at the 25th Annual JazzReggae Festival " src="./images/food/food_primary.png" >
@@ -51,7 +55,8 @@
     				</br>
     
     				Just a taste of one of the many distinguished food choices available at JazzReggae will excite your palate and leave you wanting to try more. The 2013 festival will present a variety of food vendors that will serve to complement and celebrate the diversity of our music, crowd, and activities. This includes a large, mouth-watering spectrum of food vendors selling Thai, Jamaican, and Caribbean cuisines to name only a few. In addition, almost all of the cooking methods and utensils used at the festival are sustainable, promoting a green-friendly environment. Every year the producers of JazzReggae Fest hand-pick their featured food vendors in order to showcase the most delectable, diverse and enjoyable grub around!
-				
+					</br>
+					</br>
     				</br>
     			</div>	
 				
@@ -415,6 +420,7 @@
 <script type="text/javascript">
 	//var jPM = $.jPanelMenu();
 	var jPM = $.jPanelMenu({
+		animated: false,
     	menu: '#nav-side',
     	
 	});	

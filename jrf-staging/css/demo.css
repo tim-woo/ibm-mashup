@@ -36,8 +36,8 @@ body {
 	padding:0px;
 	margin:0px;
 	font-family: Verdana, Arial, sans-serif;
-	background-color: rgb(0, 63, 63);
-	/*background-color: black;*/
+	/*background-color: rgb(0, 63, 63);*/
+	background-color: black;
 }
 
 img {
@@ -66,10 +66,20 @@ li {
 
 h1 {
 	font-family: Groovy, Verdana, Arial, sans-serif;
-	font-size: 1.5em;
+	font-size: 1em;
 	padding: 0px;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	max-width: 100%;
+}
+
+h3 {
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.basic-padding {
+	padding: 10px;
 }
 
 nav {
@@ -86,8 +96,8 @@ nav {
 	position:fixed;
 	top:15px;
 	z-index:101;
-	opacity:0.85;
-    filter:alpha(opacity=85); /* For IE8 and earlier */
+	opacity:0.65;
+    filter:alpha(opacity=65); /* For IE8 and earlier */
 }
 .menu-trigger a {
 color:transparent;
@@ -105,8 +115,8 @@ color:transparent;
 
 #full-view {
 	/*background-color:white;*/
-	background-color: rgb(0, 63, 63);
-	/*background-color: black;*/
+	/*background-color: rgb(0, 63, 63);*/
+	background-color: black;
 }
 
 #wrapper {
@@ -120,7 +130,7 @@ color:transparent;
 	/*background-color:#99cc99;*/
 	/*background-color: rgba(153, 204, 153,0.48);*/
 	background-color: rgba(190, 230, 190,1);
-	margin-bottom:20px;
+	margin-bottom:0px;
 	text-align:center;
 	box-shadow: 0 0 30px #111111;
 }
@@ -221,7 +231,7 @@ width:100%;
 }
 
 .grid-flip-container {
-	margin-bottom: 20px;
+	margin-top: -25px;
 	padding-bottom: 25px;
 }
 
@@ -285,11 +295,53 @@ width:100%;
 	display:none;
 }
 
+.hide-on-desktop {
+	display:block;
+}
+
+.header-ticket-1 {
+	background: #000000;
+	float:left;
+	width:100%;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+.header-ticket-2 {
+	display: none;
+	background: #000000;
+	float:left;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
 /* Flipper did go here once */
 
 @media screen and (min-width: 540px)
 {
 
+	.header-ticket-1 {
+	float:left;
+	width:70%;
+	}
+
+	.header-ticket-2 {
+	display: block;
+	float:left;
+	width:30%;
+	}
+
+	h1 {
+	font-family: Groovy, Verdana, Arial, sans-serif;
+	font-size: 1.5em;
+	padding: 0px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	}
+	
+	#page {
+		margin-bottom:20px;
+	}
 	/*#nav {
 	display:block;
 	background-color: black;
@@ -446,6 +498,10 @@ width:100%;
 	.hide-on-mobile {
 	display:block;
 	}
+	
+	.hide-on-desktop {
+	display:none;
+	}
 }
 
 @media screen and (min-width: 620px)
@@ -468,18 +524,18 @@ width:100%;
 	}
 	
 	.left-column {
-    	width:55%;
+    	width:65%;
     	float:left;
-    	padding-left:5%;
-    	padding-right:5%;
+    	padding-left:1%;
+    	padding-right:1%;
     
     }
     
     .right-column {
-    	width:30%; 
+    	width:35%; 
     	float:right;
-    	padding-left:0%;
-    	padding-right:5%;
+    	padding-left:1%;
+    	padding-right:1%;
     }
     
 }
@@ -507,18 +563,4 @@ width:100%;
 		margin-bottom: 18%;
     }
     
-    .left-column {
-    	width:55%;
-    	float:left;
-    	padding-left:5%;
-    	padding-right:5%;
-    
-    }
-    
-    .right-column {
-    	width:30%; 
-    	float:right;
-    	padding-left:0%;
-    	padding-right:5%;
-    }
 }

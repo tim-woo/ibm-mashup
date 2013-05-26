@@ -20,7 +20,7 @@
 	display:none;
 }
 .es-carousel ul li{
-	height:100%;
+	height:auto;
 	float:left;
 	display:block;
 }

@@ -81,6 +81,7 @@
 <script type="text/javascript">
 	//var jPM = $.jPanelMenu();
 	var jPM = $.jPanelMenu({
+		animated: false,
     	menu: '#nav-side',
     	
 	});	
@@ -144,6 +145,21 @@
     $('a:contains(Map)').css("background","#00cde0");
     $('li:contains(Map)').css("background","#00cde0");
 </script>
+	
+	<script>
+		
+		console.log($(document).outerHeight());
+		console.log($('#header').outerHeight());
+		console.log($(document).outerHeight()  - $('#header').outerHeight());
+		
+		var mapheight = $(document).outerHeight()  - $('#header').outerHeight();
+		
+
+    $('#map').css({
+        height: mapheight
+    });
+	
+	</script>
 	
 	<script type="text/javascript">
 function triggerMenu()
