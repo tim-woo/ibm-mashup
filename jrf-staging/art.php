@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title> MyVent Template Container </title>
+	<title> Art Exhibit </title>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		
@@ -94,7 +94,7 @@ JazzReggae is pleased to announce the various art exhibits and craft projects fe
 X is the Weapon is an artist collective based in Orange County that will be featured at this year’s exhibition. Several artists will also be doing live art during both days of the festival. We hope to show process alongside final product, so you can see how these artists bring their works from start to completion.
 <br>
 <br>
-<a href="./gallery.php?id=x">Gallery</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://xistheweapon.com/">Website</a>
+<!--<a href="./gallery.php?id=x">Gallery</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--><a href="http://xistheweapon.com/">Website</a>
 <br>
 <br>
 
@@ -107,7 +107,7 @@ X is the Weapon is an artist collective based in Orange County that will be feat
 Founded by two USC graduates and now based in Venice Beach, Sole Bicycles started with the goal of creating affordable and well-designed fixed gear bikes, but they didn’t just stop there.Sole also has a team of artists that turns selected bikes into works of art. At the festival, you will get to see these bikes alongside artists’ other works to experience the full range of art produced by theSole collective.
 <br>
 <br>
-<a href="./gallery.php?id=sole">Gallery</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.solebicycles.com/">Website</a>
+<!--<a href="./gallery.php?id=sole">Gallery</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--><a href="http://www.solebicycles.com/">Website</a>
 <br>
 <br>
 
@@ -128,9 +128,9 @@ As part of the JazzReggae sustainable art initiative, the artists of CanLove wil
 <img src="./images/art/student.png" style="width:100%">
 <br>
 <br>
-<a href="./gallery.php?id=student">Gallery</a>
+<!--<a href="./gallery.php?id=student">Gallery</a>
 <br>
-<br>
+<br>-->
 
 
 <h1>Photo Project</h1>
@@ -140,9 +140,9 @@ As part of the JazzReggae sustainable art initiative, the artists of CanLove wil
 As part of our mission to make art interactive and diverse, JazzReggae launched a collaborative photo project that will be displayed as part of the exhibition this year. Contestants were given little instruction, only that their submission had to be inspired by Los Angeles, opening the project up to a range of interpretations. Winning submissions will be displayed for the first time at the festival in a collaborative collage piece.
 <br>
 <br>
-<a href="./gallery.php?id=photo">Gallery</a>
+<!--<a href="./gallery.php?id=photo">Gallery</a>
 <br>
-<br>
+<br>-->
 
 
 <h1>Sustainable arts and crafts</h1>

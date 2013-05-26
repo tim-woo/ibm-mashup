@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title> MyVent Template Container </title>
+	<title> Gallery </title>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		
@@ -140,19 +140,46 @@ As part of our mission to make art interactive and diverse, JazzReggae launched 
 		case "x":
 			echo '
 			
-<li><a href="#"><img src="./libraries/gallery/images/thumbs/1.jpg" data-large="./libraries/gallery/images/1.jpg" alt="image01" data-description="From off a hill whose concave womb reworded" /></a></li>
+<li><a href="#"><img src="" data-large="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/gallery/artemisNolascoGypsyWoman.png" alt="image01" data-description="Gypsy Woman - Artemis Nolasco" /></a></li>
+<li><a href="#"><img src="" data-large="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/gallery/artemisNolascoSantigold.png" alt="image01" data-description="Santigold - Artemis Nolasco" /></a></li>
+<li><a href="#"><img src="" data-large="" alt="image01" data-description="" /></a></li>
+<li><a href="#"><img src="" data-large="" alt="image01" data-description="" /></a></li>
+<li><a href="#"><img src="" data-large="" alt="image01" data-description="" /></a></li>
+<li><a href="#"><img src="" data-large="" alt="image01" data-description="" /></a></li>
+<li><a href="#"><img src="" data-large="" alt="image01" data-description="" /></a></li>
+<li><a href="#"><img src="" data-large="" alt="image01" data-description="" /></a></li>
+<li><a href="#"><img src="" data-large="" alt="image01" data-description="" /></a></li>
+<li><a href="#"><img src="" data-large="" alt="image01" data-description="" /></a></li>
+<li><a href="#"><img src="" data-large="" alt="image01" data-description="" /></a></li>
+<li><a href="#"><img src="" data-large="" alt="image01" data-description="" /></a></li>
+<li><a href="#"><img src="" data-large="" alt="image01" data-description="" /></a></li>
 	
 					
 					';
 			break;
 		case "sole":
-			echo '';
+			echo '
+			
+<li><a href="#"><img src="" data-large="" alt="image01" data-description="" /></a></li>
+	
+					
+					';
 			break;
 		case "student":
-			echo '<';
+			echo '
+			
+<li><a href="#"><img src="" data-large="" alt="image01" data-description="" /></a></li>
+	
+					
+					';
 			break;
 		case "photo":
-			echo '';
+			echo '
+			
+<li><a href="#"><img src="" data-large="" alt="image01" data-description="" /></a></li>
+	
+					
+					';
 			break;
 		default:
 			echo '';

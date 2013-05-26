@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title> MyVent Template Container </title>
+	<title> Line Up </title>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		
