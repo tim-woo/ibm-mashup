@@ -68,13 +68,13 @@
 				<div class="home-content" style="padding-top:10px;padding-bottom:20px;">
 					<div class="left-column">
 						<!--<img src="./images/home/flyer.png">-->
+						
+						
+					<!--	
 						<h1> Now Playing </h1>
-				
-				
-				
+						
 				<div class="front-page-artist"><a href="./artist.php?id=kes"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/kes.png" ></a></div>
 				
-				<!--
 				
 				<div class="front-page-artist"><a href="./artist.php?id=marcia"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/marcia.png" ></a></div>
 				
@@ -85,23 +85,18 @@
 				<div class="front-page-artist"><a href="./artist.php?id=barrington"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/barrington.png" ></a></div>
 				
 				<div class="front-page-artist"><a href="./artist.php?id=ziggy"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/ziggy.png" ></a></div>
-				
-				-->
-				
+				<br> -->
 				
 				
-				<br>
 				<h1> Up Next </h1>
 				
 				
-				<!--
 				<div class="front-page-artist"><a href="./artist.php?id=kes"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/kes.png" ></a></div>
-				-->
 				
+				<!--
 				
 				<div class="front-page-artist"><a href="./artist.php?id=marcia"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/marcia.png" ></a></div>
 				
-				<!--
 				<div class="front-page-artist"><a href="./artist.php?id=mr"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/mr.png" ></a></div>
 				
 				
