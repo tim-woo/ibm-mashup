@@ -104,6 +104,7 @@ color:transparent;
 }
 
 
+
 .side-strip {
 	/*background-color:#33cccc;*/
 	background-color:#00cde0;
@@ -278,14 +279,14 @@ width:100%;
 }
 
 .left-column {
-    width:80%;
+    width:95%;
     margin-right:auto;
     margin-left:auto;
     
 }
     
 .right-column {
-    width:80%; 
+    width:95%; 
     margin-right:auto;
     margin-left:auto;
     padding-top: 20px;
@@ -315,10 +316,25 @@ width:100%;
 	padding-bottom:2px;
 }
 
+.leaflet-control-container {
+display:none;
+}
+
+.front-page-artist {
+	width: 80%;
+	box-shadow: 0 0 10px #555;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* Flipper did go here once */
 
 @media screen and (min-width: 540px)
 {
+
+	.leaflet-control-container {
+	display:block;
+	}
 
 	.header-ticket-1 {
 	float:left;
@@ -526,16 +542,17 @@ width:100%;
 	.left-column {
     	width:65%;
     	float:left;
-    	padding-left:1%;
-    	padding-right:1%;
+    	padding-left: 2%;
+    	padding-right: 2%;
+    	padding-top: 2%;
     
     }
     
     .right-column {
     	width:35%; 
     	float:right;
-    	padding-left:1%;
-    	padding-right:1%;
+    	padding-left:2%;
+    	padding-right:2%;
     }
     
 }

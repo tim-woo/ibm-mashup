@@ -2,6 +2,8 @@
 <head>
 	<title> Food Vendors </title>
 	
+	<link rel="shortcut icon" href="http://www.jazzreggaefest.com/files/Screen%20shot%202013-02-02%20at%208.32.06%20PM.png" type="image/png">
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		
 	<!-- Include the slide show CSS -->
@@ -22,6 +24,16 @@
 	<!-- Include the slide show library -->
 	<script type="text/javascript" src="./libraries/responsiveslides/responsiveslides.min.js"></script>
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41238300-1', 'jazzreggaefest.com');
+  ga('send', 'pageview');
+
+</script>
 
 </head>
 
@@ -69,7 +81,7 @@
 								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/vendors/alex.png">
 							</div>
 							<div class="back">
-								<div class="vendor-info">Exotic, full flavored, and filling as well, Alex Ethiopian food is the best meal for those wishing to broaden their horizons. See what you’ve been missing!</div>	
+								<div class="vendor-info">Exotic, full flavored, and filling as well, Alex Ethiopian food is the best meal for those wishing to broaden their horizons. See what you've been missing!</div>	
 							</div>
 						</div>
 					</div>
@@ -82,7 +94,7 @@
 								<img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/vendors/auntie.png">
 							</div>
 							<div class="back">
-								<div class="vendor-info">Jamaican dishes renowned for their delicious quality and tender meats. Try Auntie P’s to satisfy those coastal cravings!</div>	
+								<div class="vendor-info">Jamaican dishes renowned for their delicious quality and tender meats. Try Auntie P's to satisfy those coastal cravings!</div>	
 							</div>
 						</div>
 					</div>

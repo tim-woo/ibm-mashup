@@ -2,6 +2,8 @@
 <head>
 	<title> Art Exhibit </title>
 	
+	<link rel="shortcut icon" href="http://www.jazzreggaefest.com/files/Screen%20shot%202013-02-02%20at%208.32.06%20PM.png" type="image/png">
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		
 	<!-- Include the slide show CSS -->
@@ -53,6 +55,16 @@
 			</div>
 	</script>
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41238300-1', 'jazzreggaefest.com');
+  ga('send', 'pageview');
+
+</script>
 
 </head>
 
@@ -91,7 +103,7 @@ JazzReggae is pleased to announce the various art exhibits and craft projects fe
 <img src="./images/art/x.png" style="width:100%">
 <br>
 <br>
-X is the Weapon is an artist collective based in Orange County that will be featured at this year’s exhibition. Several artists will also be doing live art during both days of the festival. We hope to show process alongside final product, so you can see how these artists bring their works from start to completion.
+X is the Weapon is an artist collective based in Orange County that will be featured at this year's exhibition. Several artists will also be doing live art during both days of the festival. We hope to show process alongside final product, so you can see how these artists bring their works from start to completion.
 <br>
 <br>
 <!--<a href="./gallery.php?id=x">Gallery</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--><a href="http://xistheweapon.com/">Website</a>
@@ -104,7 +116,7 @@ X is the Weapon is an artist collective based in Orange County that will be feat
 <img src="./images/art/sole.png" style="width:100%">
 <br>
 <br>
-Founded by two USC graduates and now based in Venice Beach, Sole Bicycles started with the goal of creating affordable and well-designed fixed gear bikes, but they didn’t just stop there.Sole also has a team of artists that turns selected bikes into works of art. At the festival, you will get to see these bikes alongside artists’ other works to experience the full range of art produced by theSole collective.
+Founded by two USC graduates and now based in Venice Beach, Sole Bicycles started with the goal of creating affordable and well-designed fixed gear bikes, but they didn't just stop there.Sole also has a team of artists that turns selected bikes into works of art. At the festival, you will get to see these bikes alongside artists' other works to experience the full range of art produced by theSole collective.
 <br>
 <br>
 <!--<a href="./gallery.php?id=sole">Gallery</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--><a href="http://www.solebicycles.com/">Website</a>
@@ -147,7 +159,7 @@ As part of our mission to make art interactive and diverse, JazzReggae launched 
 
 <h1>Sustainable arts and crafts</h1>
 
-To make the JazzReggae art exhibition as interactive and sustainable as possible, this year we have added recycled arts and crafts to the mix. Art teacher Jennifer Morgan of Sustainable Arts L.A. will have a just for kids’ arts and crafts table. All materials will be from Trash for Teachers, a company that recycles local businesses’ discarded waste to provide sustainable supplies for artists and teachers. For those of us that don’t feel too old for a little arts and crafts, we will be constructing a sculpture entirely out of recycled water bottles that you can help paint!
+To make the JazzReggae art exhibition as interactive and sustainable as possible, this year we have added recycled arts and crafts to the mix. Art teacher Jennifer Morgan of Sustainable Arts L.A. will have a just for kids' arts and crafts table. All materials will be from Trash for Teachers, a company that recycles local businesses' discarded waste to provide sustainable supplies for artists and teachers. For those of us that don't feel too old for a little arts and crafts, we will be constructing a sculpture entirely out of recycled water bottles that you can help paint!
 <br>
 <br>
 

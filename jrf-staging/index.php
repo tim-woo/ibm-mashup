@@ -4,6 +4,8 @@
 <head>
 	<title> JazzReggae Festival </title>
 	
+	<link rel="shortcut icon" href="http://www.jazzreggaefest.com/files/Screen%20shot%202013-02-02%20at%208.32.06%20PM.png" type="image/png">
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		
 	<!-- Include the slide show CSS -->
@@ -21,6 +23,16 @@
 	<!-- Include the slide show library -->
 	<script type="text/javascript" src="./libraries/responsiveslides/responsiveslides.min.js"></script>
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41238300-1', 'jazzreggaefest.com');
+  ga('send', 'pageview');
+
+</script>
 
 </head>
 
@@ -43,6 +55,8 @@
 			
 			<!-- Variable Content Goes Here -->
 			<div id="content">
+				
+				<!--
 				<div class="slide-show">
 					<ul class="rslides" id="slider1">
   						<li class="rslides-element"><img src="./images/slides/slide_santigold.png" alt=""></li>
@@ -50,24 +64,70 @@
   						<li class="rslides-element"><img src="./images/slides/slide_design.png" alt=""></li>
   						<li class="rslides-element"><img src="./images/slides/slide_stage.png" alt=""></li>
 					</ul>
-				</div>
-	
+				</div> -->
 				<div class="home-content" style="padding-top:10px;padding-bottom:20px;">
 					<div class="left-column">
-						<img src="./images/home/flyer.png">
-						
+						<!--<img src="./images/home/flyer.png">-->
+						<h1> Now Playing </h1>
+				
+				
+				
+				<div class="front-page-artist"><a href="./artist.php?id=kes"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/kes.png" ></a></div>
+				
+				<!--
+				
+				<div class="front-page-artist"><a href="./artist.php?id=marcia"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/marcia.png" ></a></div>
+				
+				
+				<div class="front-page-artist"><a href="./artist.php?id=mr"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/mr.png" ></a></div>
+				
+				
+				<div class="front-page-artist"><a href="./artist.php?id=barrington"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/barrington.png" ></a></div>
+				
+				<div class="front-page-artist"><a href="./artist.php?id=ziggy"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/ziggy.png" ></a></div>
+				
+				-->
+				
+				
+				
+				<br>
+				<h1> Up Next </h1>
+				
+				
+				<!--
+				<div class="front-page-artist"><a href="./artist.php?id=kes"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/kes.png" ></a></div>
+				-->
+				
+				
+				<div class="front-page-artist"><a href="./artist.php?id=marcia"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/marcia.png" ></a></div>
+				
+				<!--
+				<div class="front-page-artist"><a href="./artist.php?id=mr"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/mr.png" ></a></div>
+				
+				
+				<div class="front-page-artist"><a href="./artist.php?id=barrington"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/barrington.png" ></a></div>
+				
+				<div class="front-page-artist"><a href="./artist.php?id=ziggy"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/ziggy.png" ></a></div>
+				
+				-->
+				
+				
+				
+				
+				<br>
 					</div> <!-- end left column -->
 					
 					<div class="right-column">
-						<a href="http://www.ticketmaster.com/JazzReggae-Festival-UCLA-tickets/artist/870795"><img src="./images/home/tickets.png" width="500px"></a>
-						<br>
-						<br>
-						<a href="http://www.ticketmaster.com/JazzReggae-Festival-UCLA-tickets/artist/870795"><img src="./images/home/ticketsdeluxe.png" width="500px"></a>
-						<br>
-						<br>
+					
+					<h1> <span style="font-family:Verdana, Arial, sans-serif;">#</span>jazz reggae </h1>
+						
+						<a class="twitter-timeline" href="https://twitter.com/search?q=%23jazzreggae+OR+%23jrf+OR+%23jazzreggaefest+OR+%40JazzReggaeFest" data-widget-id="339069848648818690">Tweets about "#jazzreggae OR #jrf OR #jazzreggaefest OR @JazzReggaeFest"</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+					
 						
 						
-						<iframe height="225" width="100%" src="http://8tracks.com/mixes/1474514/player_v3_universal" style="border: 0px none;" ></iframe>
+						<!--<iframe height="225" width="100%" src="http://8tracks.com/mixes/1474514/player_v3_universal" style="border: 0px none;" ></iframe>-->
 						
 					</div> <!-- end right column -->
 					<div class="spacer" style="clear: both;"></div>
