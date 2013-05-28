@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="./libraries/responsiveslides/responsiveslides.css"/>
 	
 	<!-- Including our CSS file -->
-	<link rel="stylesheet" href="./css/demo.css"/>
+	<link rel="stylesheet" href="./css/demo2.css"/>
 
 	<!-- Including the most recent JQuery Library -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>

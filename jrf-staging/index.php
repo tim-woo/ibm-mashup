@@ -1,4 +1,11 @@
-<?php $page="index" ?>
+<?php 
+$now = "null";
+$next = "null";
+
+/* kes, marcia, mr, barrington, ziggy */
+
+$page="index";
+ ?>
 
 <html>
 <head>
@@ -12,7 +19,7 @@
 	<link rel="stylesheet" href="./libraries/responsiveslides/responsiveslides.css"/>
 	
 	<!-- Including our CSS file -->
-	<link rel="stylesheet" href="./css/demo.css"/>
+	<link rel="stylesheet" href="./css/demo1.css"/>
 
 	<!-- Including the most recent JQuery Library -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -67,49 +74,68 @@
 				</div> -->
 				<div class="home-content" style="padding-top:10px;padding-bottom:20px;">
 					<div class="left-column">
-						<!--<img src="./images/home/flyer.png">-->
+					
+<?php if ($GLOBALS['now'] == "null" && $GLOBALS['next'] == "null")
+	echo '<img src="./images/home/flyer.png">'
+?>
+
+
+<?php if($GLOBALS['now'] != "null")	echo '<h1> Now Playing </h1>'; ?>
 						
-						
-					<!--	
-						<h1> Now Playing </h1>
-						
-				<div class="front-page-artist"><a href="./artist.php?id=kes"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/kes.png" ></a></div>
+<?php						
+switch ($GLOBALS['now'])
+	{
+  	case "ziggy":
+  		echo '<div class="front-page-artist"><a href="./artist.php?id=ziggy"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/ziggy.png" ></a></div>';
+  		break;
+  	case "barrington":
+  		echo '<div class="front-page-artist"><a href="./artist.php?id=barrington"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/barrington.png" ></a></div>';
+  		break;
+  	case "mr":
+  		echo '<div class="front-page-artist"><a href="./artist.php?id=mr"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/mr.png" ></a></div>';
+  		break;
+  	case "marcia":
+  		echo '<div class="front-page-artist"><a href="./artist.php?id=marcia"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/marcia.png" ></a></div>';
+  		break;
+  	case "kes":
+  		echo '<div class="front-page-artist"><a href="./artist.php?id=kes"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/kes.png" ></a></div>';
+  		break;
+	default:
+  		echo '';
+	}						
+?>		
+
+<?php if($GLOBALS['now'] != "null")	echo '<br>'; ?>				
+											
+
+<?php if($GLOBALS['next'] != "null")	echo '<h1> Next Up </h1>'; ?>
 				
+<?php						
+switch ($GLOBALS['next'])
+	{
+  	case "ziggy":
+  		echo '<div class="front-page-artist"><a href="./artist.php?id=ziggy"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/ziggy.png" ></a></div>';
+  		break;
+  	case "barrington":
+  		echo '<div class="front-page-artist"><a href="./artist.php?id=barrington"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/barrington.png" ></a></div>';
+  		break;
+  	case "mr":
+  		echo '<div class="front-page-artist"><a href="./artist.php?id=mr"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/mr.png" ></a></div>';
+  		break;
+  	case "marcia":
+  		echo '<div class="front-page-artist"><a href="./artist.php?id=marcia"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/marcia.png" ></a></div>';
+  		break;
+  	case "kes":
+  		echo '<div class="front-page-artist"><a href="./artist.php?id=kes"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/kes.png" ></a></div>';
+  		break;
+	default:
+  		echo '';
+	}						
+?>					
 				
-				<div class="front-page-artist"><a href="./artist.php?id=marcia"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/marcia.png" ></a></div>
-				
-				
-				<div class="front-page-artist"><a href="./artist.php?id=mr"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/mr.png" ></a></div>
-				
-				
-				<div class="front-page-artist"><a href="./artist.php?id=barrington"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/barrington.png" ></a></div>
-				
-				<div class="front-page-artist"><a href="./artist.php?id=ziggy"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/ziggy.png" ></a></div>
-				<br> -->
-				
-				
-				<h1> Up Next </h1>
-				
-				
-				<div class="front-page-artist"><a href="./artist.php?id=kes"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/kes.png" ></a></div>
-				
-				<!--
-				
-				<div class="front-page-artist"><a href="./artist.php?id=marcia"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/marcia.png" ></a></div>
-				
-				<div class="front-page-artist"><a href="./artist.php?id=mr"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/mr.png" ></a></div>
-				
-				
-				<div class="front-page-artist"><a href="./artist.php?id=barrington"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/barrington.png" ></a></div>
-				
-				<div class="front-page-artist"><a href="./artist.php?id=ziggy"><img src="http://www.jazzreggaefest.com/sites/all/themes/jazzreggae2012/images/artists/ziggy.png" ></a></div>
-				
-				-->
-				
-				
-				
-				
-				<br>
+<?php if($GLOBALS['next'] != "null")	echo '<br>'; ?>
+
+
 					</div> <!-- end left column -->
 					
 					<div class="right-column">
