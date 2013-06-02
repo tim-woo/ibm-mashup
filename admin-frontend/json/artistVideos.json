@@ -1,0 +1,20 @@
+{
+	"videos": [
+		{
+			"site": "youtube",
+			"url": "http://www.youtube.com/watch?v=MchcXoKyAq0&feature=youtube_gdata_player"
+		},
+		{
+			"site": "youtube",
+			"url": "http://www.youtube.com/embed/dGd9DTTrX4U"
+		},
+		{
+			"site": "youtube",
+			"url": "http://www.youtube.com/embed/h1eYqxZjlwU"
+		},
+		{
+			"site": "youtube",
+			"url": "http://www.youtube.com/embed/uFaz2GN8FKY"
+		}
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"tweets": [
+		{
+			"text": "This is the text of a tweet y'all",
+			"time": "Time in standard format here",
+			"url": "http://www.link/to/this/tweet"
+		},
+		{
+			"text": "This is the text of a tweet y'all",
+			"time": "Time in standard format here",
+			"url": "http://www.link/to/this/tweet"
+		}
+	]
+}

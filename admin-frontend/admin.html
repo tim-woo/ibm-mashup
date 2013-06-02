@@ -32,166 +32,38 @@
 
 <h2> Artist Name </h2>
 <form>
-Artist name:  <input type="text" name="name"><input type="submit" name="searchArtist" value="Search Artist">
+Artist name:  <input type="text" name="name">
+<input type="button" onclick="getAjaxResponse('artistNames')" name="searchArtist" value="Search Artist">
 </form>
 
-Find the correct name from the list below and click "Select Artist" to continue.
-<br>
-<select name="artistName">
-  <option value="ARREQCK1269FB2EE5C">Schoolboy Q</option>
-  <option value="ARCPTFX13925F19938">Schoolboy Q/A$AP Rocky</option>
-  <option value="ARUTYNR13A0DE0CF48">Skeme, Schoolboy Q</option>
-  <option value="ARNCMBU13E47B9B2AF">Quiz, SchoolBoy Q, Niqle Nut and One-2</option>
-  <option value="ARCHTUB133858350DB">Ab-Soul, Kendrick Lamar, Schoolboy Q</option>
-</select>
-
-<input type="submit" name="selectArtist" value="Select Artist">
-
-<h2> Artist Images </h2>
-Choose your favorite image below and click "Select Image" to continue.
-
-<select class="image-picker masonry">
-  <option data-img-src="http://userserve-ak.last.fm/serve/_/56703723/Schoolboy+Q+schoolboyq.jpg" value="1">Image 1</option>
-  <option data-img-src="http://userserve-ak.last.fm/serve/_/57790665/Schoolboy+Q+SchoolboyQ.jpg" value="2">Image 2</option>
-  <option data-img-src="http://userserve-ak.last.fm/serve/_/56703791/Schoolboy+Q+sq.png" value="3">Image 3</option>
-  <option data-img-src="http://userserve-ak.last.fm/serve/500/32644551/Schoolboy+Q+l_ef70c71e6fbca21e6133cfea2c97.jpg" value="4">Image 4</option>
-  <option data-img-src="http://userserve-ak.last.fm/serve/_/56703743/Schoolboy+Q+schoolboyq.jpg" value="5">Image 5</option>
-  <option data-img-src="http://userserve-ak.last.fm/serve/500/57724069/Schoolboy+Q+SchoolboyQ1.jpg" value="6">Image 6</option>
-  <option data-img-src="http://userserve-ak.last.fm/serve/_/57790955/Schoolboy+Q+SchoolboyQ.jpg" value="7">Image 7</option>
-  <option data-img-src="http://userserve-ak.last.fm/serve/500/57204889/Schoolboy+Q+26538_10150154964145023_312196.jpg" value="8">Image 8</option>
-  <option data-img-src="http://userserve-ak.last.fm/serve/_/52465929/Schoolboy+Q+b64048000storiesSchoolboyQPic.jpg" value="9">Image 9</option>
-  <option data-img-src="http://userserve-ak.last.fm/serve/_/56703723/Schoolboy+Q+schoolboyq.jpg" value="10">Image 10</option>
-  <option data-img-src="http://userserve-ak.last.fm/serve/_/57790665/Schoolboy+Q+SchoolboyQ.jpg" value="11">Image 11</option>
-  <option data-img-src="http://userserve-ak.last.fm/serve/_/56703791/Schoolboy+Q+sq.png" value="12">Image 12</option>
-  <option data-img-src="http://userserve-ak.last.fm/serve/500/32644551/Schoolboy+Q+l_ef70c71e6fbca21e6133cfea2c97.jpg" value="13">Image 13</option>
-  <option data-img-src="http://userserve-ak.last.fm/serve/_/56703743/Schoolboy+Q+schoolboyq.jpg" value="14">Image 14</option>
-  <option data-img-src="http://userserve-ak.last.fm/serve/500/57724069/Schoolboy+Q+SchoolboyQ1.jpg" value="15">Image 15</option>
-</select>
-
-<br>
-<input type="submit" name="selectImage" value="Select Image">
-
-<h2> Artist Biography </h2>
-
-Choose a biography: 
-<select id="artistBiographies" name="artistBiographies">
-  <option value="wikipedia">Wikipedia</option>
-  <option value="last.fm">Last.FM</option>
-</select>
-<br><br>
-<div id="biography">
-Wikipedia Biography
-</div>
-<br>
-<input type="submit" name="selectBiography" value="Select Biography">
-
-<h2> Artist Videos </h2>
-
-<div id="video-container">
-<iframe width="560" height="315" src="http://www.youtube.com/embed/KnnYiW5dnhQ" frameborder="0" allowfullscreen></iframe><input type="checkbox" name="option1" value="Milk">
-<br>
-<iframe width="560" height="315" src="http://www.youtube.com/embed/dGd9DTTrX4U" frameborder="0" allowfullscreen></iframe><input type="checkbox" name="option1" value="Milk">
-<br>
-<iframe width="560" height="315" src="http://www.youtube.com/embed/h1eYqxZjlwU" frameborder="0" allowfullscreen></iframe><input type="checkbox" name="option1" value="Milk">
-<br>
-<iframe width="560" height="315" src="http://www.youtube.com/embed/uFaz2GN8FKY" frameborder="0" allowfullscreen></iframe><input type="checkbox" name="option1" value="Milk">
-</div>
-<br>
-<input type="submit" name="selectVideos" value="Select Videos">
-
-
-<h2> Artist Songs </h2>
-
-<div id="song-container">
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F84439820"></iframe><input type="checkbox" name="option1" value="Milk">
-<br><br>
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F91990553"></iframe><input type="checkbox" name="option1" value="Milk">
-<br><br>
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F56561005"></iframe><input type="checkbox" name="option1" value="Milk">
-<br><br>
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F34480625"></iframe><input type="checkbox" name="option1" value="Milk">
-<br><br>
-</div>
-<br>
-<input type="submit" name="selectSongs" value="Select Songs">
-
-
-<h2> Artist News </h2>
-Check the box below if you would like to include a stream of the artists most recent news items: 
-<br>
-<br>
-<div id="news-container">
-<a href="http://www.vibe.com/article/kendrick-lamar-reveals-why-hes-been-hanging-mac-miller"> Kendrick Lamar Reveals Why He&#039;s Been Hanging With Mac Miller</a>
-<br>
-<a href="http://www.mtv.com/news/articles/1708257/kendrick-lamar-mac-miller-studio.jhtml"> Kendrick Lamar Recruited Mac Miller To Be His Official 'Homey'</a>
-<br>
-<a href="http://allhiphop.com/2013/05/30/schoolboy-q-says-nyc-embraces-him-but-hes-still-looking-for-love-from-l-a/"> Schoolboy Q Says NYC Embraces Him But He's Still Looking For Love From L.A.</a>
-<br>
-<a href="http://allhiphop.com/2013/05/28/trinidad-james-speaks-on-his-roots-says-hed-keep-name-with-or-without-trindadians-approval-video/"> Trinidad James Speaks on His Roots, Says He'd Keep Name With or Without Trindadians' Approval (VIDEO)</a>
-<br>
-<a href="http://www.mtv.com/news/articles/1708129/mac-miller-diplo-goosebumpz.jhtml"> Mac Miller And Diplo Give Fans 'Goosebumpz'</a>
-<br>
-<a href="http://www.gigwise.com/news/81844/listen-new-track-idgaf-by-mike-posner-featuring-pharrell-williams"> Listen: New track 'IDGAF' by Mike Posner featuring Pharrell Williams</a>
-<br>
-<a href="http://www.gigwise.com/news/81844/listen-new-track-idgaf-by-mike-posner-featuring-pharrell"> Listen: New track 'IDGAF' by Mike Posner featuring Pharrell</a>
-<br>
-<a href="http://exclaim.ca/News/mac_miller_gets_tyler_creator_action_bronson_earl_sweatshirt_for_watching_movies_with_sound_off"> Mac Miller Gets Tyler, the Creator, Action Bronson, Earl Sweatshirt for 'Watching Movies with the Sound Off'</a>
-<br>
-<a href="http://www.vibe.com/article/schoolboys-qs-oxymoron-features-his-daughter"> Schoolboy&#039;s Q&#039;s &#039;Oxymoron&#039; Features His Daughter</a>
-<br>
-<a href="http://www.vibe.com/article/schoolboy-qs-oxymoron-features-his-daughter"> Schoolboy Q&#039;s &#039;Oxymoron&#039; Features His Daughter</a>
-<br>
-<a href="http://stereogum.com/1361572/schoolboy-q-hell-of-a-night/mp3s/"> Schoolboy Q - "Hell Of A Night"</a>
-<br>
-<a href="http://pitchfork.com/news/50891-listen-new-schoolboy-q-hell-of-a-night/"> Listen: New Schoolboy Q: &#34;Hell of a Night&#34;</a>
-<br>
-<a href="http://www.spin.com/articles/uoeno-black-hippy-remix-kendrick-lamar/"> Hear Kendrick Lamar and Black Hippy Wink at Rapey Rozay in Latest &#039;U.O.E.N.O&#039; Remix</a>
-<br>
-<a href="http://stereogum.com/1359642/kendrick-lamar-schoolboy-q-ab-soul-jay-rock-u-o-e-n-o-black-hippy-remix/mp3s/"> Kendrick Lamar, Schoolboy Q, Ab-Soul & Jay-Rock - "U.O.E.N.O. (Black Hippy Remix)"</a>
-<br>
-<a href="http://allhiphop.com/2013/05/23/kendrick-lamar-schoolboy-q-ab-soul-jay-rock-drop-u-o-e-n-o-remix/"> Kendrick Lamar, Schoolboy Q, Ab-Soul, & Jay Rock Drop "U.O.E.N.O" Remix</a>
-<br>
-</div>
-<br>
-Include News stream <input type="checkbox" name="option1" value="Milk">
-<br>
-<input type="submit" name="newsContinue" value="Continue">
-
-<h2> Artist Twitter </h2>
-Check the box below if you would like to include the artist's Twitter stream:
-<br>
-<a class="twitter-timeline" href="https://twitter.com/ScHoolBoyQ" data-widget-id="340935679490023425">Tweets by @ScHoolBoyQ</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<br>
-<br>
-Include Twitter stream <input type="checkbox" name="option1" value="Milk">
-<br>
-<input type="submit" name="twitterContinue" value="Continue">
-
-<br>
-<br>
-<br>
-
-<input type="submit" name="create" value="Create Mashup">
+<div id="myDiv"></div>
 
 
 </div>
 
 <script>
-$("select.image-picker").imagepicker();
-</script>
+// This updates the image selector element
+function updateImages()
+{
+	// This converts the image selector from text drop down to image grid
+	$("select.image-picker").imagepicker();
 
-<script>
-var container = jQuery("select.image-picker.masonry").next("ul.thumbnails");
+	// This cleans up the image grid using the masonry library
+	var container = jQuery("select.image-picker.masonry").next("ul.thumbnails");
     container.imagesLoaded(function(){ 
       container.masonry({ 
         itemSelector:   "li",
       }); 
     });
+}
 </script>
 
 <script>
+
+// This function is called when the biography drop down meny is changed
+// Currently not working
 $('#artistBiographies').change(function() {
+
     var val = $("#artistBiographies option:selected").val();
     
     log(val);
@@ -204,6 +76,8 @@ $('#artistBiographies').change(function() {
 </script>
 
 <script>
+
+// Convinience function to log any message to the browsers debugging console
 function log(msg) {
     setTimeout(function() {
         throw new Error(msg);
@@ -211,9 +85,291 @@ function log(msg) {
 }
 </script>
 
+<script>
+
+// Adds a div with specified ID and inner HTML to the page
+function appendDiv(divId, inner)
+{
+	// Creare a new div and set the ID based on the parameter
+	var newDiv = document.createElement('div');
+    newDiv.id = divId;
+    
+    // Set the inner HTML of the div according to the parameter
+    newDiv.innerHTML = inner;
+    
+    // Append the new div to the existing HTML element with id=page
+	$('#page').append(newDiv);
+    
+    // The updateImages() function must be called to display image selector
+    if(divId == "artistImages")
+    	updateImages();
+    
+    // This trick auto scrolls to the bottom of the page
+    $(window).scrollTop($(document).height());
+}
+
+// Given one of our predefined request types, this requests the data,
+// and calls the appropriate function to parse and add the data to the web page
+function getAjaxResponse(request)
+{
+	// Create a Ajax request depending on browser
+	var xmlhttp;
+	if (window.XMLHttpRequest)
+	{// code for IE7+, Firefox, Chrome, Opera, Safari
+  		xmlhttp=new XMLHttpRequest();
+	}
+	else
+	{// code for IE6, IE5
+  		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+  
+  	// Define the function to be called when response is received
+	xmlhttp.onreadystatechange=function()
+  	{
+  		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    	{	
+    		// Create a JSON object from the server response
+    		var object = JSON.parse(xmlhttp.responseText);
+    		
+    		// Initialize a string to contain the HTML we're creating 
+    		var innerHTML = "";
+    		
+    		// Parse the JSON object depending on the request's required format
+    		if(request == "artistNames")
+    			innerHTML = parseArtistNames(object);
+    		else if(request == "artistImages")
+    			innerHTML = parseArtistImages(object);
+    		else if(request == "artistBiographies")
+    			innerHTML = parseArtistBiographies(object);
+    		else if(request == "artistVideos")
+    			innerHTML = parseArtistVideos(object);
+    		else if(request == "artistSongs")
+    			innerHTML = parseArtistSongs(object);
+    		else if(request == "artistNews")
+    			innerHTML = parseArtistNews(object);
+    		else if(request == "artistTwitter")
+    			innerHTML = parseArtistTwitter(object);
+
+			// Call function to create a div with this HTML and append to document
+    		appendDiv(request, innerHTML);
+    	}
+	}
+	
+	// Create the AJAX call to our server depending on the specified request
+	if(request == "artistNames")
+	{
+		// getArtistNames?search=Schoolboy+Q
+		// Send a request to the server. Provide the text artist name, select from the name form
+		// Get back a json object with names and id's
+    	xmlhttp.open("GET","./json/artistNames.json",true);
+    }
+    else if(request == "artistImages")
+    {
+    	// getArtistImages?id=ARREQCK1269FB2EE5C
+		// Send a request to the server, provide artist ID, from select form
+		// Get back a json with the urls
+    	xmlhttp.open("GET","./json/artistImages.json",true);
+    }
+    else if(request == "artistBiographies")
+    {
+    	// getArtistBiographies?id=ARREQCK1269FB2EE5C
+		// Send a request to the server, provide artist ID, from select form
+		// Get back a json with the text and source site
+    	xmlhttp.open("GET","./json/artistBiographies.json",true);
+    }
+    else if(request == "artistVideos")
+    {
+    	// getArtistVideos?name=Schoolboy+Q
+		// Send a request to the server, provide artist name, from select form
+		// Get back a json with the urls and source site
+    	xmlhttp.open("GET","./json/artistVideos.json",true);
+    }
+    else if(request == "artistSongs")
+    {
+    	// getArtistSongs?name=Schoolboy+Q
+		// Send a request to the server, provide artist name, from select form
+		// Get back a json with the urls and source site
+    	xmlhttp.open("GET","./json/artistSongs.json",true);
+    }
+    else if(request == "artistNews")
+    {
+    	// getArtistNews?id=ARREQCK1269FB2EE5C
+		// Send a request to the server, provide artist ID, from select form
+		// Get back a json with the title, URL
+    	xmlhttp.open("GET","./json/artistNews.json",true);
+    }
+    else if(request == "artistTwitter")
+    {
+    	// getArtistTweets?id=ARREQCK1269FB2EE5C
+		// Send a request to the server, provide artist ID, from select form
+		// Get back a json with the tweet text, time, url
+    	xmlhttp.open("GET","./json/artistTwitter.json",true);
+    }
+	
+	// Send the AJAX request, when it's complete, the above function handles the response
+	xmlhttp.send();
+}
+
+function parseArtistNames(jsonObject) {
+
+    var innerHTML = 'Find the correct name from the list below and click "Select Artist" to continue.<br>';
+    		
+    innerHTML += '<select name="artistName">';
+    
+  	innerHTML += '<option value="ARREQCK1269FB2EE5C">Schoolboy Q</option>';
+  	innerHTML += '<option value="ARCPTFX13925F19938">Schoolboy Q/A$AP Rocky</option>';
+  	innerHTML += '<option value="ARUTYNR13A0DE0CF48">Skeme, Schoolboy Q</option>';
+  	innerHTML += '<option value="ARNCMBU13E47B9B2AF">Quiz, SchoolBoy Q, Niqle Nut and One-2</option>';
+  	innerHTML += '<option value="ARCHTUB133858350DB">Ab-Soul, Kendrick Lamar, Schoolboy Q</option>';
+  	
+	innerHTML += '</select>';
+	
+	innerHTML += '<input type="submit" onclick="getAjaxResponse(\'artistImages\')" name="selectArtist" value="Select Artist">';
+
+	return innerHTML;
+}
+
+function parseArtistImages(jsonObject) {
+
+    var innerHTML = '<h2> Artist Images </h2>';
+	innerHTML += 'Choose your favorite image below and click "Select Image" to continue.';
+
+	innerHTML += '<select class="image-picker masonry">';
+  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/_/56703723/Schoolboy+Q+schoolboyq.jpg" value="1">Image 1</option>';
+  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/_/57790665/Schoolboy+Q+SchoolboyQ.jpg" value="2">Image 2</option>';
+  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/_/56703791/Schoolboy+Q+sq.png" value="3">Image 3</option>';
+  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/500/32644551/Schoolboy+Q+l_ef70c71e6fbca21e6133cfea2c97.jpg" value="4">Image 4</option>';
+  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/_/56703743/Schoolboy+Q+schoolboyq.jpg" value="5">Image 5</option>';
+  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/500/57724069/Schoolboy+Q+SchoolboyQ1.jpg" value="6">Image 6</option>';
+  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/_/57790955/Schoolboy+Q+SchoolboyQ.jpg" value="7">Image 7</option>';
+  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/500/57204889/Schoolboy+Q+26538_10150154964145023_312196.jpg" value="8">Image 8</option>';
+  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/_/52465929/Schoolboy+Q+b64048000storiesSchoolboyQPic.jpg" value="9">Image 9</option>';
+  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/_/56703723/Schoolboy+Q+schoolboyq.jpg" value="10">Image 10</option>';
+  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/_/57790665/Schoolboy+Q+SchoolboyQ.jpg" value="11">Image 11</option>';
+  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/_/56703791/Schoolboy+Q+sq.png" value="12">Image 12</option>';
+  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/500/32644551/Schoolboy+Q+l_ef70c71e6fbca21e6133cfea2c97.jpg" value="13">Image 13</option>';
+  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/_/56703743/Schoolboy+Q+schoolboyq.jpg" value="14">Image 14</option>';
+  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/500/57724069/Schoolboy+Q+SchoolboyQ1.jpg" value="15">Image 15</option>';
+	innerHTML += '</select>';
+
+	innerHTML += '<br>';
+	innerHTML += '<input type="submit" onclick="getAjaxResponse(\'artistBiographies\')" name="selectImage" value="Select Image">';
+   
+    return innerHTML;
+}
+
+function parseArtistBiographies(jsonObject) {
+
+    var innerHTML = '<h2> Artist Biography </h2>';
+	innerHTML += 'Choose a biography: ';
+    
+	innerHTML += '<select id="artistBiographies" name="artistBiographies">';
+  	innerHTML += '<option value="wikipedia">Wikipedia</option>';
+  	innerHTML += '<option value="last.fm">Last.FM</option>';
+	innerHTML += '</select>';
+	
+	innerHTML += '<br><br>';
+	innerHTML += '<div id="biography">';
+	innerHTML += 'Wikipedia Biography';
+	innerHTML += '</div>';
+	innerHTML += '<br>';
+	
+	innerHTML += '<input type="submit" onclick="getAjaxResponse(\'artistVideos\')" name="selectBiography" value="Select Biography">';
+
+	return innerHTML;
+}
+
+function parseArtistVideos(jsonObject) {
+
+    var innerHTML = '<h2> Artist Videos </h2>';
+	innerHTML += '<div id="video-container">';
+	innerHTML += '<iframe width="560" height="315" src="http://www.youtube.com/embed/KnnYiW5dnhQ" frameborder="0" allowfullscreen></iframe><input type="checkbox" name="option1" value="Milk">';
+	innerHTML += '<br>';
+	innerHTML += '<iframe width="560" height="315" src="http://www.youtube.com/embed/dGd9DTTrX4U" frameborder="0" allowfullscreen></iframe><input type="checkbox" name="option1" value="Milk">';
+	innerHTML += '<br>';
+	innerHTML += '<iframe width="560" height="315" src="http://www.youtube.com/embed/h1eYqxZjlwU" frameborder="0" allowfullscreen></iframe><input type="checkbox" name="option1" value="Milk">';
+	innerHTML += '<br>';
+	innerHTML += '<iframe width="560" height="315" src="http://www.youtube.com/embed/uFaz2GN8FKY" frameborder="0" allowfullscreen></iframe><input type="checkbox" name="option1" value="Milk">';
+	innerHTML += '</div>';
+	innerHTML += '<br>';
+	innerHTML += '<input type="submit" onclick="getAjaxResponse(\'artistSongs\')" name="selectVideos" value="Select Videos">';
+    
+    return innerHTML;
+}
+
+function parseArtistSongs(jsonObject) {
+
+    var innerHTML = '<h2> Artist Songs </h2>';
+    
+	innerHTML += '<div id="song-container">';
+	innerHTML += '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F84439820"></iframe><input type="checkbox" name="option1" value="Milk">';
+	innerHTML += '<br><br>';
+	innerHTML += '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F91990553"></iframe><input type="checkbox" name="option1" value="Milk">';
+	innerHTML += '<br><br>';
+	innerHTML += '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F56561005"></iframe><input type="checkbox" name="option1" value="Milk">';
+	innerHTML += '<br><br>';
+	innerHTML += '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F34480625"></iframe><input type="checkbox" name="option1" value="Milk">';
+	innerHTML += '<br><br>';
+	innerHTML += '</div>';
+	innerHTML += '<br>';
+	innerHTML += '<input type="submit" onclick="getAjaxResponse(\'artistNews\')" name="selectSongs" value="Select Songs">';
+
+	return innerHTML;
+}
+
+function parseArtistNews(jsonObject) {
+
+	var innerHTML = '<h2> Artist News </h2>';
+    
+	innerHTML += 'Check the box below if you would like to include a stream of the artists most recent news items: ';
+	innerHTML += '<br><br>';
+	innerHTML += '<div id="news-container">';
+	innerHTML += '<a href="http://www.vibe.com/article/kendrick-lamar-reveals-why-hes-been-hanging-mac-miller"> Kendrick Lamar Reveals Why He&#039;s Been Hanging With Mac Miller</a>';
+	innerHTML += '<br>';
+	innerHTML += '<a href="http://www.mtv.com/news/articles/1708257/kendrick-lamar-mac-miller-studio.jhtml"> Kendrick Lamar Recruited Mac Miller To Be His Official \'Homey\'</a>';
+	innerHTML += '<br>';
+	innerHTML += '<a href="http://allhiphop.com/2013/05/30/schoolboy-q-says-nyc-embraces-him-but-hes-still-looking-for-love-from-l-a/"> Schoolboy Q Says NYC Embraces Him But He\'s Still Looking For Love From L.A.</a>';
+	innerHTML += '<br>';
+	innerHTML += '<a href="http://allhiphop.com/2013/05/28/trinidad-james-speaks-on-his-roots-says-hed-keep-name-with-or-without-trindadians-approval-video/"> Trinidad James Speaks on His Roots, Says He\'d Keep Name With or Without Trindadians\' Approval (VIDEO)</a>';
+	innerHTML += '<br>';
+	innerHTML += '<a href="http://www.mtv.com/news/articles/1708129/mac-miller-diplo-goosebumpz.jhtml"> Mac Miller And Diplo Give Fans \'Goosebumpz\'</a>';
+	innerHTML += '<br>';
+	innerHTML += '</div>';
+	innerHTML += '<br>';
+	innerHTML += 'Include News stream <input type="checkbox" name="option1" value="Milk">';
+	innerHTML += '<br>';
+	innerHTML += '<input type="submit" onclick="getAjaxResponse(\'artistTwitter\')" name="newsContinue" value="Continue">';
+	
+	return innerHTML;
+}
+
+function parseArtistTwitter(jsonObject) {
+
+	var innerHTML = '<h2> Artist Twitter </h2>';
+    
+	innerHTML += 'Check the box below if you would like to include the artist\'s Twitter stream:';
+	innerHTML += '<br>';
+	innerHTML += '<a class="twitter-timeline" href="https://twitter.com/ScHoolBoyQ" data-widget-id="340935679490023425">Tweets by @ScHoolBoyQ</a>';
+	innerHTML += '<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?\'http\':\'https\';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");<\/script>';
+	innerHTML += '<br>';
+	innerHTML += '<br>';
+	innerHTML += 'Include Twitter stream <input type="checkbox" name="option1" value="Milk">';
+	innerHTML += '<br>';
+	innerHTML += '<input type="submit" name="twitterContinue" value="Continue">';
+
+	innerHTML += '<br><br><br>';
+
+	innerHTML += '<input type="submit" name="create" value="Create Mashup">';
+			
+	return innerHTML;
+}
+
+</script>
+
 
 </body>
 
 
 </html>
+
 

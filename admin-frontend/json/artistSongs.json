@@ -1,0 +1,20 @@
+{
+	"songs": [
+		{
+			"site": "soundcloud",
+			"url": "https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F84439820"
+		},
+		{
+			"site": "soundcloud",
+			"url": "https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F91990553"
+		},
+		{
+			"site": "soundcloud",
+			"url": "https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F56561005"
+		},
+		{
+			"site": "soundcloud",
+			"url": "https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F34480625"
+		}
+	]
+}
