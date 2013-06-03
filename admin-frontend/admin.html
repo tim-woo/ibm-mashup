@@ -213,15 +213,18 @@ function getAjaxResponse(request)
 function parseArtistNames(jsonObject) {
 
     var innerHTML = 'Find the correct name from the list below and click "Select Artist" to continue.<br>';
-    		
     innerHTML += '<select name="artistName">';
     
-  	innerHTML += '<option value="ARREQCK1269FB2EE5C">Schoolboy Q</option>';
-  	innerHTML += '<option value="ARCPTFX13925F19938">Schoolboy Q/A$AP Rocky</option>';
-  	innerHTML += '<option value="ARUTYNR13A0DE0CF48">Skeme, Schoolboy Q</option>';
-  	innerHTML += '<option value="ARNCMBU13E47B9B2AF">Quiz, SchoolBoy Q, Niqle Nut and One-2</option>';
-  	innerHTML += '<option value="ARCHTUB133858350DB">Ab-Soul, Kendrick Lamar, Schoolboy Q</option>';
-  	
+    var artistNames = jsonObject.names;		
+    for(var i = 0; i < artistNames.length; i++)
+	{
+		innerHTML += '<option value="';
+		innerHTML += artistNames[i].id;
+		innerHTML += '">';
+		innerHTML += artistNames[i].name;
+		innerHTML += '</option>';
+	}
+	
 	innerHTML += '</select>';
 	
 	innerHTML += '<input type="submit" onclick="getAjaxResponse(\'artistImages\')" name="selectArtist" value="Select Artist">';
@@ -233,25 +236,19 @@ function parseArtistImages(jsonObject) {
 
     var innerHTML = '<h2> Artist Images </h2>';
 	innerHTML += 'Choose your favorite image below and click "Select Image" to continue.';
-
 	innerHTML += '<select class="image-picker masonry">';
-  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/_/56703723/Schoolboy+Q+schoolboyq.jpg" value="1">Image 1</option>';
-  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/_/57790665/Schoolboy+Q+SchoolboyQ.jpg" value="2">Image 2</option>';
-  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/_/56703791/Schoolboy+Q+sq.png" value="3">Image 3</option>';
-  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/500/32644551/Schoolboy+Q+l_ef70c71e6fbca21e6133cfea2c97.jpg" value="4">Image 4</option>';
-  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/_/56703743/Schoolboy+Q+schoolboyq.jpg" value="5">Image 5</option>';
-  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/500/57724069/Schoolboy+Q+SchoolboyQ1.jpg" value="6">Image 6</option>';
-  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/_/57790955/Schoolboy+Q+SchoolboyQ.jpg" value="7">Image 7</option>';
-  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/500/57204889/Schoolboy+Q+26538_10150154964145023_312196.jpg" value="8">Image 8</option>';
-  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/_/52465929/Schoolboy+Q+b64048000storiesSchoolboyQPic.jpg" value="9">Image 9</option>';
-  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/_/56703723/Schoolboy+Q+schoolboyq.jpg" value="10">Image 10</option>';
-  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/_/57790665/Schoolboy+Q+SchoolboyQ.jpg" value="11">Image 11</option>';
-  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/_/56703791/Schoolboy+Q+sq.png" value="12">Image 12</option>';
-  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/500/32644551/Schoolboy+Q+l_ef70c71e6fbca21e6133cfea2c97.jpg" value="13">Image 13</option>';
-  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/_/56703743/Schoolboy+Q+schoolboyq.jpg" value="14">Image 14</option>';
-  	innerHTML += '<option data-img-src="http://userserve-ak.last.fm/serve/500/57724069/Schoolboy+Q+SchoolboyQ1.jpg" value="15">Image 15</option>';
-	innerHTML += '</select>';
-
+	
+	var artistImages = jsonObject.images;		
+    for(var i = 0; i < artistImages.length; i++)
+	{
+		innerHTML += '<option data-img-src="';
+		innerHTML += artistImages[i].url;
+		innerHTML += '" value="';
+		innerHTML += i;
+		innerHTML += '"></option>';
+	}
+	
+  	innerHTML += '</select>';
 	innerHTML += '<br>';
 	innerHTML += '<input type="submit" onclick="getAjaxResponse(\'artistBiographies\')" name="selectImage" value="Select Image">';
    
@@ -262,15 +259,23 @@ function parseArtistBiographies(jsonObject) {
 
     var innerHTML = '<h2> Artist Biography </h2>';
 	innerHTML += 'Choose a biography: ';
-    
 	innerHTML += '<select id="artistBiographies" name="artistBiographies">';
-  	innerHTML += '<option value="wikipedia">Wikipedia</option>';
-  	innerHTML += '<option value="last.fm">Last.FM</option>';
-	innerHTML += '</select>';
 	
+	
+	window.artistBiographies = jsonObject.biographies;	
+    for(var i = 0; i < window.artistBiographies.length; i++)
+	{
+		innerHTML += '<option value="';
+		innerHTML += i;
+		innerHTML += '">';
+		innerHTML += window.artistBiographies[i].site; // TODO capitalize first letter
+		innerHTML += '</option>';
+	}
+  	
+	innerHTML += '</select>';
 	innerHTML += '<br><br>';
 	innerHTML += '<div id="biography">';
-	innerHTML += 'Wikipedia Biography';
+	innerHTML += window.artistBiographies[0].text; // TODO check for no entries
 	innerHTML += '</div>';
 	innerHTML += '<br>';
 	
@@ -283,13 +288,34 @@ function parseArtistVideos(jsonObject) {
 
     var innerHTML = '<h2> Artist Videos </h2>';
 	innerHTML += '<div id="video-container">';
-	innerHTML += '<iframe width="560" height="315" src="http://www.youtube.com/embed/KnnYiW5dnhQ" frameborder="0" allowfullscreen></iframe><input type="checkbox" name="option1" value="Milk">';
-	innerHTML += '<br>';
-	innerHTML += '<iframe width="560" height="315" src="http://www.youtube.com/embed/dGd9DTTrX4U" frameborder="0" allowfullscreen></iframe><input type="checkbox" name="option1" value="Milk">';
-	innerHTML += '<br>';
-	innerHTML += '<iframe width="560" height="315" src="http://www.youtube.com/embed/h1eYqxZjlwU" frameborder="0" allowfullscreen></iframe><input type="checkbox" name="option1" value="Milk">';
-	innerHTML += '<br>';
-	innerHTML += '<iframe width="560" height="315" src="http://www.youtube.com/embed/uFaz2GN8FKY" frameborder="0" allowfullscreen></iframe><input type="checkbox" name="option1" value="Milk">';
+	
+	
+	var artistVideos = jsonObject.videos;	
+    for(var i = 0; i < artistVideos.length; i++)
+	{
+		if(artistVideos[i].site == "youtube")
+		{	
+			// innerHTML += '<iframe width="560" height="315" src="http://www.youtube.com/embed/KnnYiW5dnhQ" frameborder="0" allowfullscreen></iframe>';
+			// innerHTML += '<input type="checkbox" name="option1" value="Milk">';
+	
+			innerHTML += '<iframe width="560" height="315" src="';
+			innerHTML += artistVideos[i].url;
+			innerHTML += '" frameborder="0" allowfullscreen></iframe>';
+			
+			innerHTML += '<input type="checkbox" name="video';
+			innerHTML += i;
+			innerHTML += '" value="';
+			innerHTML += i;
+			innerHTML += '">';
+			
+			innerHTML += '<br>';
+		}
+		else if(artistVideos[i].site == "vimeo")
+		{
+		}
+		
+	}
+	
 	innerHTML += '</div>';
 	innerHTML += '<br>';
 	innerHTML += '<input type="submit" onclick="getAjaxResponse(\'artistSongs\')" name="selectVideos" value="Select Videos">';
@@ -302,14 +328,35 @@ function parseArtistSongs(jsonObject) {
     var innerHTML = '<h2> Artist Songs </h2>';
     
 	innerHTML += '<div id="song-container">';
-	innerHTML += '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F84439820"></iframe><input type="checkbox" name="option1" value="Milk">';
-	innerHTML += '<br><br>';
-	innerHTML += '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F91990553"></iframe><input type="checkbox" name="option1" value="Milk">';
-	innerHTML += '<br><br>';
-	innerHTML += '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F56561005"></iframe><input type="checkbox" name="option1" value="Milk">';
-	innerHTML += '<br><br>';
-	innerHTML += '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F34480625"></iframe><input type="checkbox" name="option1" value="Milk">';
-	innerHTML += '<br><br>';
+	
+	
+	
+	var artistSongs = jsonObject.songs;	
+    for(var i = 0; i < artistSongs.length; i++)
+	{
+		if(artistSongs[i].site == "soundcloud")
+		{	
+			// innerHTML += '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F84439820"></iframe>';
+			// innerHTML += '<input type="checkbox" name="option1" value="Milk">';
+	
+			innerHTML += '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="';
+			innerHTML += artistSongs[i].url;
+			innerHTML += '"></iframe>';
+			
+			innerHTML += '<input type="checkbox" name="song';
+			innerHTML += i;
+			innerHTML += '" value="';
+			innerHTML += i;
+			innerHTML += '">';
+			
+			innerHTML += '<br><br>';
+		}
+		else if(artistVideos[i].site == "vimeo")
+		{
+		}
+		
+	}
+	
 	innerHTML += '</div>';
 	innerHTML += '<br>';
 	innerHTML += '<input type="submit" onclick="getAjaxResponse(\'artistNews\')" name="selectSongs" value="Select Songs">';
@@ -324,16 +371,22 @@ function parseArtistNews(jsonObject) {
 	innerHTML += 'Check the box below if you would like to include a stream of the artists most recent news items: ';
 	innerHTML += '<br><br>';
 	innerHTML += '<div id="news-container">';
-	innerHTML += '<a href="http://www.vibe.com/article/kendrick-lamar-reveals-why-hes-been-hanging-mac-miller"> Kendrick Lamar Reveals Why He&#039;s Been Hanging With Mac Miller</a>';
-	innerHTML += '<br>';
-	innerHTML += '<a href="http://www.mtv.com/news/articles/1708257/kendrick-lamar-mac-miller-studio.jhtml"> Kendrick Lamar Recruited Mac Miller To Be His Official \'Homey\'</a>';
-	innerHTML += '<br>';
-	innerHTML += '<a href="http://allhiphop.com/2013/05/30/schoolboy-q-says-nyc-embraces-him-but-hes-still-looking-for-love-from-l-a/"> Schoolboy Q Says NYC Embraces Him But He\'s Still Looking For Love From L.A.</a>';
-	innerHTML += '<br>';
-	innerHTML += '<a href="http://allhiphop.com/2013/05/28/trinidad-james-speaks-on-his-roots-says-hed-keep-name-with-or-without-trindadians-approval-video/"> Trinidad James Speaks on His Roots, Says He\'d Keep Name With or Without Trindadians\' Approval (VIDEO)</a>';
-	innerHTML += '<br>';
-	innerHTML += '<a href="http://www.mtv.com/news/articles/1708129/mac-miller-diplo-goosebumpz.jhtml"> Mac Miller And Diplo Give Fans \'Goosebumpz\'</a>';
-	innerHTML += '<br>';
+	
+	
+	
+	var artistNews = jsonObject.news;	
+    for(var i = 0; i < artistNews.length; i++)
+	{
+		innerHTML += '<a href="';
+		innerHTML += artistNews[i].url;
+		innerHTML += '">';
+		innerHTML += artistNews[i].title; 
+		innerHTML += '</a>';
+		
+		innerHTML += '<br>';
+	}
+	
+	
 	innerHTML += '</div>';
 	innerHTML += '<br>';
 	innerHTML += 'Include News stream <input type="checkbox" name="option1" value="Milk">';
