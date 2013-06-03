@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title> Artist Mashup </title>
+	<title> ARTIST MASHUP </title>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
 	
@@ -28,7 +28,7 @@
 
 <div id="page">
 
-<h1> Artist Mashup </h1>
+<h1> ARTIST MASHUP </h1>
 
 <h2> Artist Name </h2>
 <form>
@@ -42,23 +42,13 @@ Artist name:  <input type="text" name="name">
 </div>
 
 <script>
-// This updates the image selector element
-function updateImages()
-{
-	// This converts the image selector from text drop down to image grid
-	$("select.image-picker").imagepicker();
 
-	// This cleans up the image grid using the masonry library
-	var container = jQuery("select.image-picker.masonry").next("ul.thumbnails");
-    container.imagesLoaded(function(){ 
-      container.masonry({ 
-        itemSelector:   "li",
-      }); 
-    });
+// Convinience function to log any message to the browsers debugging console
+function log(msg) {
+    setTimeout(function() {
+        throw new Error(msg);
+    }, 0);
 }
-</script>
-
-<script>
 
 // This function is called when the biography drop down meny is changed
 // Currently not working
@@ -73,15 +63,31 @@ $('#artistBiographies').change(function() {
     else
     	$("#biography").html("Quincy Matthew Hanley (born October 26, 1986), better known by his stage name ScHoolboy Q is an American recording hip hop artist from Los Angeles, California. Hanley is signed to Top Dawg Entertainment and is a member of Black Hippy along with Jay Rock, Kendrick Lamar and Ab-Soul. In 2008, ScHoolboy Q released his first mixtape titled, Schoolboy Turned Hustla and followed up in 2009 with Gangsta & Soul. In 2011, he finally released his first album titled, Setbacks  Dividing his time between socially conscious rap and bud smoker's anthems, ScHoolboy Q makes quite the impression on his debut \"street album\": the polished, funky, well-balanced, and rewarding Setbacks. Think Mos Def meets Murs on an especially hazy, West Coast weekend and you've got the idea, but this ScHoolboy offers some unique ideas on top of it. He's a complex, mature young man who worries about his kids consuming too much fast food (the straight forward \"Figg Get Da Money\") but he's also a dude who can't help letting go, diving headfirst into a bong when work is done (the dreamlike \"Light Years Ahead\"). \"What's the Word\" with fellow Black Hippy member Jay Rock, is a radio-friendly number that deserves a lavish party video while the following \"iBETiGOTSUMWEED\" is the kind of looped, scratchy soul the Madlib and Stones Throw crowd crave. Talented on either end of the spectrum, ScHoolboy Q delivers both with the same skill and cool head, all while keeping his own identity up front. Setbacks wants to come off as just slightly more important than a mixtape, but this casual release is a big contribution to the \"true hip-hop\" movement.");
 });
-</script>
 
-<script>
+// Dynamic version of above function
+$(document).on('change', '#artistBiographies', function() {
+    
+    var val = $("#artistBiographies option:selected").val();
+    
+    log(val);
+    
+    $("#biography").html(window.artistBiographies[val].text);
+    
+});
 
-// Convinience function to log any message to the browsers debugging console
-function log(msg) {
-    setTimeout(function() {
-        throw new Error(msg);
-    }, 0);
+// This updates the image selector element
+function updateImages()
+{
+	// This converts the image selector from text drop down to image grid
+	$("select.image-picker").imagepicker();
+
+	// This cleans up the image grid using the masonry library
+	var container = jQuery("select.image-picker.masonry").next("ul.thumbnails");
+    container.imagesLoaded(function(){ 
+      container.masonry({ 
+        itemSelector:   "li",
+      }); 
+    });
 }
 </script>
 
