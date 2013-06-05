@@ -2,19 +2,19 @@
 	"videos": [
 		{
 			"site": "youtube",
-			"url": "http://www.youtube.com/embed/KnnYiW5dnhQ"
+			"url": "KnnYiW5dnhQ"
 		},
 		{
 			"site": "youtube",
-			"url": "http://www.youtube.com/embed/dGd9DTTrX4U"
+			"url": "dGd9DTTrX4U"
 		},
 		{
 			"site": "youtube",
-			"url": "http://www.youtube.com/embed/h1eYqxZjlwU"
+			"url": "h1eYqxZjlwU"
 		},
 		{
 			"site": "youtube",
-			"url": "http://www.youtube.com/embed/uFaz2GN8FKY"
+			"url": "uFaz2GN8FKY"
 		}
 	]
 }

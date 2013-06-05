@@ -31,13 +31,10 @@
 <h1> ARTIST MASHUP </h1>
 
 <h2> Artist Name </h2>
-<form>
-Artist name:  <input type="text" name="name">
-<input type="button" onclick="getAjaxResponse('artistNames')" name="searchArtist" value="Search Artist">
-</form>
+Artist name:  <input type="text" name="searchName" id="searchName">
+<input type="button" onclick="getAjaxResponse('artistNames')" value="Search Artist">
 
 <div id="myDiv"></div>
-
 
 </div>
 
@@ -167,6 +164,11 @@ function getAjaxResponse(request)
 		// getArtistNames?search=Schoolboy+Q
 		// Send a request to the server. Provide the text artist name, select from the name form
 		// Get back a json object with names and id's
+		
+		// Pass parameter from name form: 
+		var searchName = document.getElementById('searchName').value;
+		log(searchName);
+		
     	xmlhttp.open("GET","./json/artistNames.json",true);
     }
     else if(request == "artistImages")
@@ -174,6 +176,12 @@ function getAjaxResponse(request)
     	// getArtistImages?id=ARREQCK1269FB2EE5C
 		// Send a request to the server, provide artist ID, from select form
 		// Get back a json with the urls
+		
+		// Pass name parameter from selected dropdown
+		var select = document.getElementById("artistName");
+		var artistName = select.options[select.selectedIndex].text;
+		log(artistName);
+		
     	xmlhttp.open("GET","./json/artistImages.json",true);
     }
     else if(request == "artistBiographies")
@@ -181,6 +189,12 @@ function getAjaxResponse(request)
     	// getArtistBiographies?id=ARREQCK1269FB2EE5C
 		// Send a request to the server, provide artist ID, from select form
 		// Get back a json with the text and source site
+		
+		// Pass id parameter from selected dropdown
+		var select = document.getElementById("artistName");
+		var artistId = select.options[select.selectedIndex].value;
+		log(artistId);
+		
     	xmlhttp.open("GET","./json/artistBiographies.json",true);
     }
     else if(request == "artistVideos")
@@ -188,6 +202,12 @@ function getAjaxResponse(request)
     	// getArtistVideos?name=Schoolboy+Q
 		// Send a request to the server, provide artist name, from select form
 		// Get back a json with the urls and source site
+		
+		// Pass name parameter from selected dropdown
+		var select = document.getElementById("artistName");
+		var artistName = select.options[select.selectedIndex].text;
+		log(artistName);
+		
     	xmlhttp.open("GET","./json/artistVideos.json",true);
     }
     else if(request == "artistSongs")
@@ -195,6 +215,12 @@ function getAjaxResponse(request)
     	// getArtistSongs?name=Schoolboy+Q
 		// Send a request to the server, provide artist name, from select form
 		// Get back a json with the urls and source site
+		
+		// Pass name parameter from selected dropdown
+		var select = document.getElementById("artistName");
+		var artistName = select.options[select.selectedIndex].text;
+		log(artistName);
+		
     	xmlhttp.open("GET","./json/artistSongs.json",true);
     }
     else if(request == "artistNews")
@@ -202,6 +228,12 @@ function getAjaxResponse(request)
     	// getArtistNews?id=ARREQCK1269FB2EE5C
 		// Send a request to the server, provide artist ID, from select form
 		// Get back a json with the title, URL
+		
+		// Pass id parameter from selected dropdown
+		var select = document.getElementById("artistName");
+		var artistId = select.options[select.selectedIndex].value;
+		log(artistId);
+		
     	xmlhttp.open("GET","./json/artistNews.json",true);
     }
     else if(request == "artistTwitter")
@@ -219,7 +251,7 @@ function getAjaxResponse(request)
 function parseArtistNames(jsonObject) {
 
     var innerHTML = 'Find the correct name from the list below and click "Select Artist" to continue.<br>';
-    innerHTML += '<select name="artistName">';
+    innerHTML += '<select name="artistName" id="artistName">';
     
     var artistNames = jsonObject.names;		
     for(var i = 0; i < artistNames.length; i++)
@@ -242,7 +274,7 @@ function parseArtistImages(jsonObject) {
 
     var innerHTML = '<h2> Artist Images </h2>';
 	innerHTML += 'Choose your favorite image below and click "Select Image" to continue.';
-	innerHTML += '<select class="image-picker masonry">';
+	innerHTML += '<select class="image-picker masonry" id="image-picker">';
 	
 	var artistImages = jsonObject.images;		
     for(var i = 0; i < artistImages.length; i++)
@@ -250,7 +282,7 @@ function parseArtistImages(jsonObject) {
 		innerHTML += '<option data-img-src="';
 		innerHTML += artistImages[i].url;
 		innerHTML += '" value="';
-		innerHTML += i;
+		innerHTML += artistImages[i].url;
 		innerHTML += '"></option>';
 	}
 	
@@ -265,7 +297,7 @@ function parseArtistBiographies(jsonObject) {
 
     var innerHTML = '<h2> Artist Biography </h2>';
 	innerHTML += 'Choose a biography: ';
-	innerHTML += '<select id="artistBiographies" name="artistBiographies">';
+	innerHTML += '<select id="artistBios" name="artistBiographies">';
 	
 	
 	window.artistBiographies = jsonObject.biographies;	
@@ -296,27 +328,29 @@ function parseArtistVideos(jsonObject) {
 	innerHTML += '<div id="video-container">';
 	
 	
-	var artistVideos = jsonObject.videos;	
-    for(var i = 0; i < artistVideos.length; i++)
+	window.artistVideos = jsonObject.videos;	
+    for(var i = 0; i < window.artistVideos.length; i++)
 	{
 		if(artistVideos[i].site == "youtube")
 		{	
 			// innerHTML += '<iframe width="560" height="315" src="http://www.youtube.com/embed/KnnYiW5dnhQ" frameborder="0" allowfullscreen></iframe>';
 			// innerHTML += '<input type="checkbox" name="option1" value="Milk">';
 	
-			innerHTML += '<iframe width="560" height="315" src="';
-			innerHTML += artistVideos[i].url;
+			innerHTML += '<iframe width="560" height="315" src="http://www.youtube.com/embed/';
+			innerHTML += window.artistVideos[i].url;
 			innerHTML += '" frameborder="0" allowfullscreen></iframe>';
 			
 			innerHTML += '<input type="checkbox" name="video';
 			innerHTML += i;
-			innerHTML += '" value="';
+			innerHTML += '" id="video';
 			innerHTML += i;
+			innerHTML += '" value="';
+			innerHTML += window.artistVideos[i].url;
 			innerHTML += '">';
 			
 			innerHTML += '<br>';
 		}
-		else if(artistVideos[i].site == "vimeo")
+		else if(window.artistVideos[i].site == "vimeo")
 		{
 		}
 		
@@ -337,27 +371,26 @@ function parseArtistSongs(jsonObject) {
 	
 	
 	
-	var artistSongs = jsonObject.songs;	
+	window.artistSongs = jsonObject.songs;	
     for(var i = 0; i < artistSongs.length; i++)
 	{
-		if(artistSongs[i].site == "soundcloud")
+		if(window.artistSongs[i].site == "soundcloud")
 		{	
-			// innerHTML += '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F84439820"></iframe>';
-			// innerHTML += '<input type="checkbox" name="option1" value="Milk">';
-	
-			innerHTML += '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="';
-			innerHTML += artistSongs[i].url;
+			innerHTML += '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F';
+			innerHTML += window.artistSongs[i].url;
 			innerHTML += '"></iframe>';
 			
 			innerHTML += '<input type="checkbox" name="song';
 			innerHTML += i;
-			innerHTML += '" value="';
+			innerHTML += '" id="song';
 			innerHTML += i;
+			innerHTML += '" value="';
+			innerHTML += window.artistSongs[i].url;
 			innerHTML += '">';
 			
 			innerHTML += '<br><br>';
 		}
-		else if(artistVideos[i].site == "vimeo")
+		else if(window.artistSongs[i].site == "spotify")
 		{
 		}
 		
@@ -395,7 +428,7 @@ function parseArtistNews(jsonObject) {
 	
 	innerHTML += '</div>';
 	innerHTML += '<br>';
-	innerHTML += 'Include News stream <input type="checkbox" name="option1" value="Milk">';
+	innerHTML += 'Include News stream <input type="checkbox" name="newsCheckbox" id="newsCheckbox">';
 	innerHTML += '<br>';
 	innerHTML += '<input type="submit" onclick="getAjaxResponse(\'artistTwitter\')" name="newsContinue" value="Continue">';
 	
@@ -412,15 +445,84 @@ function parseArtistTwitter(jsonObject) {
 	innerHTML += '<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?\'http\':\'https\';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");<\/script>';
 	innerHTML += '<br>';
 	innerHTML += '<br>';
-	innerHTML += 'Include Twitter stream <input type="checkbox" name="option1" value="Milk">';
+	innerHTML += 'Include Twitter stream <input type="checkbox" name="twitterCheckbox" id="twitterCheckbox">';
 	innerHTML += '<br>';
-	innerHTML += '<input type="submit" name="twitterContinue" value="Continue">';
 
 	innerHTML += '<br><br><br>';
 
-	innerHTML += '<input type="submit" name="create" value="Create Mashup">';
+
+	innerHTML += '<input type="submit" onclick="artistMashup()" value="Create Mashup">';
+			
 			
 	return innerHTML;
+}
+
+function artistMashup() 
+{
+	url = "./artist.php?"
+	
+	url += "artistName="
+	var select = document.getElementById("artistName");
+	var artistName = select.options[select.selectedIndex].text;
+	log(artistName);
+	url += artistName;
+	
+	url += "&artistId="
+	var artistId = select.options[select.selectedIndex].value;
+	log(artistId);
+	url += artistId;
+	
+	url += "&artistImage="
+	var imageSelect = document.getElementById("image-picker");
+	var artistImage = imageSelect.options[imageSelect.selectedIndex].value;
+	log(artistImage);
+	url += artistImage;
+	
+	// bio source
+	url += "&artistBio=" 
+	var bioSelect = document.getElementById("artistBios");
+	var artistBioSource = bioSelect.options[bioSelect.selectedIndex].text;
+	log(artistBioSource);
+	url += artistBioSource;
+	
+	// artist video
+    for(var i = 0; i < window.artistVideos.length; i++)  
+    {
+    	if(document.getElementById("video"+i).checked)
+    	{	
+    		var checkbox = document.getElementById("video"+i);
+    		url += "&v[]="
+    		url += checkbox.value;
+    	}
+    }
+	
+	// artist song
+    for(var i = 0; i < window.artistSongs.length; i++)  
+    {
+    	if(document.getElementById("song"+i).checked)
+    	{	
+    		var checkbox = document.getElementById("song"+i);
+    		url += "&s[]="
+    		url += checkbox.value;
+    	}
+    }
+    
+	// news yes/no
+	url += "&artistNews=";
+	if(document.getElementById('newsCheckbox').checked)
+		url += "true";
+	else
+		url += "false";
+	
+	// twitter yes/no
+	url += "&artistTwitter=";
+	if(document.getElementById('newsCheckbox').checked)
+		url += "true";
+	else
+		url += "false";
+	
+	var win=window.open(url, '_blank');
+  	win.focus();
 }
 
 </script>
