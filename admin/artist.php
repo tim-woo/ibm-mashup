@@ -66,7 +66,7 @@
 				$json_url .= "&name=";
 				$json_url .= urlencode($_GET['artistName']);
 				
-				echo $json_url;
+				//echo $json_url;
 				
 				$json = file_get_contents($json_url);
 				$data = json_decode($json, TRUE);
@@ -113,9 +113,20 @@
 						<div class="bio-container">
 						<?php 
 						
-							$json_url = "./json/artistBiographies.json";
+							//$json_url = "./json/artistBiographies.json";
+							//$json = file_get_contents($json_url);
+							//$data = json_decode($json, TRUE);
+							
+							$json_url = "http://ec2-23-22-104-155.compute-1.amazonaws.com:8080/getArtistBiographies?id=";
+							$json_url .= urlencode($_GET['artistId']);
+							$json_url .= "&name=";
+							$json_url .= urlencode($_GET['artistName']);
+				
+							//echo $json_url;
+				
 							$json = file_get_contents($json_url);
 							$data = json_decode($json, TRUE);
+							
 							
 							$biographies = $data['biographies'];
 							
@@ -165,7 +176,17 @@
 						<?php
 							if($_GET['artistNews'] === 'true')
 							{
-								$json_url = "./json/artistNews.json";
+								//$json_url = "./json/artistNews.json";
+								//$json = file_get_contents($json_url);
+								//$data = json_decode($json, TRUE);
+								
+								$json_url = "http://ec2-23-22-104-155.compute-1.amazonaws.com:8080/getArtistNews?id=";
+								$json_url .= urlencode($_GET['artistId']);
+								$json_url .= "&name=";
+								$json_url .= urlencode($_GET['artistName']);
+				
+								//echo $json_url;
+				
 								$json = file_get_contents($json_url);
 								$data = json_decode($json, TRUE);
 								

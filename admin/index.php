@@ -269,7 +269,8 @@ function getAjaxResponse(request)
 		var artistId = select.options[select.selectedIndex].value;
 		log(artistId);
 		
-    	xmlhttp.open("GET", "./json/artistTwitterHandle.json",true);
+		
+    	xmlhttp.open("GET", "http://ec2-23-22-104-155.compute-1.amazonaws.com:8080/getArtistTwitterHandle?id=" + artistId,true);
     }
 	
 	// Send the AJAX request, when it's complete, the above function handles the response
