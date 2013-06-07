@@ -33,6 +33,7 @@
 <h2> Artist Name </h2>
 Artist name:  <input type="text" name="searchName" id="searchName">
 <input type="button" onclick="getAjaxResponse('artistNames')" value="Search Artist">
+<br><br>
 
 <div id="myDiv"></div>
 
@@ -152,6 +153,8 @@ function getAjaxResponse(request)
     			innerHTML = parseArtistNews(object);
     		else if(request == "artistTwitter")
     			innerHTML = parseArtistTwitter(object);
+    		else if(request == "artistTwitterHandle")
+    			innerHTML = parseArtistTwitterHandle(object);
 
 			// Call function to create a div with this HTML and append to document
     		appendDiv(request, innerHTML);
@@ -169,7 +172,10 @@ function getAjaxResponse(request)
 		var searchName = document.getElementById('searchName').value;
 		log(searchName);
 		
-    	xmlhttp.open("GET","./json/artistNames.json",true);
+		log("http://ec2-23-22-104-155.compute-1.amazonaws.com:8080/getArtistNames?searchName=" + escape(searchName));
+		
+    	//xmlhttp.open("GET","./json/artistNames.json",true);
+    	xmlhttp.open("GET", "http://ec2-23-22-104-155.compute-1.amazonaws.com:8080/getArtistNames?searchName=" + escape(searchName), true);
     }
     else if(request == "artistImages")
     {
@@ -181,8 +187,12 @@ function getAjaxResponse(request)
 		var select = document.getElementById("artistName");
 		var artistName = select.options[select.selectedIndex].text;
 		log(artistName);
+		var artistId = select.options[select.selectedIndex].value;
+		log(artistId);
 		
-    	xmlhttp.open("GET","./json/artistImages.json",true);
+		log("http://ec2-23-22-104-155.compute-1.amazonaws.com:8080/getArtistImages?id=" + escape(artistId) + "&name=" + escape(artistName));
+		
+    	xmlhttp.open("GET","http://ec2-23-22-104-155.compute-1.amazonaws.com:8080/getArtistImages?id=" + escape(artistId) + "&name=" + escape(artistName),true);
     }
     else if(request == "artistBiographies")
     {
@@ -192,10 +202,14 @@ function getAjaxResponse(request)
 		
 		// Pass id parameter from selected dropdown
 		var select = document.getElementById("artistName");
+		var artistName = select.options[select.selectedIndex].text;
+		log(artistName);
 		var artistId = select.options[select.selectedIndex].value;
 		log(artistId);
 		
-    	xmlhttp.open("GET","./json/artistBiographies.json",true);
+		log("http://ec2-23-22-104-155.compute-1.amazonaws.com:8080/getArtistBiographies?id=" + escape(artistId) + "&name=" + escape(artistName));
+		
+    	xmlhttp.open("GET","http://ec2-23-22-104-155.compute-1.amazonaws.com:8080/getArtistBiographies?id=" + escape(artistId) + "&name=" + escape(artistName),true);
     }
     else if(request == "artistVideos")
     {
@@ -233,8 +247,12 @@ function getAjaxResponse(request)
 		var select = document.getElementById("artistName");
 		var artistId = select.options[select.selectedIndex].value;
 		log(artistId);
+		var artistName = select.options[select.selectedIndex].text;
+		log(artistName);
 		
-    	xmlhttp.open("GET","./json/artistNews.json",true);
+		log("http://ec2-23-22-104-155.compute-1.amazonaws.com:8080/getArtistNews?id=" + escape(artistId) + "&name=" + escape(artistName));
+		
+    	xmlhttp.open("GET","http://ec2-23-22-104-155.compute-1.amazonaws.com:8080/getArtistNews?id=" + escape(artistId) + "&name=" + escape(artistName),true);
     }
     else if(request == "artistTwitter")
     {
@@ -242,6 +260,19 @@ function getAjaxResponse(request)
 		// Send a request to the server, provide artist ID, from select form
 		// Get back a json with the tweet text, time, url
     	xmlhttp.open("GET","./json/artistTwitter.json",true);
+    }
+    else if(request == "artistTwitterHandle")
+    {	
+    	// getArtistTwitterHandle?id=ARREQCK1269FB2EE5C
+    	// Send a request to the server, provide artist ID, from select form
+    	// Get back json with the twitter Handle
+    	
+    	// Pass id parameter from selected dropdown
+		var select = document.getElementById("artistName");
+		var artistId = select.options[select.selectedIndex].value;
+		log(artistId);
+		
+    	xmlhttp.open("GET", "./json/artistTwitterHandle.json",true);
     }
 	
 	// Send the AJAX request, when it's complete, the above function handles the response
@@ -253,7 +284,7 @@ function parseArtistNames(jsonObject) {
     var innerHTML = 'Find the correct name from the list below and click "Select Artist" to continue.<br>';
     innerHTML += '<select name="artistName" id="artistName">';
     
-    var artistNames = jsonObject.names;		
+    var artistNames = jsonObject.artists;		
     for(var i = 0; i < artistNames.length; i++)
 	{
 		innerHTML += '<option value="';
@@ -429,13 +460,52 @@ function parseArtistNews(jsonObject) {
 	innerHTML += '</div>';
 	innerHTML += '<br>';
 	innerHTML += 'Include News stream <input type="checkbox" name="newsCheckbox" id="newsCheckbox">';
+	innerHTML += '<br><br>';
+	innerHTML += '<input type="submit" onclick="getAjaxResponse(\'artistTwitterHandle\')" name="newsContinue" value="Continue">';
 	innerHTML += '<br>';
-	innerHTML += '<input type="submit" onclick="getAjaxResponse(\'artistTwitter\')" name="newsContinue" value="Continue">';
 	
 	return innerHTML;
 }
 
+function parseArtistTwitterHandle(jsonObject) {
+
+	
+	var innerHTML = '<h2> Artist Twitter </h2>';
+	
+	// Grab the "response" object
+	var response = jsonObject.response;
+	
+	// Grab the artist object
+	var artist = response.artist;
+	
+	// Attempt to grab the twitter entry
+	var twitterHandle = artist.twitter;
+	
+	
+	if (!twitterHandle)
+	{
+		innerHTML += "Unable to generate artist's Twitter account.<br><br>";
+	}
+	else
+	{
+		innerHTML += 'Twitter account found with handle: ';
+		innerHTML += twitterHandle;
+		innerHTML += '<br>';
+		innerHTML += 'Check if you would like to include the artist\'s Twitter stream.';
+		innerHTML += '<input type="checkbox" name="twitterCheckbox" id="twitterCheckbox">';
+		innerHTML += '<br><br>';
+		
+	}
+	
+	innerHTML += '<input type="submit" onclick="artistMashup()" value="Create Mashup">';
+	innerHTML += '<br>';
+	
+			
+	return innerHTML;
+}
+
 function parseArtistTwitter(jsonObject) {
+
 
 	var innerHTML = '<h2> Artist Twitter </h2>';
     

@@ -61,7 +61,13 @@
 			
 			<?php 
 				
-				$json_url = "./json/artistImages.json";
+				$json_url = "http://ec2-23-22-104-155.compute-1.amazonaws.com:8080/getArtistImages?id=";
+				$json_url .= urlencode($_GET['artistId']);
+				$json_url .= "&name=";
+				$json_url .= urlencode($_GET['artistName']);
+				
+				//echo $json_url;
+				
 				$json = file_get_contents($json_url);
 				$data = json_decode($json, TRUE);
 							
