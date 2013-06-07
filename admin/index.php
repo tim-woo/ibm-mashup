@@ -164,9 +164,6 @@ function getAjaxResponse(request)
 	// Create the AJAX call to our server depending on the specified request
 	if(request == "artistNames")
 	{
-		// getArtistNames?search=Schoolboy+Q
-		// Send a request to the server. Provide the text artist name, select from the name form
-		// Get back a json object with names and id's
 		
 		// Pass parameter from name form: 
 		var searchName = document.getElementById('searchName').value;

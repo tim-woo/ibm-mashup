@@ -66,7 +66,7 @@
 				$json_url .= "&name=";
 				$json_url .= urlencode($_GET['artistName']);
 				
-				//echo $json_url;
+				echo $json_url;
 				
 				$json = file_get_contents($json_url);
 				$data = json_decode($json, TRUE);
