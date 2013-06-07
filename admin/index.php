@@ -35,6 +35,8 @@ Artist name:  <input type="text" name="searchName" id="searchName">
 <input type="button" onclick="getAjaxResponse('artistNames')" value="Search Artist">
 <br><br>
 
+<input type="submit" onclick="postArtist()" value="Post Artist">
+
 <div id="myDiv"></div>
 
 </div>
@@ -90,6 +92,71 @@ function updateImages()
 </script>
 
 <script>
+
+function postArtist()
+{
+	var xmlhttp;
+	if (window.XMLHttpRequest)
+	{// code for IE7+, Firefox, Chrome, Opera, Safari
+  		xmlhttp=new XMLHttpRequest();
+	}
+	else
+	{// code for IE6, IE5
+  		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+  
+  	// Define the function to be called when response is received
+	xmlhttp.onreadystatechange=function()
+  	{
+  		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    	{	
+    		// Create a JSON object from the server response
+    		var object = JSON.parse(xmlhttp.responseText);
+    		
+    	}
+	}
+	
+	// Create the AJAX call to our server depending on the specified request
+	
+	//xmlhttp.open("POST","http://ec2-23-22-104-155.compute-1.amazonaws.com:8080/event/artist",true);
+	//xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+	
+	var query = "eventID=";
+	query += "2";
+	query += "&name=";
+	query += "Santigold";
+	query += "&image=";
+	query += "http://userserve-ak.last.fm/serve/_/2147444.jpg";
+	query += "&bio=";
+	query += "this the bio yooooo";
+	query += "&youtube_url=";
+	query += "0efg934";
+	query += "&soundcloud_url=";
+	query += "2304243";
+	
+	/*“eventID” : <eventID>, 
+	“name”artistID” : <artist_nameistID>, “image” : <primary_image>, “bio” : <biography>, “youtube_url” : <youtube_url>, “soundcloud_url” : <soundcloud_url>
+	*/
+	// Send the AJAX request, when it's complete, the above function handles the response
+	//xmlhttp.send(query);
+	
+	
+	
+	///NEW
+	var url = "http://ec2-23-22-104-155.compute-1.amazonaws.com:8080/event/artist";
+	var params = query;
+	xmlhttp.open("POST", url, true);
+
+	//Send the proper header information along with the request
+	xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xmlhttp.setRequestHeader("Content-length", params.length);
+	xmlhttp.setRequestHeader("Connection", "close");
+
+	xmlhttp.send(params);
+	
+}
+
+
 
 // Adds a div with specified ID and inner HTML to the page
 function appendDiv(divId, inner)
@@ -560,12 +627,15 @@ function parseArtistTwitterHandle(jsonObject) {
 		innerHTML += twitterHandle;
 		innerHTML += '<br>';
 		innerHTML += 'Check if you would like to include the artist\'s Twitter stream.';
-		innerHTML += '<input type="checkbox" name="twitterCheckbox" id="twitterCheckbox">';
+		innerHTML += '<input type="checkbox" name="twitterCheckbox" id="twitterCheckbox" value="';
+		innerHTML += twitterHandle;
+		innerHTML += '">';
 		innerHTML += '<br><br>';
 		
 	}
 	
 	innerHTML += '<input type="submit" onclick="artistMashup()" value="Create Mashup">';
+	innerHTML += '<input type="submit" onclick="postArtist()" value="Post Artist">';
 	innerHTML += '<br>';
 	
 			
@@ -655,9 +725,17 @@ function artistMashup()
 	// twitter yes/no
 	url += "&artistTwitter=";
 	if(document.getElementById('newsCheckbox').checked)
+	{
 		url += "true";
+		url += "&artistTwitterHandle=";
+		var checkbox = document.getElementById("twitterCheckbox");
+		url += checkbox.value;
+		
+	}
 	else
+	{
 		url += "false";
+	}
 	
 	var win=window.open(url, '_blank');
   	win.focus();

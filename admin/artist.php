@@ -176,6 +176,7 @@
 						<?php
 							if($_GET['artistNews'] === 'true')
 							{
+								echo "<h1>News</h1>";
 								//$json_url = "./json/artistNews.json";
 								//$json = file_get_contents($json_url);
 								//$data = json_decode($json, TRUE);
@@ -205,6 +206,33 @@
 							}
 						?>
 						
+						<?php
+							if($_GET['artistTwitter'] === 'true')
+							{
+								echo "<h1>Twitter</h1>";
+							
+								$json_url = "http://ec2-23-22-104-155.compute-1.amazonaws.com:8080/getTweets?searchType=username&searchValue=";
+								$json_url .=  urlencode($_GET['artistTwitterHandle']);
+				
+								//echo $json_url;
+				
+								$json = file_get_contents($json_url);
+								$data = json_decode($json, TRUE);
+								
+								$tweets = $data['tweets'];
+							
+								foreach ($tweets as $tweetObject => $tweet) {
+								
+									echo '<a href="';
+									echo $tweet['url'];
+									echo '">';
+									echo $tweet['text'];
+									echo '</a>';
+									echo '<br><br>';
+		
+								}
+							}
+						?>
 						
 
 						

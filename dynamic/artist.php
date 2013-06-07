@@ -1,0 +1,146 @@
+<html>
+<head>
+	<title> Line Up </title>
+	
+	<link rel="shortcut icon" href="http://www.jazzreggaefest.com/files/Screen%20shot%202013-02-02%20at%208.32.06%20PM.png" type="image/png">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+	<!-- Include the slide show CSS -->
+	<link rel="stylesheet" href="./libraries/responsiveslides/responsiveslides.css"/>
+	
+	<!-- Including flipper CSS -->
+	<link rel="stylesheet" href="./css/card-flipper.css"/>
+	
+	<!-- Including our CSS file -->
+	<link rel="stylesheet" href="./css/demo.css"/>
+
+	<!-- Including the most recent JQuery Library -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	
+	<!-- Include the sliding menu library -->
+	<script type="text/javascript" src="./libraries/jpanelmenu/jquery.jpanelmenu.js"></script>
+	
+	<!-- Include the slide show library -->
+	<script type="text/javascript" src="./libraries/responsiveslides/responsiveslides.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41238300-1', 'jazzreggaefest.com');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body>
+
+	<!-- FACEBOOK INCLUDE -->
+<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+
+	<div class="menu-trigger"><a href="javascript:triggerMenu();">Menu</a></div>
+	<div class="side-strip"></div>
+	
+	
+	<div id="full-view">
+	<div id="wrapper">
+	
+		<div id="page">
+		
+			<?php include('./includes/header.php'); ?>
+			
+			<?php include('./includes/nav.php'); ?>
+			<?php include('./includes/nav-side.php'); ?>
+
+			
+			
+			<!-- Variable Content Goes Here -->
+			<?php 
+				$artistID = $_GET['id'];
+				include('./includes/artist_functions.php'); 
+			?>
+			
+			<div id="content">
+				
+					<h1> <?php artistName($artistID); ?> </h1> <!-- Just a test, remove eventually -->
+			
+						<img src="<?php artistPrimaryImgURL($artistID); ?>">
+						<div class="bio-container"><?php artistBio($artistID); ?></div>
+				
+						
+						<div class="video-container">
+							<iframe src="<?php artistVideo($artistID); ?>" frameborder="0" allowfullscreen></iframe>
+						</div>
+					
+
+						
+						<?php soundcloudAudio($artistID); ?>
+						
+						<!-- Spotify Done -->
+						<?php spotify($artistID); ?>
+
+						<!-- FACEBOOK  TODO -->
+						<div class="audio-container">
+						<?php facebook($artistID); ?>
+						<!-- <div class="fb-like" data-href="https://www.facebook.com/Santigold" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div>
+						-->
+						</div>
+
+					<!-- Twitter Done -->
+					<?php twitter($artistID); ?>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						
+
+
+						
+			</div> <!-- end #content -->
+
+
+
+			
+			<?php include('./includes/footer.php'); ?>
+			
+			
+		</div> <!-- end #page -->
+	
+	</div> <!-- end #wrapper -->
+	</div> <!-- end #full-view -->
+	
+<!-- Sliding menu javascript -->
+<script type="text/javascript">
+	//var jPM = $.jPanelMenu();
+	var jPM = $.jPanelMenu({
+    	menu: '#nav-side',
+    	
+	});	
+	jPM.on();
+</script>
+<script type="text/javascript">
+function triggerMenu()
+{
+	jPM.trigger(true);
+}
+</script>
+	
+    
+</body>
+
+
+</html>
+
