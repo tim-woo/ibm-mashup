@@ -218,8 +218,10 @@ function getAjaxResponse(request)
 		var select = document.getElementById("artistName");
 		var artistName = select.options[select.selectedIndex].text;
 		log(artistName);
+		log("youtube.php?artistName=" + escape(artistName));
 		
-    	xmlhttp.open("GET","./json/artistVideos.json",true);
+    	//xmlhttp.open("GET","./json/artistVideos.json",true);
+    	xmlhttp.open("GET","youtube.php?artistName=" + escape(artistName),true);
     }
     else if(request == "artistSongs")
     {
@@ -232,7 +234,8 @@ function getAjaxResponse(request)
 		var artistName = select.options[select.selectedIndex].text;
 		log(artistName);
 		
-    	xmlhttp.open("GET","./json/artistSongs.json",true);
+    	//xmlhttp.open("GET","./json/artistSongs.json",true);
+    	xmlhttp.open("GET","soundcloud.php?artistName=" + escape(artistName),true);
     }
     else if(request == "artistNews")
     {
@@ -356,7 +359,37 @@ function parseArtistVideos(jsonObject) {
     var innerHTML = '<h2> Artist Videos </h2>';
 	innerHTML += '<div id="video-container">';
 	
+	window.artistVideos = jsonObject;	
+    for(var i = 0; i < window.artistVideos.length; i++)
+	{
+		innerHTML += '<iframe width="560" height="315" src="http://www.youtube.com/embed/';
+		innerHTML += window.artistVideos[i].id;
+		innerHTML += '" frameborder="0" allowfullscreen></iframe>';
+			
+		innerHTML += '<input type="checkbox" name="video';
+		innerHTML += i;
+		innerHTML += '" id="video';
+		innerHTML += i;
+		innerHTML += '" value="';
+		innerHTML += window.artistVideos[i].id;
+		innerHTML += '">';
+			
+			innerHTML += '<br>';
+			
+		/*if(artistVideos[i].site == "youtube")
+		{	
+			// innerHTML += '<iframe width="560" height="315" src="http://www.youtube.com/embed/KnnYiW5dnhQ" frameborder="0" allowfullscreen></iframe>';
+			// innerHTML += '<input type="checkbox" name="option1" value="Milk">';
 	
+			
+		}
+		else if(window.artistVideos[i].site == "vimeo")
+		{
+		}*/
+		
+	}
+	
+	/*
 	window.artistVideos = jsonObject.videos;	
     for(var i = 0; i < window.artistVideos.length; i++)
 	{
@@ -383,7 +416,7 @@ function parseArtistVideos(jsonObject) {
 		{
 		}
 		
-	}
+	}*/
 	
 	innerHTML += '</div>';
 	innerHTML += '<br>';
@@ -398,9 +431,46 @@ function parseArtistSongs(jsonObject) {
     
 	innerHTML += '<div id="song-container">';
 	
+	window.artistSongs = jsonObject;
+	for(var i = 0; i < window.artistSongs.length; i++)
+	{
+		innerHTML += '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F';
+		innerHTML += window.artistSongs[i].id;
+		innerHTML += '"></iframe>';
+			
+		innerHTML += '<input type="checkbox" name="song';
+		innerHTML += i;
+		innerHTML += '" id="song';
+		innerHTML += i;
+		innerHTML += '" value="';
+		innerHTML += window.artistSongs[i].id;
+		innerHTML += '">';
+			
+		innerHTML += '<br><br>';
+		
+		/*if(window.artistSongs[i].site == "soundcloud")
+		{	
+			innerHTML += '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F';
+			innerHTML += window.artistSongs[i].url;
+			innerHTML += '"></iframe>';
+			
+			innerHTML += '<input type="checkbox" name="song';
+			innerHTML += i;
+			innerHTML += '" id="song';
+			innerHTML += i;
+			innerHTML += '" value="';
+			innerHTML += window.artistSongs[i].url;
+			innerHTML += '">';
+			
+			innerHTML += '<br><br>';
+		}
+		else if(window.artistSongs[i].site == "spotify")
+		{
+		}*/
+		
+	}
 	
-	
-	window.artistSongs = jsonObject.songs;	
+	/*window.artistSongs = jsonObject.songs;	
     for(var i = 0; i < artistSongs.length; i++)
 	{
 		if(window.artistSongs[i].site == "soundcloud")
@@ -423,7 +493,7 @@ function parseArtistSongs(jsonObject) {
 		{
 		}
 		
-	}
+	}*/
 	
 	innerHTML += '</div>';
 	innerHTML += '<br>';
