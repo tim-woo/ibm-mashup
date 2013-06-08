@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title> Line Up </title>
+	<title> Generated Artist </title>
 	
 	<link rel="shortcut icon" href="http://www.jazzreggaefest.com/files/Screen%20shot%202013-02-02%20at%208.32.06%20PM.png" type="image/png">
 	

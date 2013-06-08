@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title> Line Up </title>
+	<title> Dynamic Artist </title>
 	
 	<link rel="shortcut icon" href="http://www.jazzreggaefest.com/files/Screen%20shot%202013-02-02%20at%208.32.06%20PM.png" type="image/png">
 	
@@ -77,36 +77,60 @@
 			?>
 			
 			<div id="content">
-				
-					<h1> <?php artistName($artistID); ?> </h1> <!-- Just a test, remove eventually -->
 			
-						<img src="<?php artistPrimaryImgURL($artistID); ?>">
-						<div class="bio-container"><?php artistBio($artistID); ?></div>
+				<?php
+					//http://ec2-23-22-104-155.compute-1.amazonaws.com:8080/event/artists?eventID=2 
+			
+					$json_url = "http://ec2-23-22-104-155.compute-1.amazonaws.com:8080/event/artist?eventID=2&artistID=";
+					$json_url .= urlencode($_GET['id']);
+				
+					$json = file_get_contents($json_url);
+					$data = json_decode($json, TRUE);
+							
+					$name = $data['name'];
+					$bio = $data['bio'];
+					$image = $data['image'];
+					$video = $data['video'];
+					$sound = $data['sound'];
+					
+					//$bio = 'Santigold is Santi White: an artist whose perseverance relies on invention, a champion who survives off her own skill and faith. She is a major muse watched by the inspired world, an in categorical performer who collapses time and genre with one hand guided by tradition, while the other hand carves out a shining future. Santigold is neither calm nor mayhem, but from her lungs burst every color in between. After four years of hide and seek in which blogs blew up at the sudden release of any track with her name attached to it, Santigold returns in a moment of global aggression and vulnerability. Honing in on the hyper-media cult of personality, in her unmistakable voice she asks the listener: Into what fantasy do you hurl yourself as you gaze into the glow of your machine? The answer to this question is central to what drives "Master of My Make-Believe," her latest work.';					$image = './images/artists/large/santigold_large.png';
+					//$video = 'mIMMZQJ1H6E';
+					//$sound = $data['sound'];
+					
+					//echo $name;
+			
+				?>
+			
+				
+					<h1> <?php echo $name; ?> </h1> <!-- Just a test, remove eventually -->
+			
+						<?php 
+						echo '<img src="';
+						echo $image;
+						echo '"></img>';
+						?>
+						
+						<div class="bio-container"><?php echo $bio; ?></div>
 				
 						
 						<div class="video-container">
-							<iframe src="<?php artistVideo($artistID); ?>" frameborder="0" allowfullscreen></iframe>
+							<iframe src="http://www.youtube.com/embed/<?php echo $video; ?>" frameborder="0" allowfullscreen></iframe>
+							<br>
 						</div>
 					
 
 						
-						<?php soundcloudAudio($artistID); ?>
+						<?php 
 						
-						<!-- Spotify Done -->
-						<?php spotify($artistID); ?>
-
-						<!-- FACEBOOK  TODO -->
-						<div class="audio-container">
-						<?php facebook($artistID); ?>
-						<!-- <div class="fb-like" data-href="https://www.facebook.com/Santigold" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div>
-						-->
-						</div>
-
-					<!-- Twitter Done -->
-					<?php twitter($artistID); ?>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						 if(intval($artistID) === 3)
+						 	soundcloudAudio('43420259'); 
+						 
+						 if(intval($artistID) > 13)
+						 	soundcloudAudio($sound);
+						 
+						 ?>
 						
-
+						<br>
 
 						
 			</div> <!-- end #content -->

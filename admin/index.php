@@ -35,7 +35,6 @@ Artist name:  <input type="text" name="searchName" id="searchName">
 <input type="button" onclick="getAjaxResponse('artistNames')" value="Search Artist">
 <br><br>
 
-<input type="submit" onclick="postArtist()" value="Post Artist">
 
 <div id="myDiv"></div>
 
@@ -93,8 +92,12 @@ function updateImages()
 
 <script>
 
+
 function postArtist()
 {
+
+	log("what");
+
 	var xmlhttp;
 	if (window.XMLHttpRequest)
 	{// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -118,41 +121,73 @@ function postArtist()
 	
 	// Create the AJAX call to our server depending on the specified request
 	
-	//xmlhttp.open("POST","http://ec2-23-22-104-155.compute-1.amazonaws.com:8080/event/artist",true);
-	//xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+	var select = document.getElementById("artistName");
+	var artistName = select.options[select.selectedIndex].text;
+	log(artistName);
 	
-	var query = "eventID=";
-	query += "2";
-	query += "&name=";
-	query += "Santigold";
-	query += "&image=";
-	query += "http://userserve-ak.last.fm/serve/_/2147444.jpg";
-	query += "&bio=";
-	query += "this the bio yooooo";
-	query += "&youtube_url=";
-	query += "0efg934";
-	query += "&soundcloud_url=";
-	query += "2304243";
+	var artistId = select.options[select.selectedIndex].value;
+	log(artistId);
 	
-	/*“eventID” : <eventID>, 
-	“name”artistID” : <artist_nameistID>, “image” : <primary_image>, “bio” : <biography>, “youtube_url” : <youtube_url>, “soundcloud_url” : <soundcloud_url>
-	*/
-	// Send the AJAX request, when it's complete, the above function handles the response
-	//xmlhttp.send(query);
+	var imageSelect = document.getElementById("image-picker");
+	var artistImage = imageSelect.options[imageSelect.selectedIndex].value;
+	log(artistImage);
 	
 	
+	// bio source
+	var artistBio = $("#biography").text();
+	//log("bio" + artistBio);
+	
+	
+	// artist video
+	var artistVideo = "";
+    for(var i = 0; i < window.artistVideos.length; i++)  
+    {
+    	if(document.getElementById("video"+i).checked)
+    	{	
+    		var checkbox = document.getElementById("video"+i);
+    		artistVideo = checkbox.value;
+    	}
+    }
+	
+	
+	// artist song
+	var artistSong = "";
+    for(var i = 0; i < window.artistSongs.length; i++)  
+    {
+    	if(document.getElementById("song"+i).checked)
+    	{	
+    		var checkbox = document.getElementById("song"+i);
+    		artistSong = checkbox.value;
+    	}
+    }
+    
+	
+	var query = '{';
+	query += '"eventID": "';
+	query += '2';
+	query += '", "name": "';
+	query += artistName;
+	query += '", "image": "';
+	query += artistImage;
+	query += '", "bio": "';
+	query += 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed lobortis nulla. Curabitur eget nisl quis lectus semper sodales ac sit amet odio. Cras nec tempus urna. Nunc sed ipsum elementum, rhoncus quam a, hendrerit tellus. In blandit mi non erat elementum, ut suscipit velit sagittis. Vestibulum consequat vehicula aliquam. Maecenas eu augue eget nulla sollicitudin porttitor. Mauris auctor cursus quam at laoreet. Nunc aliquam auctor velit sit amet commodo. Maecenas pharetra tincidunt arcu at adipiscing.';
+	query += '", "youtube_url": "';
+	query += artistVideo;
+	query += '", "soundcloud_url": "';
+	query += artistSong;
+	query += '"}';
+	
+	
+	log(query);
 	
 	///NEW
 	var url = "http://ec2-23-22-104-155.compute-1.amazonaws.com:8080/event/artist";
-	var params = query;
 	xmlhttp.open("POST", url, true);
 
 	//Send the proper header information along with the request
 	xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-	xmlhttp.setRequestHeader("Content-length", params.length);
-	xmlhttp.setRequestHeader("Connection", "close");
 
-	xmlhttp.send(params);
+	xmlhttp.send(query);
 	
 }
 

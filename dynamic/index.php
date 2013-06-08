@@ -1,6 +1,6 @@
 <?php 
-$now = "null";
-$next = "null";
+$now = "barrington";
+$next = "ziggy";
 
 /* kes, marcia, mr, barrington, ziggy */
 
@@ -9,7 +9,7 @@ $page="index";
 
 <html>
 <head>
-	<title> JazzReggae Festival </title>
+	<title> Dynamic Home </title>
 	
 	<link rel="shortcut icon" href="http://www.jazzreggaefest.com/files/Screen%20shot%202013-02-02%20at%208.32.06%20PM.png" type="image/png">
 	
@@ -142,7 +142,7 @@ switch ($GLOBALS['next'])
 					
 					<h1> <span style="font-family:Verdana, Arial, sans-serif;">#</span>jazz reggae </h1>
 						
-						<a class="twitter-timeline" href="https://twitter.com/search?q=%23jazzreggae+OR+%23jrf+OR+%23jazzreggaefest+OR+%40JazzReggaeFest" data-widget-id="339069848648818690">Tweets about "#jazzreggae OR #jrf OR #jazzreggaefest OR @JazzReggaeFest"</a>
+						<a class="twitter-timeline" href="https://twitter.com/search?q=%23jazzreggae+OR+%23jazzreggaefest+OR+%40JazzReggaeFest" data-widget-id="339069848648818690">Tweets about "#jazzreggae OR #jrf OR #jazzreggaefest OR @JazzReggaeFest"</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 					

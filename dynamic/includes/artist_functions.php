@@ -268,38 +268,10 @@ function soundcloudAudio($artistID)
 {
 
   echo '<div class="audio-container">';
-	switch ($artistID)
-	{
-	case "santigold":
- 	 	echo '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F43420259"></iframe>';
- 	 	break;
-	case "common":
- 	 	  echo '';
-  		break;
-	case "grouch":
-  		echo '';
-  		break;
-  	case "jhene":
-  		echo '';
-  		break;
-  	case "ryan":
-  		echo '';
-  		break;
-  	case "ziggy":
-  		echo '';
-  		break;
-  	case "barrington":
-  		echo '';
-  		break;
-  	case "mr":
-  		echo '';
-  		break;
-  	case "marcia":
-  		echo '';
-  		break;
-	default:
-  		echo '';
-	}
+	
+ echo '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F';
+ echo $artistID;
+ echo '"></iframe>';
 	
   echo '</div>';
 						

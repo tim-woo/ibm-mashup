@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title> Line Up </title>
+	<title> Dynamic Line Up </title>
 	
 	<link rel="shortcut icon" href="http://www.jazzreggaefest.com/files/Screen%20shot%202013-02-02%20at%208.32.06%20PM.png" type="image/png">
 	
@@ -56,117 +56,68 @@
 			<div id="content">
 			
 			
-				<h1> Reggae Day </h1> 
+				
+			
+				<h1> Line Up </h1> 
 				
 				<div class="artist-container">
-				<div class="grid-img">
-					<a href="./artist.php?id=ziggy">
-						<img src="./images/artists/lineup/ziggy.png">
-						<div class="grid-img-overlay">
-							<div class="overlay-text">Ziggy Marley</div>
-						</div>
-					</a>
-				</div>
 				
-				<div class="grid-img">
-					<a href="./artist.php?id=barrington">
-						<img src="./images/artists/lineup/barrington.png">
-						<div class="grid-img-overlay">
-							<div class="overlay-text">Barrington Levy</div>
-						</div>
-					</a>
-				</div>
+				<?php
+					//http://ec2-23-22-104-155.compute-1.amazonaws.com:8080/event/artists?eventID=2 
+			
+					$json_url = "http://ec2-23-22-104-155.compute-1.amazonaws.com:8080/event/artists?eventID=2";
+					//$json_url .= urlencode($_GET['artistId']);
+					//$json_url .= "&name=";
+					//$json_url .= urlencode($_GET['artistName']);
 				
-				<div class="grid-img">
-					<a href="./artist.php?id=mr">
-						<img src="./images/artists/lineup/mr.png">
-						<div class="grid-img-overlay">
-							<div class="overlay-text">Mr. Vegas</div>
-						</div>
-					</a>
-				</div>
+					//echo $json_url;
 				
-				<div class="grid-img">
-					<a href="./artist.php?id=marcia">
-						<img src="./images/artists/lineup/marcia.png">
-						<div class="grid-img-overlay">
-							<div class="overlay-text">Marcia Griffiths</div>
-						</div>
-					</a>
-				</div>
+					$json = file_get_contents($json_url);
+					$data = json_decode($json, TRUE);
+							
+							
+					$artists = $data['artists'];
+							
+					foreach ($artists as $artistObject => $artist) {
+						echo '<div class="grid-img">';
+						
+						echo '<a href="./artist.php?id=';
+						echo urlencode($artist['artistID']);
+						echo '">';
+						
+						if(intval($artist['artistID']) > 13)
+						{
+							$imageURL = $artist['primary_picture'];
+							echo '<img class="header-title" src="image.php?url='.$imageURL.'">';
+						}
+						else
+						{
+							echo '<img src="';
+							//echo './images/artists/lineup/ziggy.png'; // FIX
+							echo $artist['primary_picture'];
+							echo '">';
+						}
+						
+						echo '<div class="grid-img-overlay">';
+						
+						echo '<div class="overlay-text">';
+						echo $artist['name'];
+						echo '</div>';
+						
+						echo '</div>';
+						echo '</a>';
+						echo '</div>';
+						
+					}
 				
-				<div class="grid-img">
-					<a href="./artist.php?id=kes">
-						<img src="./images/artists/lineup/kes.png">
-						<div class="grid-img-overlay">
-							<div class="overlay-text">Kes the Band</div>
-						</div>
-					</a>
-				</div>
+				?>
+				
 				
 				<div class="spacer" style="clear: both;"></div>
 				
 				</div>
 			
-				<h1> Jam Day </h1> 
-				<div class="artist-container">
 				
-				<div class="grid-img">
-					<a href="./artist.php?id=santigold">
-						<img src="./images/artists/lineup/santigold.png">
-						<div class="grid-img-overlay">
-							<div class="overlay-text">Santigold</div>
-						</div>
-					</a>
-				</div>
-				
-				<div class="grid-img">
-					<a href="./artist.php?id=common">
-						<img src="./images/artists/lineup/common.png">
-						<div class="grid-img-overlay">
-							<div class="overlay-text">Common</div>
-						</div>
-					</a>
-				</div>
-				
-				<div class="grid-img">
-					<a href="./artist.php?id=grouch">
-						<img src="./images/artists/lineup/grouch.png">
-						<div class="grid-img-overlay">
-							<div class="overlay-text" style="font-size:24px;">The Grouch & Eligh</div>
-						</div>
-					</a>
-				</div>
-				
-				<div class="grid-img">
-					<a href="./artist.php?id=jhene">
-						<img src="./images/artists/lineup/jhene.png">
-						<div class="grid-img-overlay">
-							<div class="overlay-text">Jhene</div>
-						</div>
-					</a>
-				</div>
-				
-				<div class="grid-img">
-					<a href="./artist.php?id=ryan">
-						<img src="./images/artists/lineup/ryan.png">
-						<div class="grid-img-overlay">
-							<div class="overlay-text">Ryan McDermott</div>
-						</div>
-					</a>
-				</div>
-				
-				<div class="grid-img">
-					<a href="./artist.php?id=gluck">
-						<img src="./images/artists/lineup/gluck.png">
-						<div class="grid-img-overlay">
-							<div class="overlay-text" style="font-size:24px;">Gluck Jazz Ensemble</div>
-						</div>
-					</a>
-				</div>
-				
-				<div class="spacer" style="clear: both;"></div>
-				</div>
 				
 				
 			</div> <!-- end #content -->
